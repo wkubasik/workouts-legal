@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support — Workouts</title>
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="index.html"><span class="dot"></span>Workouts</a>
+    <div class="lang-toggle" role="group" aria-label="Language">
+      <button data-lang="en" class="active">EN</button>
+      <button data-lang="pl">PL</button>
+    </div>
+  </header>
+
+  <!-- ==================== ENGLISH ==================== -->
+  <section class="lang lang-en">
+    <h1>Support</h1>
+    <p class="updated">App: <strong>Workouts</strong> · Developer:
+      <strong>Kariera Programisty Wiesław Kubasik</strong></p>
+
+    <p>Need help with the <strong>Workouts</strong> app, found a bug, or have a feature request?
+      We're happy to help.</p>
+
+    <p><a class="btn" href="mailto:wkubasik2905@gmail.com?subject=Workouts%20support">Email support</a></p>
+
+    <div class="card">
+      Send to <strong>wkubasik2905@gmail.com</strong>. Please include your app version, device
+      and OS (e.g. "Android 14, Pixel 8"), and steps to reproduce if you're reporting a bug. We
+      aim to reply within a few business days.
+    </div>
+
+    <h2>Other things you might be looking for</h2>
+    <ul>
+      <li>Want to delete your account or data? See
+        <a href="delete-account.html">Account &amp; Data Deletion</a>.</li>
+      <li>Questions about how we handle your data? See our
+        <a href="privacy-policy.html">Privacy Policy</a>.</li>
+      <li>Questions about the rules for using the app? See our
+        <a href="terms-of-service.html">Terms of Service</a>.</li>
+      <li>Looking for who is behind this app? See
+        <a href="company.html">Company information</a>.</li>
+    </ul>
+  </section>
+
+  <!-- ==================== POLISH ==================== -->
+  <section class="lang lang-pl hidden">
+    <h1>Pomoc</h1>
+    <p class="updated">Aplikacja: <strong>Workouts</strong> · Deweloper:
+      <strong>Kariera Programisty Wiesław Kubasik</strong></p>
+
+    <p>Potrzebujesz pomocy z aplikacją <strong>Workouts</strong>, znalazłeś błąd, a może masz
+      pomysł na nową funkcję? Chętnie pomożemy.</p>
+
+    <p><a class="btn" href="mailto:wkubasik2905@gmail.com?subject=Workouts%20-%20pomoc">Napisz do wsparcia</a></p>
+
+    <div class="card">
+      Wyślij wiadomość na adres <strong>wkubasik2905@gmail.com</strong>. Jeśli zgłaszasz błąd,
+      podaj proszę wersję aplikacji, urządzenie i system (np. „Android 14, Pixel 8") oraz kroki
+      pozwalające go odtworzyć. Staramy się odpowiadać w ciągu kilku dni roboczych.
+    </div>
+
+    <h2>Inne przydatne strony</h2>
+    <ul>
+      <li>Chcesz usunąć konto lub dane? Zobacz stronę
+        <a href="delete-account.html">Usuwanie konta i danych</a>.</li>
+      <li>Pytania o to, jak przetwarzamy Twoje dane? Zobacz naszą
+        <a href="privacy-policy.html">Politykę prywatności</a>.</li>
+      <li>Pytania o zasady korzystania z aplikacji? Zobacz nasz
+        <a href="terms-of-service.html">Regulamin</a>.</li>
+      <li>Szukasz informacji o tym, kto stoi za tą aplikacją? Zobacz
+        <a href="company.html">Informacje o firmie</a>.</li>
+    </ul>
+  </section>
+
+  <footer class="foot">
+    <a href="index.html">Home</a>
+    <a href="company.html">Company</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="terms-of-service.html">Terms of Service</a>
+    <a href="delete-account.html">Delete Account</a>
+    <a href="support.html">Support</a>
+    <div style="margin-top:10px">© 2026 Kariera Programisty Wiesław Kubasik · Workouts</div>
+  </footer>
+</div>
+
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('.lang-toggle button');
+    function setLang(lang) {
+      document.querySelectorAll('.lang-en').forEach(function (e) { e.classList.toggle('hidden', lang !== 'en'); });
+      document.querySelectorAll('.lang-pl').forEach(function (e) { e.classList.toggle('hidden', lang !== 'pl'); });
+      buttons.forEach(function (b) { b.classList.toggle('active', b.dataset.lang === lang); });
+      document.documentElement.lang = lang;
+      try { localStorage.setItem('workouts_lang', lang); } catch (e) {}
+    }
+    buttons.forEach(function (b) { b.addEventListener('click', function () { setLang(b.dataset.lang); }); });
+    var lang = 'en';
+    try {
+      var stored = localStorage.getItem('workouts_lang');
+      if (stored === 'pl' || stored === 'en') { lang = stored; }
+      else if ((navigator.language || '').slice(0, 2).toLowerCase() === 'pl') { lang = 'pl'; }
+    } catch (e) {}
+    setLang(lang);
+  })();
+</script>
+</body>
+</html>

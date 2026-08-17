@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Company Information — Workouts</title>
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="index.html"><span class="dot"></span>Workouts</a>
+    <div class="lang-toggle" role="group" aria-label="Language">
+      <button data-lang="en" class="active">EN</button>
+      <button data-lang="pl">PL</button>
+    </div>
+  </header>
+
+  <!-- ==================== ENGLISH ==================== -->
+  <section class="lang lang-en">
+    <h1>Company information</h1>
+    <p class="updated">Legal identity of the business behind the Workouts app</p>
+
+    <p>The <strong>Workouts</strong> mobile app is developed and operated by a registered sole
+      proprietorship (in Polish: <em>jednoosobowa działalność gospodarcza</em>, "JDG") based in
+      Poland.</p>
+
+    <div class="card">
+      <p style="margin-top:0"><strong>Business name:</strong> Kariera Programisty Wiesław Kubasik</p>
+      <p><strong>Legal form:</strong> Sole proprietorship (JDG), registered in the Central
+        Registration and Information on Business (CEIDG), Poland</p>
+      <p><strong>NIP (Tax ID):</strong> 7922133428</p>
+      <p><strong>REGON:</strong> 362970910</p>
+      <p><strong>Registered address:</strong><br>
+        Bystrowice 64<br>
+        37-565 Roźwienica<br>
+        Podkarpackie Voivodeship, Poland</p>
+      <p style="margin-bottom:0"><strong>Contact e-mail:</strong>
+        <a href="mailto:wkubasik2905@gmail.com">wkubasik2905@gmail.com</a></p>
+    </div>
+
+    <h2>What we do</h2>
+    <p>We develop and operate <strong>Workouts</strong>, a personal workout-tracking mobile app.
+      Software development is the core business activity of this company.</p>
+
+    <h2>Related pages</h2>
+    <p>
+      <a class="btn" href="privacy-policy.html">Privacy Policy</a>
+      &nbsp;
+      <a class="btn" href="terms-of-service.html">Terms of Service</a>
+      &nbsp;
+      <a class="btn" href="support.html">Support</a>
+    </p>
+  </section>
+
+  <!-- ==================== POLISH ==================== -->
+  <section class="lang lang-pl hidden">
+    <h1>Informacje o firmie</h1>
+    <p class="updated">Tożsamość prawna podmiotu stojącego za aplikacją Workouts</p>
+
+    <p>Aplikacja mobilna <strong>Workouts</strong> jest tworzona i prowadzona przez zarejestrowaną
+      jednoosobową działalność gospodarczą (JDG) z siedzibą w Polsce.</p>
+
+    <div class="card">
+      <p style="margin-top:0"><strong>Nazwa firmy:</strong> Kariera Programisty Wiesław Kubasik</p>
+      <p><strong>Forma prawna:</strong> Jednoosobowa działalność gospodarcza (JDG), wpisana do
+        Centralnej Ewidencji i Informacji o Działalności Gospodarczej (CEIDG)</p>
+      <p><strong>NIP:</strong> 7922133428</p>
+      <p><strong>REGON:</strong> 362970910</p>
+      <p><strong>Adres siedziby:</strong><br>
+        Bystrowice 64<br>
+        37-565 Roźwienica<br>
+        woj. podkarpackie, Polska</p>
+      <p style="margin-bottom:0"><strong>Adres e-mail kontaktowy:</strong>
+        <a href="mailto:wkubasik2905@gmail.com">wkubasik2905@gmail.com</a></p>
+    </div>
+
+    <h2>Czym się zajmujemy</h2>
+    <p>Tworzymy i prowadzimy aplikację <strong>Workouts</strong> — aplikację mobilną do
+      śledzenia treningów. Wytwarzanie oprogramowania jest głównym przedmiotem działalności
+      tej firmy.</p>
+
+    <h2>Powiązane strony</h2>
+    <p>
+      <a class="btn" href="privacy-policy.html">Polityka prywatności</a>
+      &nbsp;
+      <a class="btn" href="terms-of-service.html">Regulamin</a>
+      &nbsp;
+      <a class="btn" href="support.html">Pomoc</a>
+    </p>
+  </section>
+
+  <footer class="foot">
+    <a href="index.html">Home</a>
+    <a href="company.html">Company</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="terms-of-service.html">Terms of Service</a>
+    <a href="delete-account.html">Delete Account</a>
+    <a href="support.html">Support</a>
+    <div style="margin-top:10px">© 2026 Kariera Programisty Wiesław Kubasik · Workouts</div>
+  </footer>
+</div>
+
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('.lang-toggle button');
+    function setLang(lang) {
+      document.querySelectorAll('.lang-en').forEach(function (e) { e.classList.toggle('hidden', lang !== 'en'); });
+      document.querySelectorAll('.lang-pl').forEach(function (e) { e.classList.toggle('hidden', lang !== 'pl'); });
+      buttons.forEach(function (b) { b.classList.toggle('active', b.dataset.lang === lang); });
+      document.documentElement.lang = lang;
+      try { localStorage.setItem('workouts_lang', lang); } catch (e) {}
+    }
+    buttons.forEach(function (b) { b.addEventListener('click', function () { setLang(b.dataset.lang); }); });
+    var lang = 'en';
+    try {
+      var stored = localStorage.getItem('workouts_lang');
+      if (stored === 'pl' || stored === 'en') { lang = stored; }
+      else if ((navigator.language || '').slice(0, 2).toLowerCase() === 'pl') { lang = 'pl'; }
+    } catch (e) {}
+    setLang(lang);
+  })();
+</script>
+</body>
+</html>
