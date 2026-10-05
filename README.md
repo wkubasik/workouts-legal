@@ -34,16 +34,23 @@ and nothing else holds a copy:
 - Moving the site to another address means changing `billing.legal` in the app and
   `LEGAL_SITE_URL` in the backend's `.env`.
 
-## Publish with Cloudflare Pages (recommended)
+## Publish with Cloudflare Workers (recommended)
 
-1. In the Cloudflare dashboard, go to **Workers & Pages → Create → Pages → Connect to Git** and
+The site is deployed as a Worker with static assets only, no Worker script. `wrangler.jsonc`
+serves the repo root; `.assetsignore` keeps this README, the reference docs, and the config files
+out of the upload. A new file added to the root is published unless it is listed there.
+
+1. In the Cloudflare dashboard, go to **Workers & Pages → Create → Import a repository** and
    select this repo (`wkubasik/workouts-legal`).
-2. Build settings: this is a plain static site, so leave the **build command** empty and set the
-   **build output directory** to `/` (repo root).
-3. Deploy. Cloudflare gives you a `*.pages.dev` URL immediately.
-4. Go to the project's **Custom domains** tab and add your own domain (it must already be on
-   Cloudflare DNS, or you add it there as part of this step). Cloudflare issues the certificate
-   and routes the domain to the deployment automatically.
+2. Build settings: leave the **build command** empty. The **deploy command** is
+   `npx wrangler deploy`; the non-production branch command is `npx wrangler versions upload`.
+3. Deploy. Cloudflare gives you a `*.workers.dev` URL immediately.
+4. Go to the Worker's **Settings → Domains & Routes** and add your own domain (it must already be
+   on Cloudflare DNS). Cloudflare issues the certificate and routes the domain to the Worker.
+
+Cloudflare serves every page without its `.html`: `/privacy-policy.html?lang=pl` answers with a
+307 to `/privacy-policy?lang=pl`, which keeps the language, so links ending in `.html` keep
+working.
 
 ### After the custom domain is live: verify it for Google
 

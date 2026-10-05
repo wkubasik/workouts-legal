@@ -1,0 +1,7 @@
+# Files in the repo root that are not part of the published site (wrangler.jsonc serves the root)
+.git
+.gitignore
+.wrangler
+node_modules
+wrangler.jsonc
+*.md
