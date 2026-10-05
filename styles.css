@@ -112,6 +112,15 @@ li { margin: 6px 0; }
   margin: 18px 0;
 }
 
+.table { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 15px; margin: 8px 0 16px; }
+th, td {
+  text-align: left;
+  vertical-align: top;
+  padding: 8px 12px 8px 0;
+  border-bottom: 1px solid var(--border);
+}
+
 .steps {
   counter-reset: step;
   list-style: none;
