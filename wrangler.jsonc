@@ -1,0 +1,10 @@
+// Cloudflare Workers deploy of the static legal pages: no Worker script, only the files at the
+// repo root served as static assets. What is kept out of the upload is listed in .assetsignore.
+{
+  "$schema": "https://unpkg.com/wrangler/config-schema.json",
+  "name": "workouts-legal",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./"
+  }
+}

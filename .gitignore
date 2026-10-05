@@ -2,3 +2,7 @@
 data-safety-form.md
 ios-app-privacy.md
 store-descriptions.md
+
+# Wrangler local state
+.wrangler/
+node_modules/
