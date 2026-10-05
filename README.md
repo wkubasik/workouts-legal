@@ -19,6 +19,13 @@ Static pages and copy for the Google Play (and App Store) listing of the **Worko
 
 The pages use only relative links, so they work under any domain or subpath without edits.
 
+**Keep them in step with the backend's copies.** The app itself links to the texts the backend
+serves (`workouts-backend/src/main/resources/legal/{en,pl}/{privacy,terms,delete-account}.html`,
+published at `https://workouts.wkubasik.pl/legal/…`). The privacy policy, terms and deletion page
+here must say the same things: a change to what the app or the backend processes, keeps or sells
+is a change to both copies. They were last brought in line with the code on 5 October 2026 (the
+AI Coach's credit pool and top-ups, SUB-31 … SUB-35).
+
 ## Publish with Cloudflare Pages (recommended)
 
 1. In the Cloudflare dashboard, go to **Workers & Pages → Create → Pages → Connect to Git** and
