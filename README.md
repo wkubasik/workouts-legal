@@ -19,6 +19,21 @@ Static pages and copy for the Google Play (and App Store) listing of the **Worko
 
 The pages use only relative links, so they work under any domain or subpath without edits.
 
+**This repo is the only source of the legal texts.** They are published at `https://wkubasik.pl`,
+and nothing else holds a copy:
+
+- The app links to them (`billing.legal` in `workouts-frontend/src/environments/`): the paywall and
+  the Settings hub open `…/terms-of-service.html?lang=<the app's language>` and
+  `…/privacy-policy.html?lang=…`. Every page reads `?lang=en|pl` and opens in that language.
+- The backend answers the URLs older builds link to, `https://workouts.wkubasik.pl/legal/{en,pl}/{terms,privacy,delete-account}`,
+  with a permanent redirect to the matching page here (`LEGAL_SITE_URL`, backend `deploy/README.md`,
+  "Legal pages"). It holds no text of its own.
+- A change to what the app or the backend processes, keeps or sells is a change to these pages. They
+  were last brought in line with the code on 5 October 2026 (the AI Coach's credit pool and
+  top-ups, SUB-31 … SUB-35).
+- Moving the site to another address means changing `billing.legal` in the app and
+  `LEGAL_SITE_URL` in the backend's `.env`.
+
 ## Publish with Cloudflare Pages (recommended)
 
 1. In the Cloudflare dashboard, go to **Workers & Pages → Create → Pages → Connect to Git** and

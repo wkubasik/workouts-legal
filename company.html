@@ -115,7 +115,9 @@
     buttons.forEach(function (b) { b.addEventListener('click', function () { setLang(b.dataset.lang); }); });
     var lang = 'en';
     try {
-      var stored = localStorage.getItem('workouts_lang');
+      // A link may name the language (?lang=pl): the app opens each text in its own language.
+      var asked = new URLSearchParams(window.location.search).get('lang');
+      var stored = asked === 'pl' || asked === 'en' ? asked : localStorage.getItem('workouts_lang');
       if (stored === 'pl' || stored === 'en') { lang = stored; }
       else if ((navigator.language || '').slice(0, 2).toLowerCase() === 'pl') { lang = 'pl'; }
     } catch (e) {}
