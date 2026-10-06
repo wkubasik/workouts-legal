@@ -17,6 +17,11 @@ Static pages and copy for the Google Play (and App Store) listing of the **Worko
 - `data-safety-form.md` — click-by-click answers for the Play Data safety questionnaire
 - `ios-app-privacy.md` — Apple App Privacy label + account-deletion (5.1.1(v)) compliance
 
+**Drafts (do NOT publish — `drafts/`, kept out of the upload by `.assetsignore`):**
+- `drafts/watches.md` — what the watch app adds to the privacy policy, the account-deletion page and
+  the Terms (EN + PL), for the lawyer's review. It goes onto the pages with the watch app's launch,
+  and the change that puts it there deletes the draft.
+
 The pages use only relative links, so they work under any domain or subpath without edits.
 
 **This repo is the only source of the legal texts.** They are published at `https://wkubasik.pl`,
