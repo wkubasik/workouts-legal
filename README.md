@@ -35,7 +35,8 @@ and nothing else holds a copy:
   "Legal pages"). It holds no text of its own.
 - A change to what the app or the backend processes, keeps or sells is a change to these pages. They
   were last brought in line with the code on 5 October 2026 (the AI Coach's credit pool and
-  top-ups, SUB-31 … SUB-35).
+  top-ups, SUB-31 … SUB-35), and on 14 October 2026 (Apple's refund requests answered through
+  RevenueCat, with the buyer's consent, ACO-06).
 - Moving the site to another address means changing `billing.legal` in the app and
   `LEGAL_SITE_URL` in the backend's `.env`.
 
