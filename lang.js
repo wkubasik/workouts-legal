@@ -46,8 +46,61 @@
         language: 'Język', home: 'Strona główna', company: 'Firma', privacy: 'Polityka prywatności',
         terms: 'Regulamin', delete: 'Usuń konto', support: 'Pomoc'
       }
+    },
+    {
+      code: 'de', name: 'Deutsch', phones: ['de'], draft: true,
+      words: {
+        language: 'Sprache', home: 'Startseite', company: 'Unternehmen', privacy: 'Datenschutzerklärung',
+        terms: 'Nutzungsbedingungen', delete: 'Konto löschen', support: 'Support',
+        draft: 'Diese Übersetzung ist ein Entwurf, der noch anwaltlich geprüft wird. Wo sie von der englischen Fassung abweicht, gilt die englische Fassung.',
+        draftLink: 'Englische Fassung lesen'
+      }
+    },
+    {
+      code: 'es-419', name: 'Español (Latinoamérica)', phones: ['es'], draft: true,
+      words: {
+        language: 'Idioma', home: 'Inicio', company: 'Empresa', privacy: 'Política de privacidad',
+        terms: 'Términos de uso', delete: 'Eliminar cuenta', support: 'Soporte',
+        draft: 'Esta traducción es un borrador pendiente de revisión jurídica. Si difiere de la versión en inglés, prevalece la versión en inglés.',
+        draftLink: 'Leer la versión en inglés'
+      }
+    },
+    {
+      code: 'fr', name: 'Français', phones: ['fr'], draft: true,
+      words: {
+        language: 'Langue', home: 'Accueil', company: 'Entreprise', privacy: 'Politique de confidentialité',
+        terms: 'Conditions d’utilisation', delete: 'Supprimer le compte', support: 'Assistance',
+        draft: 'Cette traduction est une version provisoire, en attente de relecture par un juriste. En cas de différence avec la version anglaise, c’est la version anglaise qui s’applique.',
+        draftLink: 'Lire la version anglaise'
+      }
+    },
+    {
+      code: 'it', name: 'Italiano', phones: ['it'], draft: true,
+      words: {
+        language: 'Lingua', home: 'Home', company: 'Azienda', privacy: 'Informativa sulla privacy',
+        terms: 'Termini di utilizzo', delete: 'Elimina account', support: 'Assistenza',
+        draft: 'Questa traduzione è una bozza in attesa della revisione di un legale. Se differisce dalla versione inglese, prevale la versione inglese.',
+        draftLink: 'Leggi la versione inglese'
+      }
+    },
+    {
+      code: 'pt-BR', name: 'Português (Brasil)', phones: ['pt-BR'], draft: true,
+      words: {
+        language: 'Idioma', home: 'Início', company: 'Empresa', privacy: 'Política de privacidade',
+        terms: 'Termos de uso', delete: 'Excluir conta', support: 'Suporte',
+        draft: 'Esta tradução é um rascunho e ainda será revisada por um advogado. Se ela divergir da versão em inglês, prevalece a versão em inglês.',
+        draftLink: 'Ler a versão em inglês'
+      }
+    },
+    {
+      code: 'uk', name: 'Українська', phones: ['uk'], draft: true,
+      words: {
+        language: 'Мова', home: 'Головна', company: 'Компанія', privacy: 'Політика конфіденційності',
+        terms: 'Умови використання', delete: 'Видалення облікового запису', support: 'Підтримка',
+        draft: 'Цей переклад — чернетка, яку ще має перевірити юрист. Якщо він відрізняється від англійської версії, діє англійська версія.',
+        draftLink: 'Читати англійську версію'
+      }
     }
-    /* LANGUAGES */
   ];
 
   var FALLBACK = 'en';

@@ -92,7 +92,7 @@ header.top {
 }
 
 /* A translation not yet reviewed by its lawyer (lang.js, `draft`). */
-.draft-notice {
+.card.draft-notice {
   border-color: #e0a800;
   font-size: 15px;
 }

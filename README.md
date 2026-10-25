@@ -26,7 +26,11 @@ Static pages and copy for the Google Play (and App Store) listing of the **Worko
 **Drafts (do NOT publish — `drafts/`, kept out of the upload by `.assetsignore`):**
 - `drafts/watches.md` — what the watch app adds to the privacy policy, the account-deletion page and
   the Terms (EN + PL), for the lawyer's review. It goes onto the pages with the watch app's launch,
-  and the change that puts it there deletes the draft.
+  in every language of the site (workouts-frontend `docs/languages-plan.md`, LANG-43), and the change
+  that puts it there deletes the draft.
+- `drafts/lang-21/<code>.md` — each draft language's briefing for its lawyer: what its draft chose,
+  what it adapted, the labels it is unsure of and its first questions. It goes with its language's
+  publication.
 
 The pages use only relative links, so they work under any domain or subpath without edits.
 
