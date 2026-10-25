@@ -5,36 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Workouts — Legal</title>
   <link rel="stylesheet" href="styles.css">
+  <!-- alternates: the published languages, written by node tools/check-site.mjs --fix -->
+  <link rel="alternate" hreflang="en" href="https://wkubasik.pl/?lang=en">
+  <link rel="alternate" hreflang="pl" href="https://wkubasik.pl/?lang=pl">
+  <link rel="alternate" hreflang="x-default" href="https://wkubasik.pl/">
+  <!-- /alternates -->
 </head>
 <body>
 <div class="wrap">
   <header class="top">
     <a class="brand" href="index.html"><span class="dot"></span>Workouts</a>
+    <div class="lang-menu" hidden></div>
   </header>
-  <h1>Workouts</h1>
-  <p class="muted">Personal workout-tracking app · Developer: Wiesław Kubasik ·
-    <a href="company.html">full company details</a></p>
-  <p>Legal and account information for the Workouts mobile app:</p>
-  <p>
-    <a class="btn" href="company.html">Company</a>
-    &nbsp;
-    <a class="btn" href="privacy-policy.html">Privacy Policy</a>
-    &nbsp;
-    <a class="btn" href="terms-of-service.html">Terms of Service</a>
-    &nbsp;
-    <a class="btn" href="delete-account.html">Delete Account &amp; Data</a>
-    &nbsp;
-    <a class="btn" href="support.html">Support</a>
-  </p>
+  <!-- ==================== ENGLISH ==================== -->
+  <section class="lang" lang="en" data-title="Workouts — Legal">
+    <h1>Workouts</h1>
+    <p class="muted">Personal workout-tracking app · Developer: Wiesław Kubasik ·
+      <a href="company.html">full company details</a></p>
+    <p>Legal and account information for the Workouts mobile app:</p>
+    <p>
+      <a class="btn" href="company.html">Company</a>
+      &nbsp;
+      <a class="btn" href="privacy-policy.html">Privacy Policy</a>
+      &nbsp;
+      <a class="btn" href="terms-of-service.html">Terms of Service</a>
+      &nbsp;
+      <a class="btn" href="delete-account.html">Delete Account &amp; Data</a>
+      &nbsp;
+      <a class="btn" href="support.html">Support</a>
+    </p>
+  </section>
+
+  <!-- ==================== POLISH ==================== -->
+  <section class="lang hidden" lang="pl" data-title="Workouts — Informacje prawne">
+    <h1>Workouts</h1>
+    <p class="muted">Aplikacja do śledzenia własnych treningów · Deweloper: Wiesław Kubasik ·
+      <a href="company.html">pełne dane firmy</a></p>
+    <p>Informacje prawne i dotyczące konta w aplikacji mobilnej Workouts:</p>
+    <p>
+      <a class="btn" href="company.html">Firma</a>
+      &nbsp;
+      <a class="btn" href="privacy-policy.html">Polityka prywatności</a>
+      &nbsp;
+      <a class="btn" href="terms-of-service.html">Regulamin</a>
+      &nbsp;
+      <a class="btn" href="delete-account.html">Usuwanie konta i danych</a>
+      &nbsp;
+      <a class="btn" href="support.html">Pomoc</a>
+    </p>
+  </section>
+
   <footer class="foot">
-    <a href="index.html">Home</a>
-    <a href="company.html">Company</a>
-    <a href="privacy-policy.html">Privacy Policy</a>
-    <a href="terms-of-service.html">Terms of Service</a>
-    <a href="delete-account.html">Delete Account</a>
-    <a href="support.html">Support</a>
+    <a href="index.html" data-word="home">Home</a>
+    <a href="company.html" data-word="company">Company</a>
+    <a href="privacy-policy.html" data-word="privacy">Privacy Policy</a>
+    <a href="terms-of-service.html" data-word="terms">Terms of Service</a>
+    <a href="delete-account.html" data-word="delete">Delete Account</a>
+    <a href="support.html" data-word="support">Support</a>
     <div style="margin-top:10px">© 2026 Kariera Programisty Wiesław Kubasik · Workouts · <a href="mailto:support@wkubasik.pl">support@wkubasik.pl</a></div>
   </footer>
 </div>
+
+<script src="lang.js"></script>
 </body>
 </html>

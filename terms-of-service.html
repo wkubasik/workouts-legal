@@ -6,21 +6,23 @@
   <title>Terms of Service — Workouts</title>
   <meta name="robots" content="index, follow">
   <link rel="stylesheet" href="styles.css">
+  <!-- alternates: the published languages, written by node tools/check-site.mjs --fix -->
+  <link rel="alternate" hreflang="en" href="https://wkubasik.pl/terms-of-service?lang=en">
+  <link rel="alternate" hreflang="pl" href="https://wkubasik.pl/terms-of-service?lang=pl">
+  <link rel="alternate" hreflang="x-default" href="https://wkubasik.pl/terms-of-service">
+  <!-- /alternates -->
 </head>
 <body>
 <div class="wrap">
   <header class="top">
     <a class="brand" href="index.html"><span class="dot"></span>Workouts</a>
-    <div class="lang-toggle" role="group" aria-label="Language">
-      <button data-lang="en" class="active">EN</button>
-      <button data-lang="pl">PL</button>
-    </div>
+    <div class="lang-menu" hidden></div>
   </header>
 
   <!-- ==================== ENGLISH ==================== -->
-  <section class="lang lang-en">
+  <section class="lang" lang="en">
     <h1>Terms of Service</h1>
-    <p class="updated">Last updated: 14 October 2026</p>
+    <p class="updated">Last updated: 25 October 2026</p>
 
     <p>These terms are the agreement between you and Wiesław Kubasik, trading as Kariera Programisty Wiesław Kubasik
       (“we”, “us”), for the <strong>Workouts</strong> app and the services that come with it: your account, its backup
@@ -220,12 +222,18 @@
     <p>These terms are governed by Polish law. If you are a consumer living in another country, you keep the protection
       that the mandatory rules of that country’s law give you. Disputes are decided by the courts that have
       jurisdiction under the law; as a consumer, you can also bring them before the courts where you live.</p>
+
+    <h2>18. These terms in other languages</h2>
+    <p>These terms are available in English and in every other language this site offers them in, and each version
+      says the same. If a translation differs from the English version, the English version applies, unless the law
+      where you live gives the version in your language precedence — as Polish law does for consumers in Poland — or
+      the translation is more favourable to you.</p>
   </section>
 
   <!-- ==================== POLISH ==================== -->
-  <section class="lang lang-pl hidden">
+  <section class="lang hidden" lang="pl">
     <h1>Regulamin</h1>
-    <p class="updated">Ostatnia aktualizacja: 14 października 2026 r.</p>
+    <p class="updated">Ostatnia aktualizacja: 25 października 2026 r.</p>
 
     <p>Ten regulamin to umowa między Tobą a Wiesławem Kubasikiem, prowadzącym działalność gospodarczą pod firmą Kariera
       Programisty Wiesław Kubasik („my”), dotycząca aplikacji <strong>Workouts</strong> i usług, które się z nią wiążą:
@@ -433,40 +441,25 @@
     <p>Regulamin podlega prawu polskiemu. Jeśli jesteś konsumentem mieszkającym w innym państwie, zachowujesz ochronę,
       jaką dają Ci bezwzględnie obowiązujące przepisy prawa tego państwa. Spory rozstrzygają sądy właściwe zgodnie z
       przepisami prawa; jako konsument możesz też wnieść sprawę do sądu właściwego dla miejsca swojego zamieszkania.</p>
+
+    <h2>18. Regulamin w innych językach</h2>
+    <p>Regulamin jest dostępny w języku angielskim i w każdym innym języku, w którym udostępnia go ta strona, a każda
+      wersja ma tę samą treść. Jeśli tłumaczenie różni się od wersji angielskiej, obowiązuje wersja angielska, chyba że
+      prawo miejsca Twojego zamieszkania daje pierwszeństwo wersji w Twoim języku — tak jak prawo polskie konsumentom w
+      Polsce — albo tłumaczenie jest dla Ciebie korzystniejsze.</p>
   </section>
 
   <footer class="foot">
-    <a href="index.html">Home</a>
-    <a href="company.html">Company</a>
-    <a href="privacy-policy.html">Privacy Policy</a>
-    <a href="terms-of-service.html">Terms of Service</a>
-    <a href="delete-account.html">Delete Account</a>
-    <a href="support.html">Support</a>
+    <a href="index.html" data-word="home">Home</a>
+    <a href="company.html" data-word="company">Company</a>
+    <a href="privacy-policy.html" data-word="privacy">Privacy Policy</a>
+    <a href="terms-of-service.html" data-word="terms">Terms of Service</a>
+    <a href="delete-account.html" data-word="delete">Delete Account</a>
+    <a href="support.html" data-word="support">Support</a>
     <div style="margin-top:10px">© 2026 Kariera Programisty Wiesław Kubasik · Workouts</div>
   </footer>
 </div>
 
-<script>
-  (function () {
-    var buttons = document.querySelectorAll('.lang-toggle button');
-    function setLang(lang) {
-      document.querySelectorAll('.lang-en').forEach(function (e) { e.classList.toggle('hidden', lang !== 'en'); });
-      document.querySelectorAll('.lang-pl').forEach(function (e) { e.classList.toggle('hidden', lang !== 'pl'); });
-      buttons.forEach(function (b) { b.classList.toggle('active', b.dataset.lang === lang); });
-      document.documentElement.lang = lang;
-      try { localStorage.setItem('workouts_lang', lang); } catch (e) {}
-    }
-    buttons.forEach(function (b) { b.addEventListener('click', function () { setLang(b.dataset.lang); }); });
-    var lang = 'en';
-    try {
-      // A link may name the language (?lang=pl): the app opens each text in its own language.
-      var asked = new URLSearchParams(window.location.search).get('lang');
-      var stored = asked === 'pl' || asked === 'en' ? asked : localStorage.getItem('workouts_lang');
-      if (stored === 'pl' || stored === 'en') { lang = stored; }
-      else if ((navigator.language || '').slice(0, 2).toLowerCase() === 'pl') { lang = 'pl'; }
-    } catch (e) {}
-    setLang(lang);
-  })();
-</script>
+<script src="lang.js"></script>
 </body>
 </html>
