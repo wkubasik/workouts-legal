@@ -6,19 +6,21 @@
   <title>Delete Your Account — Workouts</title>
   <meta name="robots" content="index, follow">
   <link rel="stylesheet" href="styles.css">
+  <!-- alternates: the published languages, written by node tools/check-site.mjs --fix -->
+  <link rel="alternate" hreflang="en" href="https://wkubasik.pl/delete-account?lang=en">
+  <link rel="alternate" hreflang="pl" href="https://wkubasik.pl/delete-account?lang=pl">
+  <link rel="alternate" hreflang="x-default" href="https://wkubasik.pl/delete-account">
+  <!-- /alternates -->
 </head>
 <body>
 <div class="wrap">
   <header class="top">
     <a class="brand" href="index.html"><span class="dot"></span>Workouts</a>
-    <div class="lang-toggle" role="group" aria-label="Language">
-      <button data-lang="en" class="active">EN</button>
-      <button data-lang="pl">PL</button>
-    </div>
+    <div class="lang-menu" hidden></div>
   </header>
 
   <!-- ==================== ENGLISH ==================== -->
-  <section class="lang lang-en">
+  <section class="lang" lang="en">
     <h1>Delete your account &amp; data</h1>
     <p class="updated">Last updated: 5 October 2026 · App: <strong>Workouts</strong> · Developer:
       <strong>Kariera Programisty Wiesław Kubasik</strong></p>
@@ -86,7 +88,7 @@
   </section>
 
   <!-- ==================== POLISH ==================== -->
-  <section class="lang lang-pl hidden">
+  <section class="lang hidden" lang="pl">
     <h1>Usuń swoje konto i dane</h1>
     <p class="updated">Ostatnia aktualizacja: 5 października 2026 r. · Aplikacja: <strong>Workouts</strong> · Deweloper:
       <strong>Kariera Programisty Wiesław Kubasik</strong></p>
@@ -157,38 +159,462 @@
       <a href="privacy-policy.html">Polityka prywatności</a>.</p>
   </section>
 
+  <!-- ==================== GERMAN ==================== -->
+  <section class="lang hidden" lang="de">
+    <h1>Dein Konto und deine Daten löschen</h1>
+    <p class="updated">Zuletzt aktualisiert: 5. Oktober 2026 · App: <strong>Workouts</strong> · Entwickler:
+      <strong>Kariera Programisty Wiesław Kubasik</strong></p>
+
+    <p>Du kannst dein <strong>Workouts</strong>-Konto und die damit gespeicherten Daten jederzeit löschen — in der App
+      oder, wenn du die App nicht mehr hast, indem du uns schreibst. Du kannst auch einen Teil deiner Daten löschen und
+      dein Konto behalten.</p>
+
+    <h2>Option 1 — In der App löschen (empfohlen)</h2>
+    <ol class="steps">
+      <li>Öffne die App <strong>Workouts</strong> und melde dich an.</li>
+      <li>Öffne die <strong>Einstellungen</strong> und tippe oben auf dein Konto (<strong>Konto verwalten</strong>).</li>
+      <li>Tippe auf <strong>Konto löschen</strong> und bestätige.</li>
+    </ol>
+    <p>Die App meldet dich sofort ab, und das Konto wird 30 Tage später gelöscht. Wenn du ein Abo hast, erinnert dich die
+      App daran, es im Store zu kündigen, und zeigt dir einen Link dorthin.</p>
+
+    <h2>Option 2 — Löschung per E-Mail beantragen</h2>
+    <p>Wenn du die App nicht mehr hast, schreib uns von der E-Mail-Adresse deines Kontos:</p>
+    <p><a class="btn" href="mailto:support@wkubasik.pl?subject=Mein%20Workouts-Konto%20l%C3%B6schen">Löschantrag per E-Mail senden</a></p>
+    <div class="card">
+      Schreib an <strong>support@wkubasik.pl</strong> mit dem Betreff <em>„Mein Workouts-Konto löschen“</em>, von der
+      E-Mail-Adresse deines Kontos. Wir bitten dich gegebenenfalls, den Antrag von dieser Adresse aus zu bestätigen; das
+      Konto wird dann genau so gelöscht, als hättest du es in der App gelöscht. Wir antworten innerhalb eines Monats.
+    </div>
+
+    <h2>Einen Teil deiner Daten löschen (Konto behalten)</h2>
+    <ul>
+      <li><strong>In der App:</strong> Lösche einzelne Workouts, Einheiten, Sätze, Pläne, Trainingsblöcke, deine eigenen
+        Übungen und Unterhaltungen mit dem KI-Coach und entferne deine Körperdaten. Was du löschst, verschwindet von all
+        deinen Geräten. Damit es auch auf deinen anderen Geräten gelöscht wird, behält unser Server ein gelöschtes
+        Element als gelöscht markiert, bis dein Konto gelöscht wird; eine gelöschte Unterhaltung mit dem KI-Coach
+        verliert ihre Nachrichten sofort.</li>
+      <li><strong>Per E-Mail:</strong> Wenn bestimmte Daten schon jetzt von unserem Server gelöscht werden sollen,
+        während du dein Konto behältst — zum Beispiel „alle meine Trainingseinheiten löschen“ oder „löschen, was ich in
+        der App gelöscht habe“ —, schreib uns:</li>
+    </ul>
+    <p><a class="btn" href="mailto:support@wkubasik.pl?subject=Teile%20meiner%20Workouts-Daten%20l%C3%B6schen">Antrag auf Datenlöschung per E-Mail senden</a></p>
+    <div class="card">
+      Schreib an <strong>support@wkubasik.pl</strong>, von der E-Mail-Adresse deines Kontos, und beschreibe, was
+      gelöscht werden soll. Dein Konto bleibt aktiv. Wir antworten innerhalb eines Monats.
+    </div>
+
+    <h2>Was passiert, wenn du dein Konto löschst</h2>
+    <ul>
+      <li><strong>30 Tage lang</strong> kann das Konto nicht genutzt werden. Wenn du es dir anders überlegst, schreib uns
+        vor Ablauf dieser Frist, und wir behalten es.</li>
+      <li><strong>Nach 30 Tagen</strong> wird es endgültig gelöscht, mit deinem Training, deinen Einstellungen und
+        Körperdaten, deinen Unterhaltungen mit dem KI-Coach und deinen Credits (einschließlich der Aufladungen), deinen
+        synchronisierten Geräten, deinen Tarif- und Kaufdaten, deinen Problemmeldungen mit unseren Antworten darauf und
+        deinen Nutzungsereignissen. RevenueCat, das uns mitteilt, was du in den Stores gekauft hast, löscht seinen
+        Datensatz über dich ebenfalls.</li>
+      <li><strong>Ohne Angaben, die sie mit dir verknüpfen, bleiben erhalten:</strong> Absturzberichte bis
+        90 Tage nach ihrem Versand; Kosten und Umfang deiner Anfragen an den KI-Coach und die Benachrichtigungen der
+        Stores über deine Käufe bis 400 Tage nach ihrem Entstehen. Unser Administrationsprotokoll speichert unter der
+        Nummer des Kontos die Tarife, die wir dem Konto gegeben haben, und die Kaufdaten, die wir erneut bei den Stores
+        abgerufen haben; nichts anderes, was wir speichern, verknüpft diese Nummer mit dir. Backups unserer Datenbank
+        werden innerhalb von 15 Tagen ersetzt. Problemmeldungen gehen außerdem per E-Mail an unser Support-Postfach, wo
+        wir sie nur so lange aufbewahren, wie wir sie zur Bearbeitung der Meldung brauchen.</li>
+      <li><strong>Auf deinem Smartphone</strong> bleibt, was die App gespeichert hat, bis du die App deinstallierst. Das
+        Abmelden entfernt es nicht.</li>
+    </ul>
+
+    <h2>Dein Abo</h2>
+    <p>Das Löschen deines Kontos <strong>kündigt kein Abo</strong>, das du im App Store oder bei Google Play
+      abgeschlossen hast. Damit dir nichts mehr berechnet wird, kündige es in deinem Store: auf einem iPhone unter
+      Einstellungen → dein Name → Abonnements; unter Android in der Play-Store-App über dein Profil →
+      Zahlungen und Abos → Abos.</p>
+
+    <p class="muted">In unserer <a href="privacy-policy.html">Datenschutzerklärung</a> erfährst du mehr darüber, was wir
+      speichern und warum.</p>
+  </section>
+
+  <!-- ==================== SPANISH (LATIN AMERICA) ==================== -->
+  <section class="lang hidden" lang="es-419">
+    <h1>Eliminar tu cuenta y tus datos</h1>
+    <p class="updated">Última actualización: 5 de octubre de 2026 · App: <strong>Workouts</strong> · Desarrollador:
+      <strong>Kariera Programisty Wiesław Kubasik</strong></p>
+
+    <p>Puedes eliminar tu cuenta de <strong>Workouts</strong>, y los datos que se guardan con ella, en cualquier momento
+      — en la app o, si ya no tienes la app, escribiéndonos. También puedes eliminar parte de tus datos y conservar tu
+      cuenta.</p>
+
+    <h2>Opción 1 — Eliminar la cuenta desde la app (recomendada)</h2>
+    <ol class="steps">
+      <li>Abre la app <strong>Workouts</strong> e inicia sesión.</li>
+      <li>Abre <strong>Configuración</strong> y toca tu cuenta en la parte superior (<strong>Administrar tu cuenta</strong>).</li>
+      <li>Toca <strong>Eliminar cuenta</strong> y confirma.</li>
+    </ol>
+    <p>La app cierra tu sesión de inmediato, y la cuenta se elimina 30 días después. Si tienes una suscripción, la app
+      te recuerda que la canceles en la tienda y te da un enlace para hacerlo.</p>
+
+    <h2>Opción 2 — Solicitar la eliminación por correo electrónico</h2>
+    <p>Si ya no tienes la app, escríbenos desde la dirección de correo electrónico de tu cuenta:</p>
+    <p><a class="btn" href="mailto:support@wkubasik.pl?subject=Eliminar%20mi%20cuenta%20de%20Workouts">Enviar una solicitud de eliminación</a></p>
+    <div class="card">
+      Escribe a <strong>support@wkubasik.pl</strong> con el asunto <em>“Eliminar mi cuenta de Workouts”</em>, desde la
+      dirección de correo electrónico de tu cuenta. Es posible que te pidamos que confirmes la solicitud desde esa
+      dirección; después, la cuenta se elimina exactamente igual que desde la app. Respondemos en el plazo de un mes.
+    </div>
+
+    <h2>Eliminar parte de tus datos (y conservar tu cuenta)</h2>
+    <ul>
+      <li><strong>En la app:</strong> elimina uno por uno entrenamientos, sesiones, series, planes, bloques de
+        entrenamiento, tus ejercicios personalizados y conversaciones con el Entrenador IA, y borra tus datos corporales.
+        Lo que eliminas desaparece de todos tus dispositivos. Para que tus otros dispositivos también lo eliminen, nuestro
+        servidor conserva cada elemento eliminado marcado como eliminado hasta que se elimine tu cuenta; una conversación
+        con el Entrenador IA que eliminas pierde sus mensajes de inmediato.</li>
+      <li><strong>Por correo electrónico:</strong> para que borremos ya de nuestro servidor datos concretos y conserves tu
+        cuenta — por ejemplo, “borren todas mis sesiones de entrenamiento” o “borren lo que eliminé en la app” —,
+        escríbenos:</li>
+    </ul>
+    <p><a class="btn" href="mailto:support@wkubasik.pl?subject=Eliminar%20parte%20de%20mis%20datos%20de%20Workouts">Enviar una solicitud de eliminación de datos</a></p>
+    <div class="card">
+      Escribe a <strong>support@wkubasik.pl</strong>, desde la dirección de correo electrónico de tu cuenta, y describe
+      qué quieres que borremos. Tu cuenta sigue activa. Respondemos en el plazo de un mes.
+    </div>
+
+    <h2>Qué sucede cuando eliminas tu cuenta</h2>
+    <ul>
+      <li><strong>Durante 30 días</strong> no se puede usar la cuenta. Si cambias de opinión, escríbenos antes de que
+        termine ese plazo y la conservaremos.</li>
+      <li><strong>Pasados 30 días</strong> se elimina definitivamente, junto con tus entrenamientos, tu configuración y tus
+        datos corporales, tus conversaciones y créditos del Entrenador IA (incluidos los de recargas), tus dispositivos
+        sincronizados, los registros de tu plan y de tus compras, tus reportes de problemas con nuestras respuestas y tus
+        eventos de uso. RevenueCat, que nos informa de lo que compraste en las tiendas, también elimina su
+        registro sobre ti.</li>
+      <li><strong>Se conservan sin nada que los vincule contigo:</strong> los reportes de fallos, hasta 90 días después
+        de su envío; el costo y el tamaño de tus solicitudes al Entrenador IA y las notificaciones de las tiendas sobre tus
+        compras, hasta 400 días después de producirse. Nuestro registro de administración conserva, con el número de la
+        cuenta, los planes que le otorgamos y los registros de compras que volvimos a consultar en las tiendas; nada más
+        de lo que conservamos vincula ese número contigo. Las copias de seguridad de nuestra base de datos se reemplazan
+        en un plazo de 15 días. Los reportes de problemas también llegan por correo electrónico a nuestra bandeja de
+        soporte, donde los conservamos solo el tiempo necesario para atender el reporte.</li>
+      <li><strong>En tu teléfono,</strong> lo que guardó la app permanece hasta que la desinstales. Cerrar sesión no lo
+        borra.</li>
+    </ul>
+
+    <h2>Tu suscripción</h2>
+    <p>Eliminar tu cuenta <strong>no cancela</strong> una suscripción comprada en App Store o en Google Play. Para que
+      dejen de cobrarte, cancélala en tu tienda: en un iPhone, en Configuración (o Ajustes) → tu nombre → Suscripciones;
+      en Android, en la app Play Store, en tu perfil → Pagos y suscripciones → Suscripciones.</p>
+
+    <p class="muted">Nuestra <a href="privacy-policy.html">Política de privacidad</a> explica con más detalle qué
+      conservamos y por qué.</p>
+  </section>
+
+  <!-- ==================== FRENCH ==================== -->
+  <section class="lang hidden" lang="fr">
+    <h1>Supprimer ton compte et tes données</h1>
+    <p class="updated">Dernière mise à jour : 5 octobre 2026 · Application : <strong>Workouts</strong> · Développeur :
+      <strong>Kariera Programisty Wiesław Kubasik</strong></p>
+
+    <p>Tu peux supprimer ton compte <strong>Workouts</strong>, et les données conservées avec lui, à tout moment — dans
+      l’application, ou en nous écrivant si tu n’as plus l’application. Tu peux aussi supprimer une partie de tes données
+      et garder ton compte.</p>
+
+    <h2>Option 1 — Supprimer depuis l’application (recommandée)</h2>
+    <ol class="steps">
+      <li>Ouvre l’application <strong>Workouts</strong> et connecte-toi.</li>
+      <li>Ouvre <strong>Paramètres</strong> et appuie sur ton compte, en haut (<strong>Gérer ton compte</strong>).</li>
+      <li>Appuie sur <strong>Supprimer le compte</strong>, puis confirme.</li>
+    </ol>
+    <p>L’application te déconnecte immédiatement, et le compte est supprimé 30 jours plus tard. Si tu as un abonnement,
+      l’application te rappelle de le résilier dans la boutique, avec un lien.</p>
+
+    <h2>Option 2 — Demander la suppression par e-mail</h2>
+    <p>Si tu n’as plus l’application, écris-nous depuis l’adresse e-mail de ton compte :</p>
+    <p><a class="btn" href="mailto:support@wkubasik.pl?subject=Supprimer%20mon%20compte%20Workouts">Envoyer une demande de suppression</a></p>
+    <div class="card">
+      Envoie-la à <strong>support@wkubasik.pl</strong> avec l’objet <em>« Supprimer mon compte Workouts »</em>, depuis
+      l’adresse e-mail de ton compte. Nous pouvons te demander de confirmer la demande depuis cette adresse ; le compte
+      est alors supprimé exactement comme il le serait depuis l’application. Nous répondons dans un délai d’un mois.
+    </div>
+
+    <h2>Supprimer une partie de tes données (et garder ton compte)</h2>
+    <ul>
+      <li><strong>Dans l’application :</strong> supprime un par un des entraînements, des séances, des séries, des plans,
+        des blocs d’entraînement, tes exercices personnalisés et tes conversations avec le Coach IA, et efface tes
+        mesures corporelles. Ce que tu supprimes disparaît de tous tes appareils. Pour que tes autres appareils le
+        suppriment aussi, notre serveur conserve un élément supprimé, marqué comme tel, jusqu’à la suppression de ton
+        compte ; une conversation supprimée avec le Coach IA perd ses messages immédiatement.</li>
+      <li><strong>Par e-mail :</strong> pour faire effacer dès maintenant des données précises de notre serveur tout en
+        gardant ton compte — par exemple « effacez toutes mes séances d’entraînement » ou « effacez ce que j’ai supprimé
+        dans l’application » —, écris-nous :</li>
+    </ul>
+    <p><a class="btn" href="mailto:support@wkubasik.pl?subject=Supprimer%20une%20partie%20de%20mes%20donn%C3%A9es%20Workouts">Envoyer une demande de suppression de données</a></p>
+    <div class="card">
+      Envoie-la à <strong>support@wkubasik.pl</strong>, depuis l’adresse e-mail de ton compte, en décrivant ce que tu
+      souhaites faire effacer. Ton compte reste actif. Nous répondons dans un délai d’un mois.
+    </div>
+
+    <h2>Ce qui se passe lorsque tu supprimes ton compte</h2>
+    <ul>
+      <li><strong>Pendant 30 jours</strong>, le compte ne peut pas être utilisé. Si tu changes d’avis, écris-nous avant la
+        fin de ce délai et nous le conserverons.</li>
+      <li><strong>Après 30 jours</strong>, il est supprimé définitivement, avec ton entraînement, tes paramètres et tes
+        mesures corporelles, tes conversations avec le Coach IA et tes crédits (recharges comprises), tes appareils
+        synchronisés, les données de ton offre et de tes achats, tes signalements de problème avec nos réponses, et tes
+        événements d’utilisation. RevenueCat, qui nous indique ce que tu as acheté dans les boutiques, supprime lui aussi
+        les données qu’il détient sur toi.</li>
+      <li><strong>Conservés sans rien qui permette de les relier à toi :</strong> les rapports de plantage, jusqu’à
+        90 jours après leur envoi ; le coût et la taille de tes requêtes au Coach IA et les notifications des boutiques
+        concernant tes achats, jusqu’à 400 jours après leur date. Notre journal d’administration conserve, sous le numéro
+        du compte, les offres que nous avons attribuées au compte et les données d’achat que nous avons relues auprès des
+        boutiques ; rien d’autre de ce que nous conservons ne relie ce numéro à toi. Les sauvegardes de notre base de
+        données sont remplacées dans un délai de 15 jours. Les signalements de problème parviennent aussi par e-mail à
+        notre boîte d’assistance, où nous ne les conservons que le temps nécessaire pour traiter le signalement.</li>
+      <li><strong>Sur ton téléphone,</strong> ce que l’application a enregistré y reste jusqu’à ce que tu la
+        désinstalles. La déconnexion ne le supprime pas.</li>
+    </ul>
+
+    <h2>Ton abonnement</h2>
+    <p>La suppression de ton compte <strong>ne résilie pas</strong> un abonnement acheté sur l’App Store ou Google Play.
+      Pour éviter de futurs prélèvements, résilie-le dans ta boutique : sur un iPhone, dans Réglages → ton nom →
+      Abonnements ; sur Android, dans l’application Play Store, sous ton profil → Paiements et abonnements →
+      Abonnements.</p>
+
+    <p class="muted">Notre <a href="privacy-policy.html">Politique de confidentialité</a> en dit plus sur ce que nous
+      conservons et pourquoi.</p>
+  </section>
+
+  <!-- ==================== ITALIAN ==================== -->
+  <section class="lang hidden" lang="it">
+    <h1>Elimina il tuo account e i tuoi dati</h1>
+    <p class="updated">Ultimo aggiornamento: 5 ottobre 2026 · App: <strong>Workouts</strong> · Sviluppatore:
+      <strong>Kariera Programisty Wiesław Kubasik</strong></p>
+
+    <p>Puoi eliminare il tuo account <strong>Workouts</strong>, e i dati conservati con esso, in qualsiasi momento —
+      nell’app, oppure scrivendoci se non hai più l’app. Puoi anche eliminare una parte dei tuoi dati e mantenere il tuo
+      account.</p>
+
+    <h2>Opzione 1 — Elimina l’account dall’app (consigliata)</h2>
+    <ol class="steps">
+      <li>Apri l’app <strong>Workouts</strong> e accedi.</li>
+      <li>Apri <strong>Impostazioni</strong> e tocca il tuo account in alto (<strong>Gestisci il tuo account</strong>).</li>
+      <li>Tocca <strong>Elimina account</strong> e conferma.</li>
+    </ol>
+    <p>L’app ti fa uscire subito dall’account, che viene eliminato 30 giorni dopo. Se hai un abbonamento, l’app ti ricorda
+      di annullarlo nello store, con un link.</p>
+
+    <h2>Opzione 2 — Chiedi l’eliminazione via e-mail</h2>
+    <p>Se non hai più l’app, scrivici dall’indirizzo e-mail del tuo account:</p>
+    <p><a class="btn" href="mailto:support@wkubasik.pl?subject=Elimina%20il%20mio%20account%20Workouts">Invia una richiesta di eliminazione</a></p>
+    <div class="card">
+      Scrivi a <strong>support@wkubasik.pl</strong> con oggetto <em>“Elimina il mio account Workouts”</em>,
+      dall’indirizzo e-mail del tuo account. Potremmo chiederti di confermare la richiesta da quell’indirizzo; l’account
+      viene poi eliminato esattamente come dall’app. Rispondiamo entro un mese.
+    </div>
+
+    <h2>Elimina una parte dei tuoi dati (e mantieni l’account)</h2>
+    <ul>
+      <li><strong>Nell’app:</strong> elimina singoli allenamenti, sessioni, serie, piani, blocchi di allenamento, i tuoi
+        esercizi personalizzati e le conversazioni con il Coach AI, e rimuovi le tue misure corporee. Ciò che elimini
+        scompare da tutti i tuoi dispositivi. Affinché anche gli altri tuoi dispositivi lo eliminino, il nostro server
+        conserva l’elemento eliminato, contrassegnato come eliminato, fino all’eliminazione del tuo account; una
+        conversazione con il Coach AI eliminata perde subito i suoi messaggi.</li>
+      <li><strong>Via e-mail:</strong> per far cancellare subito dal nostro server dati specifici, mantenendo il tuo
+        account — ad esempio “cancellate tutte le mie sessioni di allenamento” o “cancellate ciò che ho eliminato
+        nell’app” — scrivici:</li>
+    </ul>
+    <p><a class="btn" href="mailto:support@wkubasik.pl?subject=Elimina%20alcuni%20dei%20miei%20dati%20di%20Workouts">Invia una richiesta di eliminazione dei dati</a></p>
+    <div class="card">
+      Scrivi a <strong>support@wkubasik.pl</strong>, dall’indirizzo e-mail del tuo account, descrivendo cosa vorresti far
+      cancellare. Il tuo account resta attivo. Rispondiamo entro un mese.
+    </div>
+
+    <h2>Cosa succede quando elimini il tuo account</h2>
+    <ul>
+      <li><strong>Per 30 giorni</strong> l’account non può essere usato. Se cambi idea, scrivici prima della scadenza e lo
+        manterremo.</li>
+      <li><strong>Dopo 30 giorni</strong> viene eliminato definitivamente, insieme ai tuoi allenamenti, alle impostazioni e
+        alle misure corporee, alle conversazioni e ai crediti del Coach AI (ricariche comprese), ai dispositivi
+        sincronizzati, ai dati del piano e degli acquisti, alle tue segnalazioni di problemi con le nostre risposte e ai
+        tuoi eventi di utilizzo. Anche RevenueCat, che ci comunica cosa hai acquistato negli store, elimina i propri
+        dati su di te.</li>
+      <li><strong>Conservati senza nulla che li colleghi a te:</strong> i rapporti sugli arresti anomali, fino a 90 giorni
+        dal loro invio; il costo e le dimensioni delle tue richieste al Coach AI e le notifiche degli store sui tuoi
+        acquisti, fino a 400 giorni da quando sono avvenuti. Il nostro registro di amministrazione conserva, sotto il
+        numero dell’account, i piani che abbiamo assegnato all’account e i dati degli acquisti che abbiamo riletto dagli
+        store; nient’altro di ciò che conserviamo collega quel numero a te. I backup del nostro database vengono sostituiti
+        entro 15 giorni. Le segnalazioni di problemi arrivano anche via e-mail alla casella di posta della nostra
+        assistenza, dove le conserviamo solo per il tempo necessario a gestirle.</li>
+      <li><strong>Sul tuo telefono,</strong> ciò che l’app ha memorizzato rimane finché non disinstalli l’app. Uscire
+        dall’account non lo rimuove.</li>
+    </ul>
+
+    <h2>Il tuo abbonamento</h2>
+    <p>Eliminare il tuo account <strong>non annulla</strong> un abbonamento acquistato su App Store o su Google Play. Per
+      non ricevere più addebiti, annullalo nel tuo store: su iPhone, in Impostazioni → il tuo nome → Abbonamenti; su
+      Android, nell’app Play Store, dal tuo profilo → Pagamenti e abbonamenti → Abbonamenti.</p>
+
+    <p class="muted">La nostra <a href="privacy-policy.html">Informativa sulla privacy</a> spiega meglio cosa conserviamo
+      e perché.</p>
+  </section>
+
+  <!-- ==================== PORTUGUESE (BRAZIL) ==================== -->
+  <section class="lang hidden" lang="pt-BR">
+    <h1>Excluir sua conta e seus dados</h1>
+    <p class="updated">Última atualização: 5 de outubro de 2026 · Aplicativo: <strong>Workouts</strong> · Desenvolvedor:
+      <strong>Kariera Programisty Wiesław Kubasik</strong></p>
+
+    <p>Você pode excluir a sua conta do <strong>Workouts</strong>, e os dados guardados com ela, a qualquer momento — no
+      aplicativo ou, se você não tiver mais o aplicativo, escrevendo para nós. Você também pode excluir parte dos seus
+      dados e manter a sua conta.</p>
+
+    <h2>Opção 1 — Excluir pelo aplicativo (recomendado)</h2>
+    <ol class="steps">
+      <li>Abra o aplicativo <strong>Workouts</strong> e entre na sua conta.</li>
+      <li>Abra <strong>Configurações</strong> e toque na sua conta, no topo (<strong>Gerenciar sua conta</strong>).</li>
+      <li>Toque em <strong>Excluir conta</strong> e confirme.</li>
+    </ol>
+    <p>O aplicativo encerra a sua sessão na hora, e a conta é excluída 30 dias depois. Se você tiver uma assinatura, o
+      aplicativo lembra você de cancelá-la na loja, com um link.</p>
+
+    <h2>Opção 2 — Pedir a exclusão por e-mail</h2>
+    <p>Se você não tiver mais o aplicativo, escreva para nós a partir do endereço de e-mail da sua conta:</p>
+    <p><a class="btn" href="mailto:support@wkubasik.pl?subject=Excluir%20minha%20conta%20do%20Workouts">Pedir a exclusão por e-mail</a></p>
+    <div class="card">
+      Envie para <strong>support@wkubasik.pl</strong> com o assunto <em>“Excluir minha conta do Workouts”</em>, a partir
+      do endereço de e-mail da sua conta. Podemos pedir que você confirme o pedido a partir desse endereço; a conta é
+      então excluída exatamente como seria pelo aplicativo. Respondemos em até um mês.
+    </div>
+
+    <h2>Excluir parte dos seus dados (e manter a sua conta)</h2>
+    <ul>
+      <li><strong>No aplicativo:</strong> exclua um a um treinos, sessões, séries, planos, blocos de treino, os seus
+        próprios exercícios e conversas com o Treinador IA, e remova as suas medidas corporais. O que você exclui
+        desaparece de todos os seus dispositivos. Para que os seus outros dispositivos também o excluam, o nosso servidor
+        mantém um item excluído marcado como excluído até a exclusão da sua conta; uma conversa excluída com o Treinador
+        IA perde as mensagens na hora.</li>
+      <li><strong>Por e-mail:</strong> para que dados específicos sejam apagados do nosso servidor agora, mantendo a sua
+        conta — por exemplo, “apaguem todas as minhas sessões de treino” ou “apaguem o que excluí no aplicativo” —,
+        escreva para nós:</li>
+    </ul>
+    <p><a class="btn" href="mailto:support@wkubasik.pl?subject=Excluir%20parte%20dos%20meus%20dados%20do%20Workouts">Pedir a exclusão de dados por e-mail</a></p>
+    <div class="card">
+      Envie para <strong>support@wkubasik.pl</strong>, a partir do endereço de e-mail da sua conta, descrevendo o que você
+      gostaria que fosse apagado. A sua conta continua ativa. Respondemos em até um mês.
+    </div>
+
+    <h2>O que acontece quando você exclui a sua conta</h2>
+    <ul>
+      <li><strong>Durante 30 dias,</strong> a conta não pode ser usada. Se você mudar de ideia, escreva para nós antes
+        desse prazo e nós a manteremos.</li>
+      <li><strong>Depois de 30 dias,</strong> ela é excluída definitivamente, com os seus treinos, configurações e medidas
+        corporais, as suas conversas e os seus créditos do Treinador IA (inclusive os de recargas), os seus dispositivos
+        sincronizados, os registros do seu plano e das suas compras, os seus relatos de problemas com as nossas respostas
+        a eles e os seus eventos de uso. A RevenueCat, que nos informa o que você comprou nas lojas, também exclui o
+        registro que tem sobre você.</li>
+      <li><strong>Mantidos sem nada que os vincule a você:</strong> os relatórios de falhas, até 90 dias depois de
+        enviados; o custo e o tamanho das suas solicitações ao Treinador IA e as notificações das lojas sobre as suas
+        compras, até 400 dias depois de ocorrerem. O nosso log administrativo mantém, sob o número da conta, os planos que
+        demos à conta e os registros de compra que relemos nas lojas; nada mais que guardamos liga esse número a você. Os
+        backups do nosso banco de dados são substituídos em até 15 dias. Os relatos de problemas também chegam por e-mail
+        à nossa caixa de suporte, onde os guardamos apenas pelo tempo de que precisarmos para tratar o relato.</li>
+      <li><strong>No seu celular,</strong> o que o aplicativo armazenou continua lá até você desinstalar o aplicativo.
+        Sair da conta não remove esses dados.</li>
+    </ul>
+
+    <h2>Sua assinatura</h2>
+    <p>Excluir a sua conta <strong>não cancela</strong> uma assinatura comprada na App Store ou no Google Play. Para que
+      as cobranças parem, cancele-a na sua loja: no iPhone, em Ajustes → seu nome → Assinaturas; no Android, no app Play
+      Store, em seu perfil → Pagamentos e assinaturas → Assinaturas.</p>
+
+    <p class="muted">A nossa <a href="privacy-policy.html">Política de privacidade</a> explica melhor o que guardamos e
+      por quê.</p>
+  </section>
+
+  <!-- ==================== UKRAINIAN ==================== -->
+  <section class="lang hidden" lang="uk">
+    <h1>Видалення облікового запису й даних</h1>
+    <p class="updated">Останнє оновлення: 5 жовтня 2026 р. · Застосунок: <strong>Workouts</strong> · Розробник:
+      <strong>Kariera Programisty Wiesław Kubasik</strong></p>
+
+    <p>Ви можете будь-коли видалити свій обліковий запис <strong>Workouts</strong> і дані, що зберігаються разом із
+      ним, — у застосунку або, якщо застосунку у вас уже немає, написавши нам. Ви також можете видалити частину своїх
+      даних і зберегти обліковий запис.</p>
+
+    <h2>Варіант 1 — Видалення в застосунку (рекомендовано)</h2>
+    <ol class="steps">
+      <li>Відкрийте застосунок <strong>Workouts</strong> і ввійдіть.</li>
+      <li>Відкрийте <strong>Налаштування</strong> й торкніться свого облікового запису вгорі (<strong>Керувати обліковим
+        записом</strong>).</li>
+      <li>Торкніться <strong>Видалити обліковий запис</strong> і підтвердьте.</li>
+    </ol>
+    <p>Застосунок одразу вийде з вашого облікового запису, а сам обліковий запис буде видалено через 30 днів. Якщо у вас
+      є підписка, застосунок нагадає вам скасувати її в магазині й дасть посилання.</p>
+
+    <h2>Варіант 2 — Запит на видалення електронною поштою</h2>
+    <p>Якщо застосунку у вас уже немає, напишіть нам з адреси електронної пошти вашого облікового запису:</p>
+    <p><a class="btn" href="mailto:support@wkubasik.pl?subject=%D0%92%D0%B8%D0%B4%D0%B0%D0%BB%D1%96%D1%82%D1%8C%20%D0%BC%D1%96%D0%B9%20%D0%BE%D0%B1%D0%BB%D1%96%D0%BA%D0%BE%D0%B2%D0%B8%D0%B9%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%20Workouts">Надіслати запит на видалення</a></p>
+    <div class="card">
+      Надішліть лист на <strong>support@wkubasik.pl</strong> з темою <em>«Видаліть мій обліковий запис Workouts»</em> з
+      адреси електронної пошти вашого облікового запису. Ми можемо попросити вас підтвердити запит із цієї адреси; після
+      цього обліковий запис буде видалено так само, як із застосунку. Ми відповідаємо протягом одного місяця.
+    </div>
+
+    <h2>Видалення частини даних (обліковий запис залишається)</h2>
+    <ul>
+      <li><strong>У застосунку:</strong> видаляйте окремі тренування, заняття, підходи, плани, тренувальні блоки, власні
+        вправи й розмови з ШІ-тренером, а також видаліть свої параметри тіла. Те, що ви видаляєте, зникає з усіх ваших
+        пристроїв. Щоб ваші інші пристрої теж це видалили, наш сервер зберігає видалений елемент із позначкою про
+        видалення, доки ваш обліковий запис не буде видалено; видалена розмова з ШІ-тренером одразу втрачає свої
+        повідомлення.</li>
+      <li><strong>Електронною поштою:</strong> щоб певні дані було стерто з нашого сервера вже зараз, а ваш обліковий
+        запис залишився, — наприклад, «зітріть усі мої тренувальні заняття» або «зітріть усе, що вже видалено в
+        застосунку», — напишіть нам:</li>
+    </ul>
+    <p><a class="btn" href="mailto:support@wkubasik.pl?subject=%D0%92%D0%B8%D0%B4%D0%B0%D0%BB%D1%96%D1%82%D1%8C%20%D1%87%D0%B0%D1%81%D1%82%D0%B8%D0%BD%D1%83%20%D0%BC%D0%BE%D1%97%D1%85%20%D0%B4%D0%B0%D0%BD%D0%B8%D1%85%20Workouts">Надіслати запит на видалення даних</a></p>
+    <div class="card">
+      Надішліть лист на <strong>support@wkubasik.pl</strong> з адреси електронної пошти вашого облікового запису й
+      опишіть, що саме ви хочете стерти. Ваш обліковий запис залишиться активним. Ми відповідаємо протягом одного місяця.
+    </div>
+
+    <h2>Що відбувається, коли ви видаляєте обліковий запис</h2>
+    <ul>
+      <li><strong>Протягом 30 днів</strong> обліковим записом не можна користуватися. Якщо ви передумаєте, напишіть нам
+        до спливу цього строку, і ми його збережемо.</li>
+      <li><strong>Через 30 днів</strong> обліковий запис буде остаточно видалено разом із вашими тренуваннями,
+        налаштуваннями й параметрами тіла, розмовами з ШІ-тренером і кредитами (зокрема з поповнень), синхронізованими
+        пристроями, записами про тариф і покупки, вашими звітами про проблеми з нашими відповідями на них і подіями
+        використання. RevenueCat, який повідомляє нам, що ви придбали в магазинах, також видаляє свій запис про вас.</li>
+      <li><strong>Зберігаються без будь-чого, що пов’язувало б їх із вами:</strong> звіти про збої — до 90 днів після
+        їх надсилання; вартість і розмір ваших запитів до ШІ-тренера та сповіщення магазинів про ваші покупки — до 400
+        днів після того, як вони відбулися. Наш адміністративний журнал зберігає під номером облікового запису надані
+        йому тарифи та записи про покупки, які ми повторно отримали з магазинів; ніщо інше з того, що ми зберігаємо, не
+        пов’язує цей номер із вами. Резервні копії нашої бази даних замінюються протягом 15 днів. Звіти про проблеми
+        також надходять електронною поштою до нашої скриньки підтримки, де ми зберігаємо їх лише стільки, скільки вони
+        потрібні нам для розгляду звіту.</li>
+      <li><strong>На вашому телефоні</strong> те, що зберіг застосунок, залишається, доки ви не видалите застосунок.
+        Вихід з облікового запису цих даних не видаляє.</li>
+    </ul>
+
+    <h2>Ваша підписка</h2>
+    <p>Видалення облікового запису <strong>не скасовує</strong> підписку, придбану в App Store чи Google Play. Щоб із вас
+      більше не списували кошти, скасуйте її у своєму магазині: на iPhone — Параметри → ваше ім’я → Підписки; на
+      Android — у застосунку Play Маркет: ваш профіль → Платежі й підписки → Підписки.</p>
+
+    <p class="muted">Докладніше про те, що ми зберігаємо і чому, — у нашій <a href="privacy-policy.html">Політиці
+      конфіденційності</a>.</p>
+  </section>
+
   <footer class="foot">
-    <a href="index.html">Home</a>
-    <a href="company.html">Company</a>
-    <a href="privacy-policy.html">Privacy Policy</a>
-    <a href="terms-of-service.html">Terms of Service</a>
-    <a href="delete-account.html">Delete Account</a>
-    <a href="support.html">Support</a>
+    <a href="index.html" data-word="home">Home</a>
+    <a href="company.html" data-word="company">Company</a>
+    <a href="privacy-policy.html" data-word="privacy">Privacy Policy</a>
+    <a href="terms-of-service.html" data-word="terms">Terms of Service</a>
+    <a href="delete-account.html" data-word="delete">Delete Account</a>
+    <a href="support.html" data-word="support">Support</a>
     <div style="margin-top:10px">© 2026 Kariera Programisty Wiesław Kubasik · Workouts</div>
   </footer>
 </div>
 
-<script>
-  (function () {
-    var buttons = document.querySelectorAll('.lang-toggle button');
-    function setLang(lang) {
-      document.querySelectorAll('.lang-en').forEach(function (e) { e.classList.toggle('hidden', lang !== 'en'); });
-      document.querySelectorAll('.lang-pl').forEach(function (e) { e.classList.toggle('hidden', lang !== 'pl'); });
-      buttons.forEach(function (b) { b.classList.toggle('active', b.dataset.lang === lang); });
-      document.documentElement.lang = lang;
-      try { localStorage.setItem('workouts_lang', lang); } catch (e) {}
-    }
-    buttons.forEach(function (b) { b.addEventListener('click', function () { setLang(b.dataset.lang); }); });
-    var lang = 'en';
-    try {
-      // A link may name the language (?lang=pl): the app opens each text in its own language.
-      var asked = new URLSearchParams(window.location.search).get('lang');
-      var stored = asked === 'pl' || asked === 'en' ? asked : localStorage.getItem('workouts_lang');
-      if (stored === 'pl' || stored === 'en') { lang = stored; }
-      else if ((navigator.language || '').slice(0, 2).toLowerCase() === 'pl') { lang = 'pl'; }
-    } catch (e) {}
-    setLang(lang);
-  })();
-</script>
+<script src="lang.js"></script>
 </body>
 </html>

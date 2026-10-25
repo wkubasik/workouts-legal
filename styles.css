@@ -64,29 +64,43 @@ header.top {
   display: inline-block;
 }
 
-.lang-toggle {
-  display: inline-flex;
+/* The language menu (lang.js): each language by its own name. Drawn by the script, so absent without it. */
+.lang-menu select {
+  appearance: none;
+  -webkit-appearance: none;
   border: 1px solid var(--border);
   border-radius: 999px;
-  overflow: hidden;
-}
-
-.lang-toggle button {
-  border: 0;
-  background: transparent;
-  color: var(--muted);
-  padding: 6px 14px;
+  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23888' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 14px center;
+  color: var(--text);
+  font: inherit;
   font-size: 14px;
   font-weight: 600;
+  padding: 6px 34px 6px 14px;
+  min-height: 34px;
+  max-width: 100%;
   cursor: pointer;
 }
 
-.lang-toggle button.active {
-  background: var(--brand);
-  color: #fff;
+.lang-menu select:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+
+.lang-menu option {
+  color: #1a1a1a;
+  background: #fff;
+}
+
+/* A translation not yet reviewed by its lawyer (lang.js, `draft`). */
+.card.draft-notice {
+  border-color: #e0a800;
+  font-size: 15px;
 }
 
 h1 { font-size: 28px; line-height: 1.25; margin: 24px 0 4px; }
+/* A longer language's word must not push a phone's page sideways: headings hyphenate in the section's language. */
+h1, h2, h3 { hyphens: auto; -webkit-hyphens: auto; }
+body { overflow-wrap: break-word; }
 h2 { font-size: 20px; margin: 34px 0 8px; }
 h3 { font-size: 16px; margin: 22px 0 6px; }
 

@@ -6,19 +6,21 @@
   <title>Company Information — Workouts</title>
   <meta name="robots" content="index, follow">
   <link rel="stylesheet" href="styles.css">
+  <!-- alternates: the published languages, written by node tools/check-site.mjs --fix -->
+  <link rel="alternate" hreflang="en" href="https://wkubasik.pl/company?lang=en">
+  <link rel="alternate" hreflang="pl" href="https://wkubasik.pl/company?lang=pl">
+  <link rel="alternate" hreflang="x-default" href="https://wkubasik.pl/company">
+  <!-- /alternates -->
 </head>
 <body>
 <div class="wrap">
   <header class="top">
     <a class="brand" href="index.html"><span class="dot"></span>Workouts</a>
-    <div class="lang-toggle" role="group" aria-label="Language">
-      <button data-lang="en" class="active">EN</button>
-      <button data-lang="pl">PL</button>
-    </div>
+    <div class="lang-menu" hidden></div>
   </header>
 
   <!-- ==================== ENGLISH ==================== -->
-  <section class="lang lang-en">
+  <section class="lang" lang="en">
     <h1>Company information</h1>
     <p class="updated">Legal identity of the business behind the Workouts app</p>
 
@@ -55,7 +57,7 @@
   </section>
 
   <!-- ==================== POLISH ==================== -->
-  <section class="lang lang-pl hidden">
+  <section class="lang hidden" lang="pl">
     <h1>Informacje o firmie</h1>
     <p class="updated">Tożsamość prawna podmiotu stojącego za aplikacją Workouts</p>
 
@@ -91,38 +93,235 @@
     </p>
   </section>
 
+  <!-- ==================== GERMAN ==================== -->
+  <section class="lang hidden" lang="de">
+    <h1>Angaben zum Unternehmen</h1>
+    <p class="updated">Rechtliche Identität des Unternehmens hinter der App Workouts</p>
+
+    <p>Die mobile App <strong>Workouts</strong> wird von einem eingetragenen Einzelunternehmen (polnisch:
+      <em>jednoosobowa działalność gospodarcza</em>, „JDG“) mit Sitz in Polen entwickelt und betrieben.</p>
+
+    <div class="card">
+      <p style="margin-top:0"><strong>Name des Unternehmens:</strong> Kariera Programisty Wiesław Kubasik</p>
+      <p><strong>Rechtsform:</strong> Einzelunternehmen (JDG), eingetragen im Zentralen Register und Informationssystem
+        für Gewerbetätigkeit (CEIDG), Polen</p>
+      <p><strong>NIP (Steuernummer):</strong> 7922133428</p>
+      <p><strong>REGON:</strong> 362970910</p>
+      <p><strong>Geschäftsanschrift:</strong><br>
+        Bystrowice 64<br>
+        37-565 Roźwienica<br>
+        Woiwodschaft Podkarpackie, Polen</p>
+      <p style="margin-bottom:0"><strong>Kontakt-E-Mail:</strong>
+        <a href="mailto:support@wkubasik.pl">support@wkubasik.pl</a></p>
+    </div>
+
+    <h2>Was wir tun</h2>
+    <p>Wir entwickeln und betreiben <strong>Workouts</strong>, eine mobile App, mit der du dein eigenes Training
+      erfasst. Softwareentwicklung ist die Haupttätigkeit dieses Unternehmens.</p>
+
+    <h2>Weitere Seiten</h2>
+    <p>
+      <a class="btn" href="privacy-policy.html">Datenschutzerklärung</a>
+      &nbsp;
+      <a class="btn" href="terms-of-service.html">Nutzungsbedingungen</a>
+      &nbsp;
+      <a class="btn" href="support.html">Support</a>
+    </p>
+  </section>
+
+  <!-- ==================== SPANISH (LATIN AMERICA) ==================== -->
+  <section class="lang hidden" lang="es-419">
+    <h1>Información de la empresa</h1>
+    <p class="updated">Identidad jurídica de la empresa responsable de la app Workouts</p>
+
+    <p>La app móvil <strong>Workouts</strong> la desarrolla y la opera una empresa individual registrada
+      (en polaco: <em>jednoosobowa działalność gospodarcza</em>, “JDG”) con sede en
+      Polonia.</p>
+
+    <div class="card">
+      <p style="margin-top:0"><strong>Nombre comercial:</strong> Kariera Programisty Wiesław Kubasik</p>
+      <p><strong>Forma jurídica:</strong> Empresa individual (JDG), inscrita en el Registro Central e
+        Información sobre la Actividad Económica (CEIDG) de Polonia</p>
+      <p><strong>NIP (número de identificación fiscal):</strong> 7922133428</p>
+      <p><strong>REGON:</strong> 362970910</p>
+      <p><strong>Domicilio registrado:</strong><br>
+        Bystrowice 64<br>
+        37-565 Roźwienica<br>
+        Voivodato de Subcarpacia, Polonia</p>
+      <p style="margin-bottom:0"><strong>Correo electrónico de contacto:</strong>
+        <a href="mailto:support@wkubasik.pl">support@wkubasik.pl</a></p>
+    </div>
+
+    <h2>A qué nos dedicamos</h2>
+    <p>Desarrollamos y operamos <strong>Workouts</strong>, una app móvil para el registro personal de
+      entrenamientos. El desarrollo de software es la actividad principal de esta empresa.</p>
+
+    <h2>Páginas relacionadas</h2>
+    <p>
+      <a class="btn" href="privacy-policy.html">Política de privacidad</a>
+      &nbsp;
+      <a class="btn" href="terms-of-service.html">Términos de uso</a>
+      &nbsp;
+      <a class="btn" href="support.html">Soporte</a>
+    </p>
+  </section>
+
+  <!-- ==================== FRENCH ==================== -->
+  <section class="lang hidden" lang="fr">
+    <h1>Informations sur l’entreprise</h1>
+    <p class="updated">Identité juridique de l’entreprise à l’origine de l’application Workouts</p>
+
+    <p>L’application mobile <strong>Workouts</strong> est développée et exploitée par une entreprise individuelle
+      enregistrée (en polonais : <em>jednoosobowa działalność gospodarcza</em>, « JDG ») établie en Pologne.</p>
+
+    <div class="card">
+      <p style="margin-top:0"><strong>Dénomination commerciale :</strong> Kariera Programisty Wiesław Kubasik</p>
+      <p><strong>Forme juridique :</strong> Entreprise individuelle (JDG), inscrite au Registre central d’enregistrement et
+        d’information sur l’activité économique (CEIDG), Pologne</p>
+      <p><strong>NIP (numéro d’identification fiscale) :</strong> 7922133428</p>
+      <p><strong>REGON :</strong> 362970910</p>
+      <p><strong>Adresse du siège :</strong><br>
+        Bystrowice 64<br>
+        37-565 Roźwienica<br>
+        Voïvodie des Basses-Carpates, Pologne</p>
+      <p style="margin-bottom:0"><strong>E-mail de contact :</strong>
+        <a href="mailto:support@wkubasik.pl">support@wkubasik.pl</a></p>
+    </div>
+
+    <h2>Notre activité</h2>
+    <p>Nous développons et exploitons <strong>Workouts</strong>, une application mobile de suivi d’entraînement
+      personnel. Le développement de logiciels est l’activité principale de cette entreprise.</p>
+
+    <h2>Pages associées</h2>
+    <p>
+      <a class="btn" href="privacy-policy.html">Politique de confidentialité</a>
+      &nbsp;
+      <a class="btn" href="terms-of-service.html">Conditions d’utilisation</a>
+      &nbsp;
+      <a class="btn" href="support.html">Assistance</a>
+    </p>
+  </section>
+
+  <!-- ==================== ITALIAN ==================== -->
+  <section class="lang hidden" lang="it">
+    <h1>Informazioni sull’azienda</h1>
+    <p class="updated">Identità giuridica dell’impresa che gestisce l’app Workouts</p>
+
+    <p>L’app mobile <strong>Workouts</strong> è sviluppata e gestita da un’impresa individuale registrata (in
+      polacco: <em>jednoosobowa działalność gospodarcza</em>, “JDG”) con sede in Polonia.</p>
+
+    <div class="card">
+      <p style="margin-top:0"><strong>Denominazione:</strong> Kariera Programisty Wiesław Kubasik</p>
+      <p><strong>Forma giuridica:</strong> Impresa individuale (JDG), iscritta al Registro centrale e informazioni
+        sull’attività economica (CEIDG), Polonia</p>
+      <p><strong>NIP (identificativo fiscale):</strong> 7922133428</p>
+      <p><strong>REGON:</strong> 362970910</p>
+      <p><strong>Sede:</strong><br>
+        Bystrowice 64<br>
+        37-565 Roźwienica<br>
+        Voivodato della Precarpazia, Polonia</p>
+      <p style="margin-bottom:0"><strong>E-mail di contatto:</strong>
+        <a href="mailto:support@wkubasik.pl">support@wkubasik.pl</a></p>
+    </div>
+
+    <h2>Di cosa ci occupiamo</h2>
+    <p>Sviluppiamo e gestiamo <strong>Workouts</strong>, un’app mobile personale per tenere traccia degli allenamenti.
+      Lo sviluppo di software è l’attività principale di questa impresa.</p>
+
+    <h2>Pagine correlate</h2>
+    <p>
+      <a class="btn" href="privacy-policy.html">Informativa sulla privacy</a>
+      &nbsp;
+      <a class="btn" href="terms-of-service.html">Termini di utilizzo</a>
+      &nbsp;
+      <a class="btn" href="support.html">Assistenza</a>
+    </p>
+  </section>
+
+  <!-- ==================== PORTUGUESE (BRAZIL) ==================== -->
+  <section class="lang hidden" lang="pt-BR">
+    <h1>Informações da empresa</h1>
+    <p class="updated">Identificação legal da empresa por trás do aplicativo Workouts</p>
+
+    <p>O aplicativo para celular <strong>Workouts</strong> é desenvolvido e operado por uma empresa individual
+      registrada (em polonês: <em>jednoosobowa działalność gospodarcza</em>, “JDG”) com sede na
+      Polônia.</p>
+
+    <div class="card">
+      <p style="margin-top:0"><strong>Nome empresarial:</strong> Kariera Programisty Wiesław Kubasik</p>
+      <p><strong>Forma jurídica:</strong> Empresa individual (JDG), inscrita no Registro Central e Informações sobre
+        Atividades Econômicas (CEIDG), Polônia</p>
+      <p><strong>NIP (número de identificação fiscal):</strong> 7922133428</p>
+      <p><strong>REGON:</strong> 362970910</p>
+      <p><strong>Endereço registrado:</strong><br>
+        Bystrowice 64<br>
+        37-565 Roźwienica<br>
+        Voivodia de Podkarpackie, Polônia</p>
+      <p style="margin-bottom:0"><strong>E-mail de contato:</strong>
+        <a href="mailto:support@wkubasik.pl">support@wkubasik.pl</a></p>
+    </div>
+
+    <h2>O que fazemos</h2>
+    <p>Desenvolvemos e operamos o <strong>Workouts</strong>, um aplicativo para celular de acompanhamento de treinos
+      pessoais. O desenvolvimento de software é a atividade principal desta empresa.</p>
+
+    <h2>Páginas relacionadas</h2>
+    <p>
+      <a class="btn" href="privacy-policy.html">Política de privacidade</a>
+      &nbsp;
+      <a class="btn" href="terms-of-service.html">Termos de uso</a>
+      &nbsp;
+      <a class="btn" href="support.html">Suporte</a>
+    </p>
+  </section>
+
+  <!-- ==================== UKRAINIAN ==================== -->
+  <section class="lang hidden" lang="uk">
+    <h1>Відомості про компанію</h1>
+    <p class="updated">Правові відомості про підприємця, який стоїть за застосунком Workouts</p>
+
+    <p>Мобільний застосунок <strong>Workouts</strong> розробляє та обслуговує зареєстрований індивідуальний підприємець
+      (польською: <em>jednoosobowa działalność gospodarcza</em>, «JDG») із Польщі.</p>
+
+    <div class="card">
+      <p style="margin-top:0"><strong>Найменування:</strong> Kariera Programisty Wiesław Kubasik</p>
+      <p><strong>Організаційно-правова форма:</strong> індивідуальна підприємницька діяльність (JDG), зареєстрована в
+        Центральному обліку та інформації про господарську діяльність (CEIDG), Польща</p>
+      <p><strong>NIP (податковий номер):</strong> 7922133428</p>
+      <p><strong>REGON:</strong> 362970910</p>
+      <p><strong>Зареєстрована адреса:</strong><br>
+        Bystrowice 64<br>
+        37-565 Roźwienica<br>
+        Підкарпатське воєводство, Польща</p>
+      <p style="margin-bottom:0"><strong>Контактна електронна пошта:</strong>
+        <a href="mailto:support@wkubasik.pl">support@wkubasik.pl</a></p>
+    </div>
+
+    <h2>Чим ми займаємося</h2>
+    <p>Ми розробляємо та обслуговуємо <strong>Workouts</strong> — мобільний застосунок для відстеження особистих
+      тренувань. Розроблення програмного забезпечення — основний вид діяльності цього підприємця.</p>
+
+    <h2>Пов’язані сторінки</h2>
+    <p>
+      <a class="btn" href="privacy-policy.html">Політика конфіденційності</a>
+      &nbsp;
+      <a class="btn" href="terms-of-service.html">Умови використання</a>
+      &nbsp;
+      <a class="btn" href="support.html">Підтримка</a>
+    </p>
+  </section>
+
   <footer class="foot">
-    <a href="index.html">Home</a>
-    <a href="company.html">Company</a>
-    <a href="privacy-policy.html">Privacy Policy</a>
-    <a href="terms-of-service.html">Terms of Service</a>
-    <a href="delete-account.html">Delete Account</a>
-    <a href="support.html">Support</a>
+    <a href="index.html" data-word="home">Home</a>
+    <a href="company.html" data-word="company">Company</a>
+    <a href="privacy-policy.html" data-word="privacy">Privacy Policy</a>
+    <a href="terms-of-service.html" data-word="terms">Terms of Service</a>
+    <a href="delete-account.html" data-word="delete">Delete Account</a>
+    <a href="support.html" data-word="support">Support</a>
     <div style="margin-top:10px">© 2026 Kariera Programisty Wiesław Kubasik · Workouts</div>
   </footer>
 </div>
 
-<script>
-  (function () {
-    var buttons = document.querySelectorAll('.lang-toggle button');
-    function setLang(lang) {
-      document.querySelectorAll('.lang-en').forEach(function (e) { e.classList.toggle('hidden', lang !== 'en'); });
-      document.querySelectorAll('.lang-pl').forEach(function (e) { e.classList.toggle('hidden', lang !== 'pl'); });
-      buttons.forEach(function (b) { b.classList.toggle('active', b.dataset.lang === lang); });
-      document.documentElement.lang = lang;
-      try { localStorage.setItem('workouts_lang', lang); } catch (e) {}
-    }
-    buttons.forEach(function (b) { b.addEventListener('click', function () { setLang(b.dataset.lang); }); });
-    var lang = 'en';
-    try {
-      // A link may name the language (?lang=pl): the app opens each text in its own language.
-      var asked = new URLSearchParams(window.location.search).get('lang');
-      var stored = asked === 'pl' || asked === 'en' ? asked : localStorage.getItem('workouts_lang');
-      if (stored === 'pl' || stored === 'en') { lang = stored; }
-      else if ((navigator.language || '').slice(0, 2).toLowerCase() === 'pl') { lang = 'pl'; }
-    } catch (e) {}
-    setLang(lang);
-  })();
-</script>
+<script src="lang.js"></script>
 </body>
 </html>
