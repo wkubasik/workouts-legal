@@ -12,8 +12,7 @@ bullet of §7 included). Voice: *du*, lower case; "wir" is the business.
 - **Page names follow the app** (`de.json`), as every language's do: *Datenschutzerklärung*
   (`settingsPage.legal.privacyPolicy`) and *Nutzungsbedingungen* (`settingsPage.legal.termsOfUse`, "Terms of Use"). Each
   page's `<h1>`, `ui.json` and every reference on the other pages use these names. The deletion page is titled *Dein Konto und
-  deine Daten löschen*. Links to it say *Konto und Daten löschen*, and the footer says *Konto löschen*, which is also
-  the app's button.
+  deine Daten löschen*, and so do its links, the index's button and the footer (LANG-44: one name for the page).
 - **Company page**: *Angaben zum Unternehmen*, with *Unternehmen* in the footer and on the button. I did not call it
   *Impressum*. Whether the page should serve as the Impressum for DE/AT (§ 5 DDG; § 5 ECG / § 25 MedienG) is for the
   reviewer to decide. If it does, it probably needs that title and more fields.
@@ -81,13 +80,28 @@ bullet of §7 included). Voice: *du*, lower case; "wir" is the business.
   English title in brackets, as the Polish does.
 - **Grace period**: Apple's German term may be *Nachfrist für die Abrechnung* rather than *Kulanzzeitraum*.
 
-## Problems found in the source (not fixed)
+## Problems found in the source
+
+**LANG-44 fixed these on 26 October 2026, in English, Polish and this draft**, as the product owner decided
+(workouts-frontend `docs/languages-plan.md`, LANG-44): the pages name the Settings row as it reads — *Einstellungen →
+Workouts Pro*, or *Upgrade* on the Free plan — and the page it opens as the subscription page; English's site calls
+the Terms *Terms of Use*, as the app does; the deletion page has one name in every language, its title (*Dein Konto und deine Daten löschen*), in
+its links, the index and the footer; problem reports name their bases — answering one, by e-mail too, is *Erfüllung unseres Vertrags*,
+finding and fixing the problem *berechtigtes Interesse*; the bullet names the switch, *Letzte Aktivität anhängen*, and what it attaches, a log of the
+app's recent activity; the Android app no longer carries Firebase Cloud Messaging, which nothing used, so §4 names
+Crashlytics alone; the introduction says who else processes the data rather than who processes it *for us*, and §4
+opens on those who process it rather than on companies, since it lists controllers and the authorities too; the
+purchases paragraph gives the account the credits it *bought or was given*; the quotes are typographic; and the Polish
+addresses the reader neutrally (*usunąłem* stays: the person's own words). The Terms' and the Privacy Policy's "Last
+updated" read 26 October 2026 in every language. Checked and left as they are: the index naming the developer and the
+other pages his business, both true; "goals and weekly targets", a description rather than a label; and "plan" for
+the tier and the training plan alike in English, which this draft tells apart. Each item below is as it was found.
 
 1. **"Settings → Subscription" names no row.** This path appears in Privacy §2 (AI Coach), Terms §4, §5 and §7, and
    Support. The Settings hub's row is labelled *Workouts Pro* (`settingsPage.subscription.pro`) or *Upgrade*
    (`settingsPage.subscription.upgrade`), never "Subscription". Only the page it opens is titled "Subscription"
    (`subscriptionPage.title`; DE *Abo*). The same is true in every language. It is filed as a fix to
-   the English (LANG-44 in workouts-frontend's `docs/languages-plan.md`), so the German keeps the path as written: *Einstellungen → Abo*.
+   the English (LANG-44 in workouts-frontend's `docs/languages-plan.md`), so the German kept the path as written, *Einstellungen → Abo*, until LANG-44 fixed it.
 2. **Terms of Use vs Terms of Service.** The app calls the document "Terms of Use", but the English site calls it
    "Terms of Service". German follows the app.
 3. **One page, four names.** The deletion page is called "Delete your account & data" (h1), "Account & Data Deletion"

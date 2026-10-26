@@ -142,9 +142,9 @@ servers: then the lawyer words it (§6, question 3).
 
 > Jeśli korzystasz z Workouts na zegarku — Apple Watch, zegarku z systemem Wear OS, zegarku Garmin albo zegarku Amazfit
 > z systemem Zepp OS — zegarek pokazuje Twoje zaplanowane treningi i ten, który trwa, a Ty zapisujesz na nim serie.
-> Twój trening nadal zapisuje wyłącznie aplikacja na telefonie: zegarek przekazuje jej, co zrobiłeś — którą serię, z
-> jakim ciężarem, liczbą powtórzeń, czasem lub odczuwanym wysiłkiem i kiedy — a aplikacja zapisuje to tak, jakbyś
-> zapisał to na telefonie, po czym tworzy kopię zapasową i synchronizuje dane, jak opisano wyżej.
+> Twój trening nadal zapisuje wyłącznie aplikacja na telefonie: zegarek przekazuje jej, co zostało zrobione — którą serię, z
+> jakim ciężarem, liczbą powtórzeń, czasem lub odczuwanym wysiłkiem i kiedy — a aplikacja zapisuje to tak samo jak
+> serie zapisane na telefonie, po czym tworzy kopię zapasową i synchronizuje dane, jak opisano wyżej.
 >
 > - **Apple Watch i Wear OS.** Zegarek wymienia te dane bezpośrednio z aplikacją Workouts na Twoim telefonie, przez
 >   połączenie, które system Apple lub Google utrzymuje między zegarkiem a telefonem; po drodze nic nie przechodzi
@@ -185,7 +185,7 @@ servers: then the lawyer words it (§6, question 3).
 >   Connect możesz w każdej chwili wycofać w ich ustawieniach, a każdy z tych zapisów usunąć tam, gdzie jest
 >   przechowywany.
 >
-> Przetwarzamy to wszystko, aby zapewnić Ci aplikację na zegarek, z której zdecydowałeś się korzystać — *wykonanie
+> Przetwarzamy to wszystko, aby zapewnić Ci aplikację na zegarek, gdy zdecydujesz się z niej korzystać — *wykonanie
 > umowy* (art. 6 ust. 1 lit. b). To, co mówi o Twoim zdrowiu, przetwarzamy na podstawie Twojej *wyraźnej zgody* (art. 6
 > ust. 1 lit. a i art. 9 ust. 2 lit. a), tak jak Twój trening powyżej. Wyrażasz ją, korzystając z zegarka, a w przypadku
 > aplikacji Zdrowie i Health Connect — udzielając zgody w tych aplikacjach.
@@ -235,7 +235,7 @@ I w akapicie pod tabelą, po „…pozostaje tam do odinstalowania aplikacji.”
 Bez zmian, chyba że WATCH-04 ustali, że Garmin Connect lub aplikacja Zepp przesyła ruch przekaźnika przez serwery Garmin
 lub Zepp — wtedy brzmienie ustala prawnik (§6, pytanie 3).
 
-## 4. Account & Data Deletion (`delete-account.html`)
+## 4. Delete your account & data (`delete-account.html`)
 
 ### 4.1 English
 
