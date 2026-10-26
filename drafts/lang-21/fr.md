@@ -62,8 +62,9 @@ draft started from, plus Terms §18 and the Privacy Policy's last bullet of §7)
 ## The app's labels quoted (fr.json)
 
 Paramètres (`settingsPage.title`) → Gérer ton compte (`settingsPage.account.manage`) → Supprimer le compte / Exporter
-mes entraînements; Paramètres → Diagnostic → Signaler un problème; Paramètres → Abonnement (`subscriptionPage.title`)
-→ Gérer l'abonnement / Restaurer les achats / Coach IA (`subscriptionPage.ai.title`); the plans Gratuit, Pro,
+mes entraînements; Paramètres → Diagnostic → Signaler un problème; Paramètres → Workouts Pro (`settingsPage.subscription.pro`, *Passer à
+Pro* on the Free plan) → Gérer l'abonnement / Restaurer les achats / Coach IA (`subscriptionPage.ai.title`), on the page
+titled Abonnement (`subscriptionPage.title`), since LANG-44; the plans Gratuit, Pro,
 Pro + Coach IA; "l'entraînement en direct sur l'écran verrouillé" (`settingsPage.liveWorkout`); *niveaux de force*;
 *minuteur de repos*.
 
@@ -92,14 +93,29 @@ Pro + Coach IA; "l'entraînement en direct sur l'écran verrouillé" (`settingsP
 
 ## Problems found in the source
 
+**LANG-44 fixed these on 26 October 2026, in English, Polish and this draft**, as the product owner decided
+(workouts-frontend `docs/languages-plan.md`, LANG-44): the pages name the Settings row as it reads — *Paramètres →
+Workouts Pro*, or *Passer à Pro* on the Free plan — and the page it opens as the subscription page; English's site calls
+the Terms *Terms of Use*, as the app does; the deletion page has one name in every language, its title (*Supprimer ton compte et tes données*), in
+its links, the index and the footer; problem reports name their bases — answering one, by e-mail too, is *exécution du contrat*,
+finding and fixing the problem *intérêt légitime*; the bullet names the switch, *Joindre l’activité récente*, and what it attaches, a log of the
+app's recent activity; the Android app no longer carries Firebase Cloud Messaging, which nothing used, so §4 names
+Crashlytics alone; the introduction says who else processes the data rather than who processes it *for us*, and §4
+opens on those who process it rather than on companies, since it lists controllers and the authorities too; the
+purchases paragraph gives the account the credits it *bought or was given*; the quotes are typographic; and the Polish
+addresses the reader neutrally (*usunąłem* stays: the person's own words). The Terms' and the Privacy Policy's "Last
+updated" read 26 October 2026 in every language. Checked and left as they are: the index naming the developer and the
+other pages his business, both true; "goals and weekly targets", a description rather than a label; and "plan" for
+the tier and the training plan alike in English, which this draft tells apart. Each item below is as it was found.
+
 1. **"Settings → Subscription" names no row of the Settings hub.** The hub's row to the Subscription page reads
    "Workouts Pro" with a plan badge, or "Upgrade" on Free (`settingsPage.subscription.pro` / `.upgrade`, settings.page.html);
    "Subscription" is only the title of the page it opens. Quoted in Privacy §2 (AI Coach, "Settings → Subscription →
    AI Coach"), Terms §4, §5 (Managing and cancelling), §7 (Its allowance) and twice on Support. I kept "Paramètres →
-   Abonnement", the page's own title, as the English does (filed as a fix to the English, LANG-44).
+   Abonnement", the page's own title, as the English did, until LANG-44 fixed it.
 2. **Privacy §2, Purchases**: "We use this to give your account the plan and the credits it paid for" follows the
    sentence on plans given at no charge, which nobody paid for — perhaps "it paid for or was given". Translated as
-   written ("l'offre et les crédits qu'il a payés").
+   written ("l'offre et les crédits qu'il a payés") until LANG-44 made it "achetés ou reçus".
 3. **The Polish legal pages address the reader in the masculine** (F8), which LANG-31's scope (the app's strings) does
    not cover: Privacy — *zaakceptowałeś* (AI Coach), *jeśli jesteś zalogowany* (crash reports), *gdy jesteś
    zalogowany* (server logs), *napisałeś* twice (problem reports); Terms — *utworzyłeś* (§6), *tak jakbyś sam ją
@@ -110,6 +126,6 @@ Pro + Coach IA; "l'entraînement en direct sur l'écran verrouillé" (`settingsP
    page uses typographic ones — cosmetic.
 6. **The deletion page goes by four names**: its title "Delete your account & data", links "Account & Data Deletion"
    (Privacy §3, Support), "Delete Account & Data" (index), "deleting your account" (Terms §13), and the footer's
-   "Delete Account". Translated each in place: title "Supprimer ton compte et tes données", links "Suppression du
-   compte et des données", the index's button "Supprimer le compte et les données", the footer "Supprimer le compte"
-   (the app's button).
+   "Delete Account". Translated each in place, until LANG-44 gave the page one name, its title "Supprimer ton compte et
+   tes données", in its links, the index and the footer ("deleting your account" in Terms §13 is a description, not
+   the page's name).

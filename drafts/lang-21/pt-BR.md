@@ -29,7 +29,8 @@ To decide:
 - **Art. 33**: §5 names EU instruments (Data Privacy Framework, the Commission's SCCs), which are not LGPD mechanisms
   by themselves (ANPD's own clauses: Resolução CD/ANPD nº 19/2024, as I recall). And from Brazil, the controller and
   its hosting in Poland are a transfer too, which "the transfers §5 describes" does not cover.
-- **Problem reports** (§2) have no legal basis in the source (see §4 below), so the mapping leaves them out.
+- **Problem reports** (§2) name their bases since LANG-44 — the contract and legitimate interest — so the mapping
+  reaches them as it reaches every other purpose (art. 7º, V and IX).
 - Minors: the site says 16+; under the LGPD (art. 14), the Código Civil (16–17 relatively incapable, art. 4º, I) and,
   if I recall it right, the ECA Digital (Lei nº 15.211/2025), worth a look.
 
@@ -63,7 +64,8 @@ arts. 25 and 51, I); §17 forum (CDC art. 101, I); §18 English precedence (CDC 
 - Neutral address (guide §4.2): no *cobrado*, *conectado*, *você mesmo*; the one gendered noun left is the legal status
   *consumidor*.
 - App labels as `pt-BR.json` writes them: Configurações; Gerenciar sua conta; Excluir conta; Exportar meus treinos;
-  Diagnóstico → Relatar um problema; Assinatura → Gerenciar assinatura / Restaurar compras / Treinador IA; Gratuito,
+  Diagnóstico → Relatar um problema; Workouts Pro (*Fazer upgrade* on the Free plan) → Gerenciar assinatura /
+  Restaurar compras / Treinador IA, on the page titled Assinatura, since LANG-44; Gratuito,
   Pro, Pro + Treinador IA.
 
 ## 3. Store / OS labels I am not sure of
@@ -76,10 +78,25 @@ arts. 25 and 51, I); §17 forum (CDC art. 101, I); §18 English precedence (CDC 
 
 ## 4. Problems in the English / Polish source
 
+**LANG-44 fixed these on 26 October 2026, in English, Polish and this draft**, as the product owner decided
+(workouts-frontend `docs/languages-plan.md`, LANG-44): the pages name the Settings row as it reads — *Configurações →
+Workouts Pro*, or *Fazer upgrade* on the Free plan — and the page it opens as the subscription page; English's site calls
+the Terms *Terms of Use*, as the app does; the deletion page has one name in every language, its title (*Excluir sua conta e seus dados*), in
+its links, the index and the footer; problem reports name their bases — answering one, by e-mail too, is *execução do nosso contrato*,
+finding and fixing the problem *legítimo interesse*; the bullet names the switch, *Anexar atividade recente*, and what it attaches, a log of the
+app's recent activity; the Android app no longer carries Firebase Cloud Messaging, which nothing used, so §4 names
+Crashlytics alone; the introduction says who else processes the data rather than who processes it *for us*, and §4
+opens on those who process it rather than on companies, since it lists controllers and the authorities too; the
+purchases paragraph gives the account the credits it *bought or was given*; the quotes are typographic; and the Polish
+addresses the reader neutrally (*usunąłem* stays: the person's own words). The Terms' and the Privacy Policy's "Last
+updated" read 26 October 2026 in every language. Checked and left as they are: the index naming the developer and the
+other pages his business, both true; "goals and weekly targets", a description rather than a label; and "plan" for
+the tier and the training plan alike in English, which this draft tells apart. Each item below is as it was found.
+
 - **"Settings → Subscription" names no row.** The Settings hub's row reads *Workouts Pro* (with the plan's badge) or
   *Upgrade* (`settingsPage.subscription.pro` / `.upgrade`); only the page it opens is titled *Subscription*
   (`subscriptionPage.title`). Privacy §2 (The AI Coach), Terms §4, §5 (Managing and cancelling), §7 (Its allowance),
-  Support — English and Polish alike. I kept *Configurações → Assinatura*.
+  Support — English and Polish alike. I kept *Configurações → Assinatura* until LANG-44 fixed it.
 - **"Terms of Service" vs "Terms of Use"**: the page and footer say Terms of Service; the app's links say Terms of Use.
 - **Privacy §2, "Problem reports"**: the only purpose with no legal basis named (EN and PL).
 - **Privacy §6, "We answer within one month"**: fine under the GDPR, too long under LGPD art. 19, II (handled in §1).

@@ -7,16 +7,16 @@ Static pages and copy for the Google Play (and App Store) listing of the **Worko
 - `company.html` — company/legal-identity information (business name, NIP, REGON, address) —
   this is the "organization ownership" page for Google Play Console
 - `privacy-policy.html` — Privacy Policy
-- `terms-of-service.html` — Terms of Service
-- `delete-account.html` — Account & Data Deletion instructions
+- `terms-of-service.html` — Terms of Use, the name the app links them by (its file keeps the old name, which every
+  link in use names)
+- `delete-account.html` — Delete your account & data: how to delete an account, or part of its data
 - `support.html` — Support / contact page
 - `lang.js` — the site's languages, and the one script of every page (below)
 - `styles.css` — shared styling (theme-aware, mobile-first)
 
-**Reference docs (do NOT publish — for your Play Console setup):**
-- `store-descriptions.md` — short + full descriptions (EN + PL)
-- `data-safety-form.md` — click-by-click answers for the Play Data safety questionnaire
-- `ios-app-privacy.md` — Apple App Privacy label + account-deletion (5.1.1(v)) compliance
+**Reference docs** for the stores' consoles are not here: they are workouts-frontend's `store-listing/` — the
+descriptions under each store's `metadata/`, the Play Data safety answers in `google-play/data-safety.md` and Apple's
+App Privacy label in `app-store/app-privacy.md`. They follow these pages.
 
 **Tools (do NOT publish — `tools/`, kept out of the upload by `.assetsignore`):**
 - `tools/check-site.mjs` — `node tools/check-site.mjs` checks every page against `lang.js` and the
@@ -48,8 +48,10 @@ and nothing else holds a copy:
 - A change to what the app or the backend processes, keeps or sells is a change to these pages. They
   were last brought in line with the code on 5 October 2026 (the AI Coach's credit pool and
   top-ups, SUB-31 … SUB-35), on 14 October 2026 (Apple's refund requests answered through
-  RevenueCat, with the buyer's consent, ACO-06), and on 25 October 2026 (the Terms' §18 on the
-  versions in other languages and the Privacy Policy's line on asking in your own, LANG-21).
+  RevenueCat, with the buyer's consent, ACO-06), on 25 October 2026 (the Terms' §18 on the
+  versions in other languages and the Privacy Policy's line on asking in your own, LANG-21), and on 26 October 2026
+  (LANG-44: the Settings row the pages name, one name for the Terms and one for the deletion page, the problem reports'
+  legal bases, Firebase Cloud Messaging gone from the Android app and from §4, and Polish in neutral address).
 - Moving the site to another address means changing `billing.legal` in the app,
   `LEGAL_SITE_URL` in the backend's `.env`, and `ORIGIN` in `tools/check-site.mjs` (then `--fix`),
   which the pages' `hreflang` alternates name whole.
@@ -124,7 +126,7 @@ repo:
 - **Organization website / ownership proof**: your custom domain's `company.html` — shows the
   legal business name, NIP, REGON, and registered address.
 - **Privacy policy** (App content → Privacy policy): the `privacy-policy.html` URL.
-- **Terms of Service**: the `terms-of-service.html` URL.
+- **Terms of Use**: the `terms-of-service.html` URL.
 - **Delete account URL** (App content → Data safety → account/data deletion): the
   `delete-account.html` URL.
 - **Support URL**: the `support.html` URL.

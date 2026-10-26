@@ -50,8 +50,8 @@ For the reviewing lawyer (Ukrainian-speaking, Polish and EU law, plan §Q.2) and
 - **Page titles.** These follow the app's catalogue, as every language's do:
   - Terms: *Умови використання* (`settingsPage.legal.termsOfUse`).
   - Privacy Policy: *Політика конфіденційності* (`settingsPage.legal.privacyPolicy`).
-  - Delete page: *Видалення облікового запису й даних*, in both the h1 and the links; the footer says *Видалення
-    облікового запису*.
+  - Delete page: *Видалення облікового запису й даних*, in the h1, the links, the index and, since LANG-44, the
+    footer.
   - Company page: *Відомості про компанію*; the footer and index button say *Компанія*.
   - Support: *Підтримка*.
 - **App labels quoted** (all from uk.json):
@@ -96,7 +96,22 @@ For the reviewing lawyer (Ukrainian-speaking, Polish and EU law, plan §Q.2) and
 - **Sign in with Apple:** *вхід з Apple / через Apple*. Apple's Ukrainian product name is, I believe, *Вхід з Apple*.
   The app's own button reads *Продовжити з Apple*.
 
-## Problems found in the source (not fixed)
+## Problems found in the source
+
+**LANG-44 fixed these on 26 October 2026, in English, Polish and this draft**, as the product owner decided
+(workouts-frontend `docs/languages-plan.md`, LANG-44): the pages name the Settings row as it reads — *Налаштування →
+Workouts Pro*, or *Покращити тариф* on the Free plan — and the page it opens as the subscription page; English's site calls
+the Terms *Terms of Use*, as the app does; the deletion page has one name in every language, its title (*Видалення облікового запису й даних*), in
+its links, the index and the footer; problem reports name their bases — answering one, by e-mail too, is *виконання нашого договору*,
+finding and fixing the problem *законний інтерес*; the bullet names the switch, *Додати нещодавню активність*, and what it attaches, a log of the
+app's recent activity; the Android app no longer carries Firebase Cloud Messaging, which nothing used, so §4 names
+Crashlytics alone; the introduction says who else processes the data rather than who processes it *for us*, and §4
+opens on those who process it rather than on companies, since it lists controllers and the authorities too; the
+purchases paragraph gives the account the credits it *bought or was given*; the quotes are typographic; and the Polish
+addresses the reader neutrally (*usunąłem* stays: the person's own words). The Terms' and the Privacy Policy's "Last
+updated" read 26 October 2026 in every language. Checked and left as they are: the index naming the developer and the
+other pages his business, both true; "goals and weekly targets", a description rather than a label; and "plan" for
+the tier and the training plan alike in English, which this draft tells apart. Each item below is as it was found.
 
 1. **Polish addresses the reader in the masculine throughout the legal pages.** This is the same issue as F8 /
    LANG-31, but on the site rather than in the catalogue. Examples:
@@ -117,7 +132,7 @@ For the reviewing lawyer (Ukrainian-speaking, Polish and EU law, plan §Q.2) and
    ASCII `"`, while the rest of the English uses “…”.
 4. **"Settings → Subscription" names no row on the Settings hub.** The row reads "Workouts Pro" or "Upgrade"; only the
    page it opens is titled "Subscription". This affects Privacy Policy §2 and Terms §4, §5 and §7, and the support
-   page. I kept the path as written; it is filed as a fix to the English (LANG-44).
+   page. I kept the path as written until LANG-44 fixed it.
 5. **The app and the site name the Terms differently.** The app calls them "Terms of Use" (`settingsPage.legal.termsOfUse`,
    `paywall.termsOfUse`); the site calls them "Terms of Service". The Ukrainian follows the app (*Умови використання*)
    everywhere.

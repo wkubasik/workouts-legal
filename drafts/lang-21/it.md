@@ -74,14 +74,29 @@ the English has it, `→` in menu paths. Dates: *25 ottobre 2026*, *5 ottobre 20
 - Apple's own Italian title for the Licensed Application EULA — unverified. *Termini di servizio di Google Play* —
   fairly sure.
 
-## Problems found in the source (not fixed)
+## Problems found in the source
+
+**LANG-44 fixed these on 26 October 2026, in English, Polish and this draft**, as the product owner decided
+(workouts-frontend `docs/languages-plan.md`, LANG-44): the pages name the Settings row as it reads — *Impostazioni →
+Workouts Pro*, or *Passa a Pro* on the Free plan — and the page it opens as the subscription page; English's site calls
+the Terms *Terms of Use*, as the app does; the deletion page has one name in every language, its title (*Elimina il tuo account e i tuoi dati*), in
+its links, the index and the footer; problem reports name their bases — answering one, by e-mail too, is *esecuzione del contratto*,
+finding and fixing the problem *legittimo interesse*; the bullet names the switch, *Allega l’attività recente*, and what it attaches, a log of the
+app's recent activity; the Android app no longer carries Firebase Cloud Messaging, which nothing used, so §4 names
+Crashlytics alone; the introduction says who else processes the data rather than who processes it *for us*, and §4
+opens on those who process it rather than on companies, since it lists controllers and the authorities too; the
+purchases paragraph gives the account the credits it *bought or was given*; the quotes are typographic; and the Polish
+addresses the reader neutrally (*usunąłem* stays: the person's own words). The Terms' and the Privacy Policy's "Last
+updated" read 26 October 2026 in every language. Checked and left as they are: the index naming the developer and the
+other pages his business, both true; "goals and weekly targets", a description rather than a label; and "plan" for
+the tier and the training plan alike in English, which this draft tells apart. Each item below is as it was found.
 
 1. **“Settings → Subscription” names no row of the Settings hub.** The hub's row to the Subscription page reads
    *Workouts Pro* with the plan's badge, or *Upgrade* on Free (`settingsPage.subscription.pro` / `.upgrade`,
    `settings.page.html`; it: *Workouts Pro* / *Passa a Pro*); only the page it opens is titled *Subscription*
    (`subscriptionPage.title`). Quoted in Terms §4, §5 (Managing and cancelling), §7 (Its allowance), Privacy §2 (AI
    Coach: “Settings → Subscription → AI Coach”) and Support (twice). A reader looking for *Abbonamento* on the hub will
-   not find it. I kept *Impostazioni → Abbonamento* (the page's title).
+   not find it. I kept *Impostazioni → Abbonamento* (the page's title) until LANG-44 fixed it.
 2. **The site calls the Terms “Terms of Service”, the app “Terms of Use”** (`settingsPage.legal.termsOfUse`,
    `paywall.termsOfUse`). Italian follows the app (above); English and Polish could align.
 3. **Privacy Policy §4 lists Firebase Cloud Messaging** as receiving “crash reports of the app’s native code and an
