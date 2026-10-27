@@ -1,11 +1,22 @@
 # Watches — the legal texts, drafted
 
-**A draft for the lawyer, not published.** Written on 2026-10-06 for WATCH-01 of the watch app's plan
-(`docs/watch-app-plan.md` in workouts-frontend, where every §, WD-n and WATCH-n below is defined). It holds what
-the watch app adds to the legal site's pages, in English and Polish: the privacy policy's new part, "Watches", and the
+**The Apple Watch's part is published; the rest is a draft.** Written on 2026-10-06 for WATCH-01 of the watch app's
+plan (`docs/watch-app-plan.md` in workouts-frontend, where every §, WD-n and WATCH-n below is defined). It holds what
+the watch apps add to the legal site's pages, in English and Polish: the privacy policy's new part, "Watches", and the
 lines its other sections gain (§2, §3); the account-deletion page's lines (§4); and two sentences in the Terms (§5).
-§6 lists the questions for the lawyer's hour.
+§6 lists the questions it had for a lawyer.
 
+- **Published on 27 October 2026: the Apple Watch's part** (workouts-frontend `docs/languages-plan.md`, LANG-43), in
+  every language of the site, since the iPhone app has carried the Apple Watch app from 1.1.8 (22 October 2026). It is
+  this draft cut to the Apple Watch — the privacy policy's part "Apple Watch" (§2.1's intro, its Apple Watch item, "On
+  the watch", "Heart rate and calories" and Apple Health), §2.2's three lines, §2.3's line under the table and §2.4's
+  Apple entry; §4.1's last item; §5.1 — each fact checked against the code first (WATCH-21, WATCH-16, WATCH-23). The
+  pages are now that part's one source. What is left below is **Wear OS's, Garmin's and Amazfit's** — the relay, its
+  retention rows, Health Connect, Garmin Connect, Garmin and Zepp Health in §4, the deletion page's *Disconnect* and
+  *After 30 days* lines, the Terms' Wear OS, Garmin and Amazfit requirements — each published with its watch's launch,
+  in every language, rewording the Apple Watch's part to "Watches" then.
+- **No lawyer read it.** The product owner decided on 2026-10-27 to publish without a lawyer's review (LANG-D10); §6's
+  questions stay here as the record of what one would have been asked.
 - **Not on the site.** `.assetsignore` keeps `drafts/` — and every `*.md` — out of the upload, so nothing here is
   served at `https://wkubasik.pl`.
 - **Published with the launch** (WATCH-46, §H.9, §H.10 step 1), never before: until then nothing the pages describe

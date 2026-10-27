@@ -9,6 +9,12 @@
   <!-- alternates: the published languages, written by node tools/check-site.mjs --fix -->
   <link rel="alternate" hreflang="en" href="https://wkubasik.pl/privacy-policy?lang=en">
   <link rel="alternate" hreflang="pl" href="https://wkubasik.pl/privacy-policy?lang=pl">
+  <link rel="alternate" hreflang="de" href="https://wkubasik.pl/privacy-policy?lang=de">
+  <link rel="alternate" hreflang="es-419" href="https://wkubasik.pl/privacy-policy?lang=es-419">
+  <link rel="alternate" hreflang="fr" href="https://wkubasik.pl/privacy-policy?lang=fr">
+  <link rel="alternate" hreflang="it" href="https://wkubasik.pl/privacy-policy?lang=it">
+  <link rel="alternate" hreflang="pt-BR" href="https://wkubasik.pl/privacy-policy?lang=pt-BR">
+  <link rel="alternate" hreflang="uk" href="https://wkubasik.pl/privacy-policy?lang=uk">
   <link rel="alternate" hreflang="x-default" href="https://wkubasik.pl/privacy-policy">
   <!-- /alternates -->
 </head>
@@ -22,7 +28,7 @@
   <!-- ==================== ENGLISH ==================== -->
   <section class="lang" lang="en">
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: 26 October 2026</p>
+    <p class="updated">Last updated: 27 October 2026</p>
 
     <p>This policy explains what personal data the <strong>Workouts</strong> app and its services process, why, on what
       legal basis, who else processes it, how long we keep it, and what your rights are. Workouts is used under
@@ -64,6 +70,37 @@
       <li>When you delete something in the app, our server keeps it marked as deleted, so that your other devices delete
         it too; it is erased with your account.</li>
     </ul>
+
+    <h3>Apple Watch</h3>
+    <p>If you use Workouts on an Apple Watch, the watch shows your planned workouts and the one in progress, and you log
+      your sets on it. Your training is still written only by the app on your iPhone: the watch sends it what you did —
+      which set, with what weight, repetitions, time or effort, and when — and the app saves it as if you had logged it
+      on the phone, then backs it up and syncs it as described above.</p>
+    <ul>
+      <li><strong>Between the watch and your iPhone.</strong> The watch exchanges this with the Workouts app on your
+        iPhone directly, over the connection Apple’s system keeps between them; nothing passes through our server on the
+        way.</li>
+      <li><strong>On the watch.</strong> The watch keeps the workouts coming up, the one in progress and what it has not
+        yet handed to your iPhone, and a short log of its own technical events, which never contains names, values or
+        your heart rate. It clears them when you sign out of the app on your iPhone or sign in with another account, and
+        when you remove the app from the watch.</li>
+      <li><strong>Heart rate and calories.</strong> During a workout the watch measures your heart rate and estimates
+        the calories you burn, and shows them to you. While the watch is connected, the Workouts app on your iPhone
+        shows your heart rate too, and keeps none of it. Neither ever reaches our server, our logs, our usage events or
+        our crash reports.</li>
+      <li><strong>Apple Health.</strong> With your permission, the watch saves the workout to Apple Health — strength
+        training, its start and end, your heart rate and active energy — where it counts towards your Activity rings;
+        during the workout it reads your heart rate and active energy there, to show them. On your iPhone, Workouts uses
+        Apple Health only to open the app on your watch when you start a workout on the phone: it reads and writes
+        nothing there. These records are kept on your devices, and by Apple under its own terms, not by us. Beyond what
+        the watch shows you during a workout, we read nothing from them; we never use them for advertising or marketing,
+        we do not sell them, and we store none of them on our server or in iCloud. You can withdraw the permission at
+        any time in Apple Health’s settings, and delete these records in Apple Health.</li>
+    </ul>
+    <p>We process this to provide the watch app you chose to use — <em>performance of our contract</em> (Article
+      6(1)(b)). What it reveals about your health we process on your <em>explicit consent</em> (Articles 6(1)(a) and
+      9(2)(a)), as with your training above, which you give by using the watch and by granting Apple Health’s
+      permission.</p>
 
     <h3>The AI Coach</h3>
     <p>If you use the AI Coach and have agreed to its notice in the app, then each time you ask it something — and once
@@ -115,20 +152,25 @@
     <ul>
       <li><strong>Usage events.</strong> The app records events about how it is used — for example that a workout was
         finished, with its duration and how many exercises and sets it had, or that the plans screen was opened and how
-        it was closed — with your account, a random installation identifier, the app’s version and your platform. They
-        never contain your notes, names you typed or your body measurements. We use them to understand and improve
-        Workouts — our <em>legitimate interest</em> (Article 6(1)(f)).</li>
+        it was closed — with your account, a random installation identifier, the app’s version and your platform. If you
+        use an Apple Watch, they also say whether a workout was started and finished on the phone or on the watch, that
+        a watch was connected, and, when a workout from the watch could not be saved as it was, why, from a fixed list
+        of reasons. They never contain your notes, names you typed or your body measurements. We use them to understand
+        and improve Workouts — our <em>legitimate interest</em> (Article 6(1)(f)).</li>
       <li><strong>Crash reports.</strong> When the app fails, it sends us what went wrong: the error and where it
         happened, the last steps before it (screens opened, requests made, sync events), the app’s version, your
-        platform, system version and device model, the installation identifier and, if you are signed in, your
-        account. On Android, a crash of the app’s native code is reported by Firebase Crashlytics (section 4). We use
-        crash reports to fix errors — our <em>legitimate interest</em>.</li>
+        platform, system version and device model, the installation identifier and, if you are signed in, your account.
+        On Android, a crash of the app’s native code is reported by Firebase Crashlytics (section 4). When the app on an
+        Apple Watch fails, the watch hands a summary of the failure to your iPhone, which sends it to us like the app’s
+        own crash reports. We use crash reports to fix errors — our <em>legitimate interest</em>.</li>
       <li><strong>Problem reports.</strong> When you send one from Settings → Diagnostics, we receive what you wrote,
         your device and app versions, the state of sync, a summary of the app’s recent errors and — unless you switch
         off “Attach recent activity” before sending — a log of the app’s recent activity, which the app shows you first.
-        What you wrote, with your device and app details and your account, also reaches our support inbox by e-mail. We
-        use it to answer you, by e-mail to your account’s address, keeping our answer with your report — <em>performance
-        of our contract</em> — and to find and fix the problem — our <em>legitimate interest</em>.</li>
+        That log includes the log of an Apple Watch connected to the app, which never contains names you typed, the
+        values you logged or your heart rate. What you wrote, with your device and app details and your account, also
+        reaches our support inbox by e-mail. We use it to answer you, by e-mail to your account’s address, keeping our
+        answer with your report — <em>performance of our contract</em> — and to find and fix the problem — our
+        <em>legitimate interest</em>.</li>
       <li><strong>Server logs.</strong> Our server and the network in front of it record every request: your IP
         address, the time, the address requested, the answer and how long it took, your device’s user agent and, while
         you are signed in, your account. We use them to keep the service running and secure — our <em>legitimate interest</em>.</li>
@@ -174,8 +216,9 @@
       subscription: to stop being charged, cancel it in your App Store or Google Play settings. Our administration log
       keeps, under the account’s number, what we did with the account — the plans we gave it, and the purchase records
       we re-read from the stores, with their transaction identifiers; once the account is deleted, nothing else we keep
-      links that number to you. What is stored on your phone stays there until you uninstall the app. See
-      <a href="delete-account.html">Delete your account &amp; data</a>.</p>
+      links that number to you. What is stored on your phone stays there until you uninstall the app. Workouts your
+      Apple Watch saved to Apple Health stay there until you delete them there. See <a href="delete-account.html">Delete
+      your account &amp; data</a>.</p>
 
     <h2>4. Who else processes your data</h2>
     <p>Only those that process data for us, on our instructions, or that are responsible for their own part:</p>
@@ -191,8 +234,9 @@
       <li><strong>Google</strong> — <strong>Firebase Crashlytics</strong>, in the Android app only — which receives
         crash reports of the app’s native code and an identifier of the app’s installation.</li>
       <li><strong>Our e-mail delivery provider</strong>, which sends the e-mails described above.</li>
-      <li><strong>Apple and Google</strong>, which sell subscriptions and top-ups and, if you use them, sign you in, as
-        controllers under their own privacy policies.</li>
+      <li><strong>Apple and Google</strong>, which sell subscriptions and top-ups and, if you use them, sign you in —
+        and Apple, if you use an Apple Watch, connects it to your iPhone and runs Apple Health — as controllers under
+        their own privacy policies.</li>
       <li><strong>Authorities</strong>, where the law requires us to disclose data.</li>
     </ul>
     <p>We do not sell your data, and we do not share it for advertising. The app contains no advertising.</p>
@@ -235,7 +279,7 @@
   <!-- ==================== POLISH ==================== -->
   <section class="lang hidden" lang="pl">
     <h1>Polityka prywatności</h1>
-    <p class="updated">Ostatnia aktualizacja: 26 października 2026 r.</p>
+    <p class="updated">Ostatnia aktualizacja: 27 października 2026 r.</p>
 
     <p>Ta polityka wyjaśnia, jakie dane osobowe przetwarzają aplikacja <strong>Workouts</strong> i związane z nią usługi,
       w jakim celu, na jakiej podstawie prawnej, kto jeszcze je przetwarza, jak długo je przechowujemy
@@ -280,6 +324,39 @@
       <li>Gdy usuwasz coś w aplikacji, nasz serwer przechowuje to z oznaczeniem „usunięte”, aby Twoje pozostałe
         urządzenia też to usunęły; zostaje to skasowane wraz z kontem.</li>
     </ul>
+
+    <h3>Apple Watch</h3>
+    <p>Jeśli korzystasz z Workouts na Apple Watch, zegarek pokazuje Twoje zaplanowane treningi i ten, który trwa, a Ty
+      zapisujesz na nim serie. Twój trening nadal zapisuje wyłącznie aplikacja na iPhonie: zegarek przekazuje jej, co
+      zostało zrobione — którą serię, z jakim ciężarem, liczbą powtórzeń, czasem lub odczuwanym wysiłkiem i kiedy — a
+      aplikacja zapisuje to tak samo jak serie zapisane na telefonie, po czym tworzy kopię zapasową i synchronizuje
+      dane, jak opisano wyżej.</p>
+    <ul>
+      <li><strong>Między zegarkiem a iPhone’em.</strong> Zegarek wymienia te dane bezpośrednio z aplikacją Workouts na
+        Twoim iPhonie, przez połączenie, które system Apple utrzymuje między nimi; po drodze nic nie przechodzi przez
+        nasz serwer.</li>
+      <li><strong>Na zegarku.</strong> Zegarek przechowuje nadchodzące treningi, trening, który trwa, i to, czego
+        jeszcze nie przekazał iPhone’owi, a także krótki dziennik własnych zdarzeń technicznych, który nigdy nie zawiera
+        nazw, wartości ani Twojego tętna. Usuwa je, gdy wylogujesz się z aplikacji na iPhonie lub zalogujesz się na inne
+        konto, a także gdy usuniesz aplikację z zegarka.</li>
+      <li><strong>Tętno i kalorie.</strong> Podczas treningu zegarek mierzy Twoje tętno i szacuje spalone kalorie oraz
+        pokazuje je Tobie. Gdy zegarek jest połączony, aplikacja Workouts na iPhonie także pokazuje Twoje tętno i
+        niczego z niego nie zachowuje. Ani tętno, ani kalorie nigdy nie trafiają na nasz serwer, do naszych dzienników,
+        zdarzeń użycia ani raportów awarii.</li>
+      <li><strong>Zdrowie (Apple Health).</strong> Za Twoją zgodą zegarek zapisuje trening w aplikacji Zdrowie — trening
+        siłowy, jego początek i koniec, Twoje tętno i aktywną energię — gdzie wlicza się on do Twoich pierścieni
+        Aktywności; podczas treningu odczytuje stamtąd Twoje tętno i aktywną energię, aby je pokazać. Na iPhonie
+        Workouts korzysta z aplikacji Zdrowie wyłącznie po to, aby otworzyć aplikację na zegarku, gdy zaczynasz trening
+        na telefonie: niczego tam nie odczytuje ani nie zapisuje. Te zapisy są przechowywane na Twoich urządzeniach oraz
+        przez Apple na jego własnych zasadach, a nie przez nas. Poza tym, co zegarek pokazuje Ci podczas treningu,
+        niczego z nich nie odczytujemy; nigdy nie wykorzystujemy ich do reklamy ani marketingu, nie sprzedajemy ich i
+        nie przechowujemy żadnych z nich na naszym serwerze ani w iCloud. Zgodę możesz w każdej chwili wycofać w
+        ustawieniach aplikacji Zdrowie, a te zapisy usunąć w aplikacji Zdrowie.</li>
+    </ul>
+    <p>Przetwarzamy to, aby zapewnić Ci aplikację na zegarek, gdy zdecydujesz się z niej korzystać — <em>wykonanie
+      umowy</em> (art. 6 ust. 1 lit. b). To, co mówi o Twoim zdrowiu, przetwarzamy na podstawie Twojej <em>wyraźnej
+      zgody</em> (art. 6 ust. 1 lit. a i art. 9 ust. 2 lit. a), tak jak Twój trening powyżej; wyrażasz ją, korzystając z
+      zegarka i udzielając zgody w aplikacji Zdrowie.</p>
 
     <h3>Trener AI</h3>
     <p>Jeśli korzystasz z Trenera AI po zaakceptowaniu jego informacji w aplikacji, to za każdym razem, gdy o coś go
@@ -333,23 +410,29 @@
     <h3>Jak aplikacja jest używana i gdy coś zawodzi</h3>
     <ul>
       <li><strong>Zdarzenia użycia.</strong> Aplikacja zapisuje zdarzenia dotyczące sposobu korzystania z niej — np. że
-        trening został zakończony, wraz z czasem jego trwania oraz liczbą ćwiczeń i serii, albo że otwarto ekran planów i
-        w jaki sposób go zamknięto — wraz z Twoim kontem, losowym identyfikatorem instalacji, wersją aplikacji i
-        platformą. Nigdy nie zawierają Twoich notatek, wpisanych przez Ciebie nazw ani pomiarów ciała. Służą nam do
-        zrozumienia i ulepszania Workouts — nasz <em>prawnie uzasadniony interes</em> (art. 6 ust. 1 lit. f).</li>
+        trening został zakończony, wraz z czasem jego trwania oraz liczbą ćwiczeń i serii, albo że otwarto ekran planów
+        i w jaki sposób go zamknięto — wraz z Twoim kontem, losowym identyfikatorem instalacji, wersją aplikacji i
+        platformą. Jeśli korzystasz z Apple Watch, zdarzenia mówią też, czy trening rozpoczęto i zakończono na
+        telefonie, czy na zegarku, że połączono zegarek, a gdy trening z zegarka nie mógł zostać zapisany w takiej
+        postaci, w jakiej był — dlaczego, z zamkniętej listy powodów. Nigdy nie zawierają Twoich notatek, wpisanych
+        przez Ciebie nazw ani pomiarów ciała. Służą nam do zrozumienia i ulepszania Workouts — nasz <em>prawnie
+        uzasadniony interes</em> (art. 6 ust. 1 lit. f).</li>
       <li><strong>Raporty awarii.</strong> Gdy aplikacja ulega awarii, wysyła nam informację o tym, co poszło nie tak:
         błąd i miejsce jego wystąpienia, ostatnie kroki przed nim (otwarte ekrany, wysłane zapytania, zdarzenia
         synchronizacji), wersję aplikacji, platformę, wersję systemu i model urządzenia, identyfikator instalacji oraz —
-        po zalogowaniu — Twoje konto. W systemie Android awarie natywnego kodu aplikacji zgłasza Firebase
-        Crashlytics (punkt 4). Raportów awarii używamy do naprawiania błędów — nasz <em>prawnie uzasadniony
-        interes</em>.</li>
+        po zalogowaniu — Twoje konto. W systemie Android awarie natywnego kodu aplikacji zgłasza Firebase Crashlytics
+        (punkt 4). Gdy aplikacja na Apple Watch ulega awarii, zegarek przekazuje podsumowanie awarii iPhone’owi, który
+        wysyła je nam tak samo jak raporty awarii samej aplikacji. Raportów awarii używamy do naprawiania błędów — nasz
+        <em>prawnie uzasadniony interes</em>.</li>
       <li><strong>Zgłoszenia problemów.</strong> Gdy wysyłasz zgłoszenie z Ustawienia → Diagnostyka, otrzymujemy jego
         treść, wersje urządzenia i aplikacji, stan synchronizacji, podsumowanie ostatnich błędów aplikacji oraz — jeśli
         przed wysłaniem nie wyłączysz opcji „Dołącz ostatnią aktywność” — dziennik ostatniej aktywności aplikacji, który
-        aplikacja najpierw Ci pokazuje. Treść zgłoszenia wraz z informacjami o urządzeniu i aplikacji oraz Twoim kontem
-        trafia też e-mailem do naszej skrzynki pomocy technicznej. Wykorzystujemy je, aby odpowiedzieć Ci e-mailem na
-        adres Twojego konta, przechowując naszą odpowiedź wraz ze zgłoszeniem — <em>wykonanie umowy</em> — oraz aby
-        znaleźć i rozwiązać problem — nasz <em>prawnie uzasadniony interes</em>.</li>
+        aplikacja najpierw Ci pokazuje. Ten dziennik obejmuje też dziennik połączonego z aplikacją Apple Watch, który
+        nigdy nie zawiera wpisanych przez Ciebie nazw, zapisanych wartości ani Twojego tętna. Treść zgłoszenia wraz z
+        informacjami o urządzeniu i aplikacji oraz Twoim kontem trafia też e-mailem do naszej skrzynki pomocy
+        technicznej. Wykorzystujemy je, aby odpowiedzieć Ci e-mailem na adres Twojego konta, przechowując naszą
+        odpowiedź wraz ze zgłoszeniem — <em>wykonanie umowy</em> — oraz aby znaleźć i rozwiązać problem — nasz
+        <em>prawnie uzasadniony interes</em>.</li>
       <li><strong>Dzienniki serwera.</strong> Nasz serwer i sieć przed nim rejestrują każde zapytanie: Twój adres IP,
         czas, adres zapytania, odpowiedź i czas jej udzielenia, identyfikator programu klienta (user agent) Twojego
         urządzenia oraz — po zalogowaniu — Twoje konto. Wykorzystujemy je do utrzymania działania i bezpieczeństwa usługi — nasz <em>prawnie uzasadniony interes</em>.</li>
@@ -395,8 +478,9 @@
       subskrypcji: aby uniknąć dalszych opłat, anuluj ją w ustawieniach App Store lub Google Play. Nasz dziennik
       administracyjny przechowuje pod numerem konta to, co zrobiliśmy z kontem — przyznane mu plany oraz ponownie
       odczytane ze sklepów informacje o zakupach, wraz z identyfikatorami transakcji; po usunięciu konta nic innego, co
-      przechowujemy, nie łączy tego numeru z Tobą. To, co jest zapisane na Twoim telefonie, pozostaje tam do odinstalowania aplikacji. Zobacz
-      <a href="delete-account.html">Usuń swoje konto i dane</a>.</p>
+      przechowujemy, nie łączy tego numeru z Tobą. To, co jest zapisane na Twoim telefonie, pozostaje tam do
+      odinstalowania aplikacji. Treningi zapisane przez Apple Watch w aplikacji Zdrowie pozostają tam, dopóki ich tam
+      nie usuniesz. Zobacz <a href="delete-account.html">Usuń swoje konto i dane</a>.</p>
 
     <h2>4. Kto jeszcze przetwarza Twoje dane</h2>
     <p>Wyłącznie podmioty, które przetwarzają dane w naszym imieniu i na nasze polecenie, albo które odpowiadają za
@@ -415,7 +499,8 @@
         otrzymuje raporty awarii natywnego kodu aplikacji oraz identyfikator jej instalacji.</li>
       <li><strong>Nasz dostawca usługi wysyłki e-maili</strong>, który wysyła opisane wyżej wiadomości.</li>
       <li><strong>Apple i Google</strong>, które sprzedają subskrypcje i doładowania oraz — jeśli z tego korzystasz —
-        umożliwiają logowanie, jako administratorzy na podstawie własnych polityk prywatności.</li>
+        umożliwiają logowanie — a Apple, jeśli korzystasz z Apple Watch, łączy go z Twoim iPhone’em i prowadzi aplikację
+        Zdrowie — jako administratorzy na podstawie własnych polityk prywatności.</li>
       <li><strong>Organy władzy publicznej</strong>, jeśli przepisy prawa wymagają od nas ujawnienia danych.</li>
     </ul>
     <p>Nie sprzedajemy Twoich danych i nie udostępniamy ich w celach reklamowych. Aplikacja nie zawiera reklam.</p>
@@ -460,7 +545,7 @@
   <!-- ==================== GERMAN ==================== -->
   <section class="lang hidden" lang="de">
     <h1>Datenschutzerklärung</h1>
-    <p class="updated">Zuletzt aktualisiert: 26. Oktober 2026</p>
+    <p class="updated">Zuletzt aktualisiert: 27. Oktober 2026</p>
 
     <p>Diese Datenschutzerklärung erklärt, welche personenbezogenen Daten die App <strong>Workouts</strong> und die
       dazugehörigen Dienste verarbeiten, zu welchem Zweck und auf welcher Rechtsgrundlage, wer sie außerdem
@@ -509,6 +594,39 @@
       <li>Wenn du in der App etwas löschst, behält unser Server es als gelöscht markiert, damit es auch auf deinen
         anderen Geräten gelöscht wird; endgültig gelöscht wird es zusammen mit deinem Konto.</li>
     </ul>
+
+    <h3>Apple Watch</h3>
+    <p>Wenn du Workouts auf einer Apple Watch nutzt, zeigt die Watch deine geplanten Workouts und das laufende an, und
+      du erfasst deine Sätze darauf. Dein Training schreibt weiterhin nur die App auf deinem iPhone: Die Watch sendet
+      ihr, was du gemacht hast — welchen Satz, mit welchem Gewicht, welchen Wiederholungen, welcher Zeit oder
+      Anstrengung und wann —, und die App speichert es, als hättest du es auf dem Smartphone erfasst, und sichert und
+      synchronisiert es dann wie oben beschrieben.</p>
+    <ul>
+      <li><strong>Zwischen der Watch und deinem iPhone.</strong> Die Watch tauscht diese Daten direkt mit der
+        Workouts-App auf deinem iPhone aus, über die Verbindung, die Apples System zwischen den beiden hält; unterwegs
+        läuft nichts über unseren Server.</li>
+      <li><strong>Auf der Watch.</strong> Die Watch speichert die anstehenden Workouts, das laufende und was sie deinem
+        iPhone noch nicht übergeben hat, sowie ein kurzes Protokoll ihrer eigenen technischen Ereignisse, das nie Namen,
+        Werte oder deine Herzfrequenz enthält. Sie löscht diese Daten, wenn du dich in der App auf deinem iPhone
+        abmeldest oder mit einem anderen Konto anmeldest, und wenn du die App von der Watch entfernst.</li>
+      <li><strong>Herzfrequenz und Kalorien.</strong> Während eines Workouts misst die Watch deine Herzfrequenz, schätzt
+        die verbrannten Kalorien und zeigt dir beides an. Solange die Watch verbunden ist, zeigt auch die Workouts-App
+        auf deinem iPhone deine Herzfrequenz an und speichert nichts davon. Keines von beiden gelangt je auf unseren
+        Server, in unsere Protokolle, unsere Nutzungsereignisse oder unsere Absturzberichte.</li>
+      <li><strong>Apple Health.</strong> Mit deiner Erlaubnis speichert die Watch das Workout in Apple Health —
+        Krafttraining, Beginn und Ende, deine Herzfrequenz und aktive Energie —, wo es in deine Aktivitätsringe
+        einfließt; während des Workouts liest sie dort deine Herzfrequenz und aktive Energie, um sie anzuzeigen. Auf
+        deinem iPhone nutzt Workouts Apple Health nur, um die App auf deiner Watch zu öffnen, wenn du ein Workout auf
+        dem Smartphone startest: Die App liest und schreibt dort nichts. Diese Einträge werden auf deinen Geräten und
+        von Apple nach dessen eigenen Bedingungen gespeichert, nicht von uns. Über das hinaus, was die Watch dir während
+        eines Workouts anzeigt, lesen wir nichts daraus; wir verwenden sie nie für Werbung oder Marketing, verkaufen sie
+        nicht und speichern nichts davon auf unserem Server oder in iCloud. Du kannst die Erlaubnis jederzeit in den
+        Einstellungen von Apple Health widerrufen und diese Einträge in Apple Health löschen.</li>
+    </ul>
+    <p>Wir verarbeiten diese Daten, um dir die Watch-App bereitzustellen, die du nutzen möchtest — <em>Erfüllung unseres
+      Vertrags</em> (Art. 6 Abs. 1 lit. b DSGVO). Was sie über deine Gesundheit verraten, verarbeiten wir auf Grundlage
+      deiner <em>ausdrücklichen Einwilligung</em> (Art. 6 Abs. 1 lit. a und Art. 9 Abs. 2 lit. a DSGVO), wie bei deinem
+      Training oben; du erteilst sie, indem du die Watch nutzt und Apple Health die Erlaubnis gibst.</p>
 
     <h3>Der KI-Coach</h3>
     <p>Wenn du den KI-Coach nutzt und seinem Hinweis in der App zugestimmt hast, senden wir jedes Mal, wenn du ihn etwas
@@ -565,25 +683,32 @@
 
     <h3>Wie die App genutzt wird und wenn Fehler auftreten</h3>
     <ul>
-      <li><strong>Nutzungsereignisse.</strong> Die App erfasst Ereignisse dazu, wie sie genutzt wird — zum Beispiel, dass
-        ein Workout beendet wurde, mit seiner Dauer und der Anzahl seiner Übungen und Sätze, oder dass die Tarifauswahl
-        geöffnet wurde und wie sie geschlossen wurde —, zusammen mit deinem Konto, einer zufälligen Installationskennung,
-        der Version der App und deiner Plattform. Sie enthalten nie deine Notizen, von dir eingegebene Namen oder deine
+      <li><strong>Nutzungsereignisse.</strong> Die App erfasst Ereignisse dazu, wie sie genutzt wird — zum Beispiel,
+        dass ein Workout beendet wurde, mit seiner Dauer und der Anzahl seiner Übungen und Sätze, oder dass die
+        Tarifauswahl geöffnet wurde und wie sie geschlossen wurde —, zusammen mit deinem Konto, einer zufälligen
+        Installationskennung, der Version der App und deiner Plattform. Wenn du eine Apple Watch nutzt, sagen sie
+        außerdem, ob ein Workout auf dem Smartphone oder auf der Watch gestartet und beendet wurde, dass eine Watch
+        verbunden wurde und, wenn ein Workout von der Watch nicht so gespeichert werden konnte, wie es war, warum — aus
+        einer festen Liste von Gründen. Sie enthalten nie deine Notizen, von dir eingegebene Namen oder deine
         Körperdaten. Wir verwenden sie, um Workouts zu verstehen und zu verbessern — unser <em>berechtigtes
         Interesse</em> (Art. 6 Abs. 1 lit. f DSGVO).</li>
       <li><strong>Absturzberichte.</strong> Wenn in der App ein Fehler auftritt, sendet sie uns, was schiefgelaufen ist:
         den Fehler und wo er aufgetreten ist, die letzten Schritte davor (geöffnete Bildschirme, gestellte Anfragen,
         Synchronisierungsereignisse), die Version der App, deine Plattform, Systemversion und dein Gerätemodell, die
         Installationskennung und, wenn du angemeldet bist, dein Konto. Unter Android meldet Firebase Crashlytics einen
-        Absturz des nativen Codes der App (Abschnitt 4). Wir verwenden Absturzberichte, um Fehler zu beheben — unser
-        <em>berechtigtes Interesse</em>.</li>
+        Absturz des nativen Codes der App (Abschnitt 4). Wenn die App auf einer Apple Watch abstürzt, übergibt die Watch
+        eine Zusammenfassung des Fehlers an dein iPhone, das sie uns wie die Absturzberichte der App selbst sendet. Wir
+        verwenden Absturzberichte, um Fehler zu beheben — unser <em>berechtigtes Interesse</em>.</li>
       <li><strong>Problemmeldungen.</strong> Wenn du eine über Einstellungen → Diagnose sendest, erhalten wir, was du
         geschrieben hast, die Versionen deines Geräts und der App, den Stand der Synchronisierung, eine Zusammenfassung
         der letzten Fehler der App und — sofern du vor dem Senden „Letzte Aktivität anhängen“ nicht ausschaltest — ein
-        Protokoll der letzten Aktivität der App, das sie dir vorher anzeigt. Was du geschrieben hast, geht zusammen mit den Angaben zu Gerät und App und mit
-        deinem Konto außerdem per E-Mail an unser Support-Postfach. Wir verwenden die Meldung, um dir per E-Mail an die
-        Adresse deines Kontos zu antworten, wobei wir unsere Antwort zusammen mit deiner Meldung speichern — <em>Erfüllung
-        unseres Vertrags</em> —, und um das Problem zu finden und zu beheben — unser <em>berechtigtes Interesse</em>.</li>
+        Protokoll der letzten Aktivität der App, das sie dir vorher anzeigt. Dieses Protokoll enthält auch das Protokoll
+        einer mit der App verbundenen Apple Watch, das nie von dir eingegebene Namen, die erfassten Werte oder deine
+        Herzfrequenz enthält. Was du geschrieben hast, geht zusammen mit den Angaben zu Gerät und App und mit deinem
+        Konto außerdem per E-Mail an unser Support-Postfach. Wir verwenden die Meldung, um dir per E-Mail an die Adresse
+        deines Kontos zu antworten, wobei wir unsere Antwort zusammen mit deiner Meldung speichern — <em>Erfüllung
+        unseres Vertrags</em> —, und um das Problem zu finden und zu beheben — unser <em>berechtigtes
+        Interesse</em>.</li>
       <li><strong>Serverprotokolle.</strong> Unser Server und das vorgeschaltete Netzwerk protokollieren jede Anfrage:
         deine IP-Adresse, die Uhrzeit, die angefragte Adresse, die Antwort und wie lange sie gedauert hat, den User-Agent
         deines Geräts und, solange du angemeldet bist, dein Konto. Wir verwenden sie, um den Betrieb und die Sicherheit
@@ -635,7 +760,8 @@
       was wir mit dem Konto gemacht haben — die Tarife, die wir ihm gegeben haben, und die Kaufdaten, die wir erneut bei
       den Stores abgerufen haben, mit ihren Transaktionskennungen; nach der Löschung des Kontos verknüpft nichts
       anderes, was wir speichern, diese Nummer mit dir. Was auf deinem Smartphone gespeichert ist, bleibt dort, bis du
-      die App deinstallierst. Siehe <a href="delete-account.html">Dein Konto und deine Daten löschen</a>.</p>
+      die App deinstallierst. Workouts, die deine Apple Watch in Apple Health gespeichert hat, bleiben dort, bis du sie
+      dort löschst. Siehe <a href="delete-account.html">Dein Konto und deine Daten löschen</a>.</p>
 
     <h2>4. Wer deine Daten außerdem verarbeitet</h2>
     <p>Nur diejenigen, die Daten in unserem Auftrag und nach unseren Weisungen verarbeiten oder die für ihren eigenen
@@ -652,8 +778,9 @@
       <li><strong>Google</strong> — <strong>Firebase Crashlytics</strong>, nur in der Android-App —, das Absturzberichte
         des nativen Codes der App und eine Kennung der Installation der App erhält.</li>
       <li><strong>Unser E-Mail-Versanddienstleister</strong>, der die oben beschriebenen E-Mails versendet.</li>
-      <li><strong>Apple und Google</strong>, die Abos und Aufladungen verkaufen und, wenn du dich über sie anmeldest, deine
-        Anmeldung abwickeln, als Verantwortliche nach ihren eigenen Datenschutzrichtlinien.</li>
+      <li><strong>Apple und Google</strong>, die Abos und Aufladungen verkaufen und, wenn du dich über sie anmeldest,
+        deine Anmeldung abwickeln — und Apple, wenn du eine Apple Watch nutzt, verbindet sie mit deinem iPhone und
+        betreibt Apple Health —, als Verantwortliche nach ihren eigenen Datenschutzrichtlinien.</li>
       <li><strong>Behörden</strong>, wenn uns das Gesetz verpflichtet, Daten offenzulegen.</li>
     </ul>
     <p>Wir verkaufen deine Daten nicht und geben sie nicht zu Werbezwecken weiter. Die App enthält keine Werbung.</p>
@@ -702,7 +829,7 @@
   <!-- ==================== SPANISH (LATIN AMERICA) ==================== -->
   <section class="lang hidden" lang="es-419">
     <h1>Política de privacidad</h1>
-    <p class="updated">Última actualización: 26 de octubre de 2026</p>
+    <p class="updated">Última actualización: 27 de octubre de 2026</p>
 
     <p>Esta política explica qué datos personales tratan la app <strong>Workouts</strong> y sus servicios, con qué fin,
       sobre qué base jurídica, quién más los trata, durante cuánto tiempo los conservamos y qué
@@ -748,6 +875,39 @@
       <li>Cuando eliminas algo en la app, nuestro servidor lo conserva marcado como eliminado, para que tus otros
         dispositivos también lo eliminen; se borra junto con tu cuenta.</li>
     </ul>
+
+    <h3>Apple Watch</h3>
+    <p>Si usas Workouts en un Apple Watch, el reloj muestra tus entrenamientos planificados y el que está en curso, y
+      registras tus series en él. Tu entrenamiento lo sigue escribiendo solo la app de tu iPhone: el reloj le envía lo
+      que hiciste — qué serie, con qué peso, repeticiones, tiempo o esfuerzo, y cuándo —, y la app lo guarda como si lo
+      hubieras registrado en el teléfono, y luego hace la copia de seguridad y lo sincroniza como se describe
+      arriba.</p>
+    <ul>
+      <li><strong>Entre el reloj y tu iPhone.</strong> El reloj intercambia estos datos directamente con la app Workouts
+        de tu iPhone, a través de la conexión que el sistema de Apple mantiene entre ambos; en el camino, nada pasa por
+        nuestro servidor.</li>
+      <li><strong>En el reloj.</strong> El reloj guarda los próximos entrenamientos, el que está en curso y lo que aún
+        no le entregó a tu iPhone, además de un breve registro de sus propios eventos técnicos, que nunca contiene
+        nombres, valores ni tu frecuencia cardíaca. Los borra cuando cierras sesión en la app de tu iPhone o inicias
+        sesión con otra cuenta, y cuando eliminas la app del reloj.</li>
+      <li><strong>Frecuencia cardíaca y calorías.</strong> Durante un entrenamiento, el reloj mide tu frecuencia
+        cardíaca, estima las calorías que quemas y te las muestra. Mientras el reloj está conectado, la app Workouts de
+        tu iPhone también muestra tu frecuencia cardíaca y no guarda nada de ella. Ninguno de estos datos llega nunca a
+        nuestro servidor, a nuestros registros, a nuestros eventos de uso ni a nuestros reportes de fallos.</li>
+      <li><strong>Salud (Apple Health).</strong> Con tu permiso, el reloj guarda el entrenamiento en la app Salud —
+        entrenamiento de fuerza, su inicio y su fin, tu frecuencia cardíaca y tu energía activa —, donde cuenta para tus
+        anillos de Actividad; durante el entrenamiento lee allí tu frecuencia cardíaca y tu energía activa para
+        mostrarlas. En tu iPhone, Workouts usa Salud solo para abrir la app en tu reloj cuando empiezas un entrenamiento
+        en el teléfono: no lee ni escribe nada allí. Estos registros se guardan en tus dispositivos, y Apple los
+        conserva conforme a sus propias condiciones, no nosotros. Más allá de lo que el reloj te muestra durante un
+        entrenamiento, no leemos nada de ellos; nunca los usamos para publicidad ni marketing, no los vendemos y no
+        guardamos ninguno en nuestro servidor ni en iCloud. Puedes retirar el permiso en cualquier momento en la
+        configuración de Salud, y eliminar estos registros en la app Salud.</li>
+    </ul>
+    <p>Tratamos estos datos para ofrecerte la app para el reloj que elegiste usar — <em>ejecución de nuestro
+      contrato</em> (artículo 6.1.b) del RGPD). Lo que revelan sobre tu salud lo tratamos sobre la base de tu
+      <em>consentimiento explícito</em> (artículos 6.1.a) y 9.2.a) del RGPD), como con tu entrenamiento arriba, que das
+      al usar el reloj y al conceder el permiso de Salud.</p>
 
     <h3>El Entrenador IA</h3>
     <p>Si usas el Entrenador IA tras aceptar su aviso en la app, cada vez que le preguntas algo — y una vez por semana,
@@ -802,22 +962,27 @@
     <h3>Cómo se usa la app y cuándo falla</h3>
     <ul>
       <li><strong>Eventos de uso.</strong> La app registra eventos sobre cómo se usa — por ejemplo, que se terminó un
-        entrenamiento, con su duración y cuántos ejercicios y series tuvo, o que se abrió la pantalla de planes y cómo se
-        cerró — junto con tu cuenta, un identificador de instalación aleatorio, la versión de la app y tu plataforma.
-        Nunca contienen tus notas, los nombres que escribiste ni tus datos corporales. Los usamos para entender y mejorar
-        Workouts — nuestro <em>interés legítimo</em> (artículo 6.1.f) del RGPD).</li>
-      <li><strong>Reportes de fallos.</strong> Cuando la app falla, nos envía información sobre lo que salió mal: el error y dónde ocurrió,
-        los últimos pasos antes del fallo (pantallas abiertas, solicitudes realizadas, eventos de sincronización), la
-        versión de la app, tu plataforma, la versión del sistema y el modelo del dispositivo, el identificador de
-        instalación y, si tienes la sesión iniciada, tu cuenta. En Android, los fallos del código nativo de la app los
-        reporta Firebase Crashlytics (sección 4). Usamos los reportes de fallos para corregir errores — nuestro
-        <em>interés legítimo</em>.</li>
+        entrenamiento, con su duración y cuántos ejercicios y series tuvo, o que se abrió la pantalla de planes y cómo
+        se cerró — junto con tu cuenta, un identificador de instalación aleatorio, la versión de la app y tu plataforma.
+        Si usas un Apple Watch, también indican si un entrenamiento se empezó y se terminó en el teléfono o en el reloj,
+        que se conectó un reloj y, cuando un entrenamiento del reloj no se pudo guardar tal como estaba, por qué, de una
+        lista cerrada de motivos. Nunca contienen tus notas, los nombres que escribiste ni tus datos corporales. Los
+        usamos para entender y mejorar Workouts — nuestro <em>interés legítimo</em> (artículo 6.1.f) del RGPD).</li>
+      <li><strong>Reportes de fallos.</strong> Cuando la app falla, nos envía información sobre lo que salió mal: el
+        error y dónde ocurrió, los últimos pasos antes del fallo (pantallas abiertas, solicitudes realizadas, eventos de
+        sincronización), la versión de la app, tu plataforma, la versión del sistema y el modelo del dispositivo, el
+        identificador de instalación y, si tienes la sesión iniciada, tu cuenta. En Android, los fallos del código
+        nativo de la app los reporta Firebase Crashlytics (sección 4). Cuando la app falla en un Apple Watch, el reloj
+        le entrega un resumen del fallo a tu iPhone, que nos lo envía igual que los reportes de fallos de la propia app.
+        Usamos los reportes de fallos para corregir errores — nuestro <em>interés legítimo</em>.</li>
       <li><strong>Reportes de problemas.</strong> Cuando nos envías uno desde Configuración → Diagnóstico, recibimos lo
         que escribiste, las versiones de tu dispositivo y de la app, el estado de la sincronización, un resumen de los
-        errores recientes de la app y — salvo que desactives “Adjuntar actividad reciente” antes de enviarlo — un registro
-        de la actividad reciente de la app, que la app te muestra primero. Lo que escribiste, junto con los datos de tu dispositivo y de la app y tu cuenta, también
-        llega por correo electrónico a nuestra bandeja de soporte. Lo usamos para responderte por correo electrónico, a la
-        dirección de tu cuenta, conservando nuestra respuesta junto con tu reporte — <em>ejecución de nuestro
+        errores recientes de la app y — salvo que desactives “Adjuntar actividad reciente” antes de enviarlo — un
+        registro de la actividad reciente de la app, que la app te muestra primero. Ese registro incluye el de un Apple
+        Watch conectado a la app, que nunca contiene los nombres que escribiste, los valores que registraste ni tu
+        frecuencia cardíaca. Lo que escribiste, junto con los datos de tu dispositivo y de la app y tu cuenta, también
+        llega por correo electrónico a nuestra bandeja de soporte. Lo usamos para responderte por correo electrónico, a
+        la dirección de tu cuenta, conservando nuestra respuesta junto con tu reporte — <em>ejecución de nuestro
         contrato</em> —, y para encontrar y resolver el problema — nuestro <em>interés legítimo</em>.</li>
       <li><strong>Registros del servidor.</strong> Nuestro servidor y la red que tiene delante registran cada solicitud:
         tu dirección IP, la hora, la dirección solicitada, la respuesta y cuánto tardó, el agente de usuario (user agent)
@@ -862,14 +1027,15 @@
         </tbody>
       </table>
     </div>
-    <p>Cuando solicitas eliminar tu cuenta, se elimina 30 días después, junto con todo lo que en la tabla se
-      conserva hasta entonces, incluidos tus créditos; RevenueCat también elimina su registro sobre ti. Eliminar tu cuenta
-      no cancela una suscripción: para que dejen de cobrarte, cancélala en la configuración de App Store o de Google Play.
+    <p>Cuando solicitas eliminar tu cuenta, se elimina 30 días después, junto con todo lo que en la tabla se conserva
+      hasta entonces, incluidos tus créditos; RevenueCat también elimina su registro sobre ti. Eliminar tu cuenta no
+      cancela una suscripción: para que dejen de cobrarte, cancélala en la configuración de App Store o de Google Play.
       Nuestro registro de administración conserva, con el número de la cuenta, lo que hicimos con ella — los planes que
       le otorgamos y los registros de compras que volvimos a consultar en las tiendas, con sus identificadores de
       transacción —; una vez eliminada la cuenta, nada más de lo que conservamos vincula ese número contigo. Lo que está
-      guardado en tu teléfono permanece allí hasta que desinstales la app. Consulta
-      <a href="delete-account.html">Eliminar tu cuenta y tus datos</a>.</p>
+      guardado en tu teléfono permanece allí hasta que desinstales la app. Los entrenamientos que tu Apple Watch guardó
+      en Salud permanecen allí hasta que los elimines allí. Consulta <a href="delete-account.html">Eliminar tu cuenta y
+      tus datos</a>.</p>
 
     <h2>4. Quién más trata tus datos</h2>
     <p>Solo quienes tratan datos por encargo nuestro, siguiendo nuestras instrucciones, o son responsables de su
@@ -888,7 +1054,8 @@
         los reportes de fallos del código nativo de la app y un identificador de la instalación de la app.</li>
       <li><strong>Nuestro proveedor de envío de correo electrónico</strong>, que envía los correos descritos arriba.</li>
       <li><strong>Apple y Google</strong>, que venden las suscripciones y las recargas y, si así lo eliges, te permiten
-        iniciar sesión con ellos, como responsables del tratamiento conforme a sus propias políticas de privacidad.</li>
+        iniciar sesión con ellos — y Apple, si usas un Apple Watch, lo conecta con tu iPhone y gestiona la app Salud —,
+        como responsables del tratamiento conforme a sus propias políticas de privacidad.</li>
       <li><strong>Autoridades</strong>, cuando la ley nos obliga a revelar datos.</li>
     </ul>
     <p>No vendemos tus datos ni los compartimos con fines publicitarios. La app no contiene publicidad.</p>
@@ -933,7 +1100,7 @@
   <!-- ==================== FRENCH ==================== -->
   <section class="lang hidden" lang="fr">
     <h1>Politique de confidentialité</h1>
-    <p class="updated">Dernière mise à jour : 26 octobre 2026</p>
+    <p class="updated">Dernière mise à jour : 27 octobre 2026</p>
 
     <p>Cette politique explique quelles données personnelles l’application <strong>Workouts</strong> et ses services
       traitent, dans quel but, sur quelle base juridique, qui d’autre les traite, combien de temps nous
@@ -983,6 +1150,43 @@
       <li>Lorsque tu supprimes quelque chose dans l’application, notre serveur le conserve en le marquant comme
         supprimé, afin que tes autres appareils le suppriment aussi ; il est effacé avec ton compte.</li>
     </ul>
+
+    <h3>Apple Watch</h3>
+    <p>Si tu utilises Workouts sur une Apple Watch, la montre affiche tes entraînements prévus et celui en cours, et tu
+      y enregistres tes séries. Ton entraînement reste écrit uniquement par l’application sur ton iPhone : la montre lui
+      envoie ce que tu as fait — quelle série, avec quel poids, quelles répétitions, quelle durée ou quel effort, et
+      quand — et l’application l’enregistre comme si tu l’avais saisi sur le téléphone, puis le sauvegarde et le
+      synchronise comme décrit ci-dessus.</p>
+    <ul>
+      <li><strong>Entre la montre et ton iPhone.</strong> La montre échange ces données directement avec l’application
+        Workouts sur ton iPhone, par la connexion que le système d’Apple maintient entre les deux ; rien ne passe par
+        notre serveur en chemin.</li>
+      <li><strong>Sur la montre.</strong> La montre conserve les entraînements à venir, celui en cours et ce qu’elle n’a
+        pas encore transmis à ton iPhone, ainsi qu’un court journal de ses propres événements techniques, qui ne
+        contient jamais de noms, de valeurs ni ta fréquence cardiaque. Elle les efface lorsque tu te déconnectes de
+        l’application sur ton iPhone ou que tu te connectes avec un autre compte, et lorsque tu supprimes l’application
+        de la montre.</li>
+      <li><strong>Fréquence cardiaque et calories.</strong> Pendant un entraînement, la montre mesure ta fréquence
+        cardiaque, estime les calories que tu dépenses et te les affiche. Tant que la montre est connectée,
+        l’application Workouts sur ton iPhone affiche aussi ta fréquence cardiaque, sans rien en conserver. Aucune de
+        ces données n’atteint jamais notre serveur, nos journaux, nos événements d’utilisation ou nos rapports de
+        plantage.</li>
+      <li><strong>Santé (Apple Health).</strong> Avec ton autorisation, la montre enregistre l’entraînement dans l’app
+        Santé — un entraînement de musculation, son début et sa fin, ta fréquence cardiaque et ton énergie active —, où
+        il compte pour tes anneaux Activité ; pendant l’entraînement, elle y lit ta fréquence cardiaque et ton énergie
+        active pour les afficher. Sur ton iPhone, Workouts n’utilise Santé que pour ouvrir l’application sur ta montre
+        quand tu commences un entraînement sur le téléphone : l’application n’y lit et n’y écrit rien. Ces données sont
+        conservées sur tes appareils, et par Apple selon ses propres conditions, pas par nous. Au-delà de ce que la
+        montre t’affiche pendant un entraînement, nous n’en lisons rien ; nous ne les utilisons jamais à des fins
+        publicitaires ou de marketing, nous ne les vendons pas et nous n’en conservons aucune sur notre serveur ni dans
+        iCloud. Tu peux retirer l’autorisation à tout moment dans les réglages de Santé, et supprimer ces données dans
+        l’app Santé.</li>
+    </ul>
+    <p>Nous traitons ces données pour te fournir l’application pour montre que tu as choisi d’utiliser — <em>exécution
+      du contrat</em> (article 6, paragraphe 1, point b), du RGPD). Ce qu’elles révèlent de ta santé, nous le traitons
+      sur la base de ton <em>consentement explicite</em> (article 6, paragraphe 1, point a), et article 9, paragraphe 2,
+      point a), du RGPD), comme pour ton entraînement ci-dessus ; tu le donnes en utilisant la montre et en accordant
+      l’autorisation de Santé.</p>
 
     <h3>Le Coach IA</h3>
     <p>Si tu utilises le Coach IA et que tu as accepté sa notice d’information dans l’application, alors chaque fois que
@@ -1040,25 +1244,31 @@
     <h3>L’utilisation de l’application, et ses défaillances</h3>
     <ul>
       <li><strong>Événements d’utilisation.</strong> L’application enregistre des événements sur la façon dont elle est
-        utilisée — par exemple qu’un entraînement a été terminé, avec sa durée et son nombre d’exercices et de séries, ou
-        que l’écran des offres a été ouvert et la façon dont il a été fermé — avec ton compte, un identifiant
-        d’installation aléatoire, la version de l’application et ta plateforme. Ils ne contiennent jamais tes notes, les
-        noms que tu as saisis ni tes mesures corporelles. Nous les utilisons pour comprendre et améliorer Workouts —
-        notre <em>intérêt légitime</em> (article 6, paragraphe 1, point f), du RGPD).</li>
+        utilisée — par exemple qu’un entraînement a été terminé, avec sa durée et son nombre d’exercices et de séries,
+        ou que l’écran des offres a été ouvert et la façon dont il a été fermé — avec ton compte, un identifiant
+        d’installation aléatoire, la version de l’application et ta plateforme. Si tu utilises une Apple Watch, ils
+        indiquent aussi si un entraînement a été commencé et terminé sur le téléphone ou sur la montre, qu’une montre a
+        été connectée et, lorsqu’un entraînement venu de la montre n’a pas pu être enregistré tel quel, pourquoi, parmi
+        une liste fermée de motifs. Ils ne contiennent jamais tes notes, les noms que tu as saisis ni tes mesures
+        corporelles. Nous les utilisons pour comprendre et améliorer Workouts — notre <em>intérêt légitime</em> (article
+        6, paragraphe 1, point f), du RGPD).</li>
       <li><strong>Rapports de plantage.</strong> Lorsque l’application rencontre une défaillance, elle nous envoie ce
-        qui s’est mal passé : l’erreur et l’endroit où elle s’est produite, les dernières étapes qui l’ont précédée
+        qui s’est mal passé : l’erreur et l’endroit où elle s’est produite, les dernières étapes qui l’ont précédée
         (écrans ouverts, requêtes effectuées, événements de synchronisation), la version de l’application, ta
         plateforme, la version du système et le modèle de l’appareil, l’identifiant d’installation et, si ta session est
         ouverte, ton compte. Sur Android, un plantage du code natif de l’application est signalé par Firebase
-        Crashlytics (section 4). Nous utilisons les rapports de plantage pour corriger les erreurs — notre <em>intérêt
-        légitime</em>.</li>
+        Crashlytics (section 4). Lorsque l’application plante sur une Apple Watch, la montre transmet un résumé de la
+        défaillance à ton iPhone, qui nous l’envoie comme les rapports de plantage de l’application elle-même. Nous
+        utilisons les rapports de plantage pour corriger les erreurs — notre <em>intérêt légitime</em>.</li>
       <li><strong>Signalements de problème.</strong> Lorsque tu en envoies un depuis Paramètres → Diagnostic, nous
         recevons ce que tu as écrit, les versions de ton appareil et de l’application, l’état de la synchronisation, un
-        résumé des erreurs récentes de l’application et — sauf si tu désactives « Joindre l’activité récente » avant
-        l’envoi — un journal de l’activité récente de l’application, que celle-ci te montre d’abord. Ce que tu as écrit, avec les informations sur ton
-        appareil et l’application et ton compte, parvient aussi par e-mail à notre boîte d’assistance. Nous l’utilisons
-        pour te répondre par e-mail, à l’adresse de ton compte, en conservant notre réponse avec ton signalement —
-        <em>exécution du contrat</em> — et pour trouver et corriger le problème — notre <em>intérêt légitime</em>.</li>
+        résumé des erreurs récentes de l’application et — sauf si tu désactives « Joindre l’activité récente » avant
+        l’envoi — un journal de l’activité récente de l’application, que celle-ci te montre d’abord. Ce journal comprend
+        celui d’une Apple Watch connectée à l’application, qui ne contient jamais les noms que tu as saisis, les valeurs
+        que tu as enregistrées ni ta fréquence cardiaque. Ce que tu as écrit, avec les informations sur ton appareil et
+        l’application et ton compte, parvient aussi par e-mail à notre boîte d’assistance. Nous l’utilisons pour te
+        répondre par e-mail, à l’adresse de ton compte, en conservant notre réponse avec ton signalement — <em>exécution
+        du contrat</em> — et pour trouver et corriger le problème — notre <em>intérêt légitime</em>.</li>
       <li><strong>Journaux du serveur.</strong> Notre serveur et le réseau placé devant lui enregistrent chaque requête :
         ton adresse IP, l’heure, l’adresse demandée, la réponse et son temps de traitement, l’agent utilisateur (user
         agent) de ton appareil et, lorsque ta session est ouverte, ton compte. Nous les utilisons pour assurer le
@@ -1107,13 +1317,14 @@
       </table>
     </div>
     <p>Lorsque tu supprimes ton compte, celui-ci est supprimé 30 jours après ta demande, avec tout ce qui est indiqué
-      ci-dessus comme conservé jusque-là, crédits compris ; RevenueCat supprime lui aussi les données qu’il détient sur
-      toi. La suppression de ton compte ne résilie pas un abonnement : pour éviter de futurs prélèvements, résilie-le dans
-      les réglages de ton compte App Store ou Google Play. Notre journal d’administration conserve, sous le numéro du
-      compte, ce que nous avons fait du compte — les offres que nous lui avons attribuées et les données d’achat que nous
-      avons relues auprès des boutiques, avec leurs identifiants de transaction ; une fois le compte supprimé, plus rien
-      de ce que nous conservons ne relie ce numéro à toi. Ce qui est stocké sur ton téléphone y reste jusqu’à ce que tu
-      désinstalles l’application. Voir <a href="delete-account.html">Supprimer ton compte et tes données</a>.</p>
+      ci-dessus comme conservé jusque-là, crédits compris ; RevenueCat supprime lui aussi les données qu’il détient sur
+      toi. La suppression de ton compte ne résilie pas un abonnement : pour éviter de futurs prélèvements, résilie-le
+      dans les réglages de ton compte App Store ou Google Play. Notre journal d’administration conserve, sous le numéro
+      du compte, ce que nous avons fait du compte — les offres que nous lui avons attribuées et les données d’achat que
+      nous avons relues auprès des boutiques, avec leurs identifiants de transaction ; une fois le compte supprimé, plus
+      rien de ce que nous conservons ne relie ce numéro à toi. Ce qui est stocké sur ton téléphone y reste jusqu’à ce
+      que tu désinstalles l’application. Les entraînements que ton Apple Watch a enregistrés dans Santé y restent
+      jusqu’à ce que tu les y supprimes. Voir <a href="delete-account.html">Supprimer ton compte et tes données</a>.</p>
 
     <h2>4. Qui d’autre traite tes données</h2>
     <p>Uniquement les organismes qui traitent des données pour notre compte, sur nos instructions, ou qui sont
@@ -1133,7 +1344,8 @@
         reçoit les rapports de plantage du code natif de l’application et un identifiant de son installation.</li>
       <li><strong>Notre prestataire d’envoi d’e-mails</strong>, qui envoie les e-mails décrits ci-dessus.</li>
       <li><strong>Apple et Google</strong>, qui vendent les abonnements et les recharges et, si tu utilises cette
-        option, assurent ta connexion, en tant que responsables du traitement selon leurs propres politiques de
+        option, assurent ta connexion — et Apple, si tu utilises une Apple Watch, la relie à ton iPhone et fait
+        fonctionner l’app Santé —, en tant que responsables du traitement selon leurs propres politiques de
         confidentialité.</li>
       <li><strong>Les autorités</strong>, lorsque la loi nous oblige à leur communiquer des données.</li>
     </ul>
@@ -1184,7 +1396,7 @@
   <!-- ==================== ITALIAN ==================== -->
   <section class="lang hidden" lang="it">
     <h1>Informativa sulla privacy</h1>
-    <p class="updated">Ultimo aggiornamento: 26 ottobre 2026</p>
+    <p class="updated">Ultimo aggiornamento: 27 ottobre 2026</p>
 
     <p>Questa informativa spiega quali dati personali trattano l’app <strong>Workouts</strong> e i servizi collegati,
       perché, su quale base giuridica, chi altro li tratta, per quanto tempo li conserviamo e quali sono
@@ -1231,6 +1443,38 @@
       <li>Quando elimini qualcosa nell’app, il nostro server lo conserva contrassegnato come eliminato, così che anche
         gli altri tuoi dispositivi lo eliminino; viene cancellato insieme al tuo account.</li>
     </ul>
+
+    <h3>Apple Watch</h3>
+    <p>Se usi Workouts su un Apple Watch, l’orologio mostra i tuoi allenamenti pianificati e quello in corso, e ci
+      registri le tue serie. Il tuo allenamento continua a essere scritto solo dall’app sul tuo iPhone: l’orologio le
+      invia ciò che hai fatto — quale serie, con quale peso, ripetizioni, tempo o sforzo, e quando — e l’app lo salva
+      come se l’avessi registrato sul telefono, poi ne fa il backup e lo sincronizza come descritto sopra.</p>
+    <ul>
+      <li><strong>Tra l’orologio e il tuo iPhone.</strong> L’orologio scambia questi dati direttamente con l’app
+        Workouts sul tuo iPhone, tramite la connessione che il sistema di Apple mantiene tra i due; lungo il percorso
+        nulla passa dal nostro server.</li>
+      <li><strong>Sull’orologio.</strong> L’orologio conserva gli allenamenti in arrivo, quello in corso e ciò che non
+        ha ancora consegnato al tuo iPhone, oltre a un breve log dei propri eventi tecnici, che non contiene mai nomi,
+        valori né la tua frequenza cardiaca. Li cancella quando esci dall’account nell’app sul tuo iPhone o accedi con
+        un altro account, e quando rimuovi l’app dall’orologio.</li>
+      <li><strong>Frequenza cardiaca e calorie.</strong> Durante un allenamento l’orologio misura la tua frequenza
+        cardiaca, stima le calorie che bruci e te le mostra. Mentre l’orologio è connesso, anche l’app Workouts sul tuo
+        iPhone mostra la tua frequenza cardiaca, senza conservarne nulla. Nessuno di questi dati arriva mai al nostro
+        server, ai nostri log, ai nostri eventi di utilizzo o ai nostri rapporti sugli arresti anomali.</li>
+      <li><strong>Salute (Apple Health).</strong> Con il tuo permesso, l’orologio salva l’allenamento nell’app Salute —
+        allenamento di forza, inizio e fine, la tua frequenza cardiaca e la tua energia attiva —, dove conta per i tuoi
+        anelli Attività; durante l’allenamento vi legge la tua frequenza cardiaca e la tua energia attiva, per
+        mostrarle. Sul tuo iPhone, Workouts usa Salute solo per aprire l’app sul tuo orologio quando inizi un
+        allenamento sul telefono: lì non legge né scrive nulla. Questi dati sono conservati sui tuoi dispositivi, e da
+        Apple secondo i propri termini, non da noi. Oltre a ciò che l’orologio ti mostra durante un allenamento, non ne
+        leggiamo nulla; non li usiamo mai per pubblicità o marketing, non li vendiamo e non ne conserviamo nessuno sul
+        nostro server né su iCloud. Puoi revocare il permesso in qualsiasi momento nelle impostazioni di Salute, ed
+        eliminare questi dati nell’app Salute.</li>
+    </ul>
+    <p>Trattiamo questi dati per fornirti l’app per l’orologio che hai scelto di usare — <em>esecuzione del
+      contratto</em> (art. 6, par. 1, lett. b), GDPR). Ciò che rivelano sulla tua salute lo trattiamo sulla base del tuo
+      <em>consenso esplicito</em> (art. 6, par. 1, lett. a), e art. 9, par. 2, lett. a), GDPR), come per il tuo
+      allenamento sopra, che esprimi usando l’orologio e concedendo il permesso di Salute.</p>
 
     <h3>Il Coach AI</h3>
     <p>Se usi il Coach AI e hai accettato il suo avviso nell’app, ogni volta che gli chiedi qualcosa — e una volta alla
@@ -1286,25 +1530,30 @@
     <h3>Come viene usata l’app, e quando qualcosa non funziona</h3>
     <ul>
       <li><strong>Eventi di utilizzo.</strong> L’app registra eventi su come viene usata — ad esempio che un allenamento
-        è stato terminato, con la sua durata e il numero di esercizi e serie, o che la schermata dei piani di abbonamento
-        è stata aperta e come è stata chiusa — insieme al tuo account, a un identificativo casuale dell’installazione,
-        alla versione dell’app e alla tua piattaforma. Non contengono mai le tue note, i nomi che hai digitato né le tue
-        misure corporee. Li usiamo per capire e migliorare Workouts — il nostro <em>legittimo interesse</em> (art. 6,
-        par. 1, lett. f), GDPR).</li>
+        è stato terminato, con la sua durata e il numero di esercizi e serie, o che la schermata dei piani di
+        abbonamento è stata aperta e come è stata chiusa — insieme al tuo account, a un identificativo casuale
+        dell’installazione, alla versione dell’app e alla tua piattaforma. Se usi un Apple Watch, indicano anche se un
+        allenamento è stato iniziato e terminato sul telefono o sull’orologio, che è stato connesso un orologio e,
+        quando un allenamento dall’orologio non ha potuto essere salvato così com’era, perché, da un elenco chiuso di
+        motivi. Non contengono mai le tue note, i nomi che hai digitato né le tue misure corporee. Li usiamo per capire
+        e migliorare Workouts — il nostro <em>legittimo interesse</em> (art. 6, par. 1, lett. f), GDPR).</li>
       <li><strong>Rapporti sugli arresti anomali.</strong> Quando l’app va in errore, ci invia informazioni su cosa è
-        andato storto: l’errore e il punto in cui si è verificato, gli ultimi passaggi precedenti (schermate aperte, richieste
-        effettuate, eventi di sincronizzazione), la versione dell’app, la tua piattaforma, la versione del sistema e il
-        modello del dispositivo, l’identificativo dell’installazione e, se hai effettuato l’accesso, il tuo
+        andato storto: l’errore e il punto in cui si è verificato, gli ultimi passaggi precedenti (schermate aperte,
+        richieste effettuate, eventi di sincronizzazione), la versione dell’app, la tua piattaforma, la versione del
+        sistema e il modello del dispositivo, l’identificativo dell’installazione e, se hai effettuato l’accesso, il tuo
         account. Su Android, un arresto anomalo del codice nativo dell’app viene segnalato da Firebase Crashlytics
-        (sezione 4). Usiamo i rapporti sugli arresti anomali per correggere gli errori — il nostro <em>legittimo
-        interesse</em>.</li>
-      <li><strong>Segnalazioni di problemi.</strong> Quando ne invii una da Impostazioni → Diagnostica, riceviamo ciò che
-        hai scritto, le versioni del tuo dispositivo e dell’app, lo stato della sincronizzazione, un riepilogo degli
+        (sezione 4). Quando l’app va in errore su un Apple Watch, l’orologio consegna un riepilogo dell’errore al tuo
+        iPhone, che ce lo invia come i rapporti sugli arresti anomali dell’app stessa. Usiamo i rapporti sugli arresti
+        anomali per correggere gli errori — il nostro <em>legittimo interesse</em>.</li>
+      <li><strong>Segnalazioni di problemi.</strong> Quando ne invii una da Impostazioni → Diagnostica, riceviamo ciò
+        che hai scritto, le versioni del tuo dispositivo e dell’app, lo stato della sincronizzazione, un riepilogo degli
         errori recenti dell’app e — a meno che tu non disattivi “Allega l’attività recente” prima dell’invio — un log
-        dell’attività recente dell’app, che l’app ti mostra prima. Ciò che hai scritto, con i dettagli del dispositivo e dell’app e il tuo account, arriva
-        anche via e-mail alla casella di posta della nostra assistenza. Usiamo la segnalazione per risponderti via e-mail,
-        all’indirizzo del tuo account, conservando la nostra risposta insieme alla tua segnalazione — <em>esecuzione del
-        contratto</em> — e per individuare e risolvere il problema — il nostro <em>legittimo interesse</em>.</li>
+        dell’attività recente dell’app, che l’app ti mostra prima. Quel log comprende quello di un Apple Watch connesso
+        all’app, che non contiene mai i nomi che hai digitato, i valori che hai registrato né la tua frequenza cardiaca.
+        Ciò che hai scritto, con i dettagli del dispositivo e dell’app e il tuo account, arriva anche via e-mail alla
+        casella di posta della nostra assistenza. Usiamo la segnalazione per risponderti via e-mail, all’indirizzo del
+        tuo account, conservando la nostra risposta insieme alla tua segnalazione — <em>esecuzione del contratto</em> —
+        e per individuare e risolvere il problema — il nostro <em>legittimo interesse</em>.</li>
       <li><strong>Log del server.</strong> Il nostro server e la rete che lo precede registrano ogni richiesta: il tuo
         indirizzo IP, l’ora, l’indirizzo richiesto, la risposta e il tempo impiegato, lo user agent del tuo dispositivo e,
         se hai effettuato l’accesso, il tuo account. Li usiamo per mantenere il servizio funzionante e sicuro — il nostro <em>legittimo interesse</em>.</li>
@@ -1350,12 +1599,13 @@
     </div>
     <p>Quando elimini il tuo account, questo viene eliminato 30 giorni dopo la tua richiesta, insieme a tutto ciò che è
       indicato sopra come conservato fino a quel momento, crediti compresi; anche RevenueCat elimina i propri dati su di
-      te. Eliminare il tuo account non annulla un abbonamento: per non ricevere più addebiti, annullalo nelle impostazioni
-      di App Store o di Google Play. Il nostro registro di amministrazione conserva, sotto il numero dell’account, ciò che
-      abbiamo fatto con l’account — i piani che gli abbiamo assegnato e i dati degli acquisti che abbiamo riletto dagli
-      store, con i relativi identificativi di transazione; una volta eliminato l’account, nient’altro di ciò che
-      conserviamo collega quel numero a te. Ciò che è memorizzato sul tuo telefono vi rimane finché non disinstalli
-      l’app. Vedi <a href="delete-account.html">Elimina il tuo account e i tuoi dati</a>.</p>
+      te. Eliminare il tuo account non annulla un abbonamento: per non ricevere più addebiti, annullalo nelle
+      impostazioni di App Store o di Google Play. Il nostro registro di amministrazione conserva, sotto il numero
+      dell’account, ciò che abbiamo fatto con l’account — i piani che gli abbiamo assegnato e i dati degli acquisti che
+      abbiamo riletto dagli store, con i relativi identificativi di transazione; una volta eliminato l’account,
+      nient’altro di ciò che conserviamo collega quel numero a te. Ciò che è memorizzato sul tuo telefono vi rimane
+      finché non disinstalli l’app. Gli allenamenti che il tuo Apple Watch ha salvato in Salute vi rimangono finché non
+      li elimini lì. Vedi <a href="delete-account.html">Elimina il tuo account e i tuoi dati</a>.</p>
 
     <h2>4. Chi altro tratta i tuoi dati</h2>
     <p>Solo i soggetti che trattano i dati per nostro conto e secondo le nostre istruzioni, oppure che rispondono in proprio
@@ -1373,8 +1623,9 @@
       <li><strong>Google</strong> — <strong>Firebase Crashlytics</strong>, solo nell’app per Android — che riceve i
         rapporti sugli arresti anomali del codice nativo dell’app e un identificativo dell’installazione dell’app.</li>
       <li><strong>Il nostro fornitore del servizio di invio e-mail</strong>, che invia le e-mail descritte sopra.</li>
-      <li><strong>Apple e Google</strong>, che vendono abbonamenti e ricariche e, se li usi per accedere, gestiscono il tuo
-        accesso, in qualità di titolari autonomi del trattamento secondo le proprie informative sulla privacy.</li>
+      <li><strong>Apple e Google</strong>, che vendono abbonamenti e ricariche e, se li usi per accedere, gestiscono il
+        tuo accesso — e Apple, se usi un Apple Watch, lo collega al tuo iPhone e gestisce l’app Salute —, in qualità di
+        titolari autonomi del trattamento secondo le proprie informative sulla privacy.</li>
       <li><strong>Le autorità pubbliche</strong>, quando la legge ci obbliga a comunicare i dati.</li>
     </ul>
     <p>Non vendiamo i tuoi dati e non li condividiamo a fini pubblicitari. L’app non contiene pubblicità.</p>
@@ -1420,7 +1671,7 @@
   <!-- ==================== PORTUGUESE (BRAZIL) ==================== -->
   <section class="lang hidden" lang="pt-BR">
     <h1>Política de privacidade</h1>
-    <p class="updated">Última atualização: 26 de outubro de 2026</p>
+    <p class="updated">Última atualização: 27 de outubro de 2026</p>
 
     <p>Esta política explica quais dados pessoais o aplicativo <strong>Workouts</strong> e os serviços dele tratam, por
       quê, com qual base legal, quem mais os trata, por quanto tempo os guardamos e quais são os seus direitos.
@@ -1465,6 +1716,39 @@
       <li>Quando você exclui algo no aplicativo, nosso servidor o mantém marcado como excluído, para que os seus outros
         dispositivos também o excluam; ele é apagado junto com a sua conta.</li>
     </ul>
+
+    <h3>Apple Watch</h3>
+    <p>Se você usa o Workouts em um Apple Watch, o relógio mostra os seus treinos planejados e o que está em andamento,
+      e você registra as suas séries nele. Os seus treinos continuam sendo gravados só pelo aplicativo no seu iPhone: o
+      relógio envia a ele o que você fez — qual série, com que peso, repetições, tempo ou esforço, e quando —, e o
+      aplicativo salva isso como se você tivesse registrado no celular, depois faz o backup e sincroniza como descrito
+      acima.</p>
+    <ul>
+      <li><strong>Entre o relógio e o seu iPhone.</strong> O relógio troca esses dados diretamente com o aplicativo
+        Workouts no seu iPhone, pela conexão que o sistema da Apple mantém entre os dois; no caminho, nada passa pelo
+        nosso servidor.</li>
+      <li><strong>No relógio.</strong> O relógio guarda os próximos treinos, o que está em andamento e o que ainda não
+        entregou ao seu iPhone, além de um breve log dos próprios eventos técnicos, que nunca contém nomes, valores nem
+        a sua frequência cardíaca. Ele apaga esses dados quando você sai da conta no aplicativo do seu iPhone ou entra
+        com outra conta, e quando você remove o aplicativo do relógio.</li>
+      <li><strong>Frequência cardíaca e calorias.</strong> Durante um treino, o relógio mede a sua frequência cardíaca,
+        estima as calorias que você gasta e mostra isso a você. Enquanto o relógio está conectado, o aplicativo Workouts
+        no seu iPhone também mostra a sua frequência cardíaca e não guarda nada dela. Nenhum desses dados jamais chega
+        ao nosso servidor, aos nossos logs, aos nossos eventos de uso ou aos nossos relatórios de falhas.</li>
+      <li><strong>Saúde (Apple Health).</strong> Com a sua permissão, o relógio salva o treino no app Saúde — treino de
+        força, início e fim, a sua frequência cardíaca e a sua energia ativa —, onde ele conta para os seus anéis de
+        Atividade; durante o treino, ele lê lá a sua frequência cardíaca e a sua energia ativa para mostrá-las. No seu
+        iPhone, o Workouts usa o Saúde só para abrir o aplicativo no seu relógio quando você começa um treino no
+        celular: ele não lê nem grava nada lá. Esses registros ficam nos seus dispositivos, e com a Apple, de acordo com
+        os termos dela, não conosco. Além do que o relógio mostra a você durante um treino, não lemos nada deles; nunca
+        os usamos para publicidade ou marketing, não os vendemos e não guardamos nenhum deles no nosso servidor nem no
+        iCloud. Você pode revogar a permissão a qualquer momento nos ajustes do Saúde e excluir esses registros no app
+        Saúde.</li>
+    </ul>
+    <p>Tratamos esses dados para oferecer a você o aplicativo para relógio que você escolheu usar — <em>execução do
+      nosso contrato</em> (art. 6º, nº 1, alínea b). O que eles revelam sobre a sua saúde tratamos com base no seu
+      <em>consentimento explícito</em> (art. 6º, nº 1, alínea a, e art. 9º, nº 2, alínea a), como os seus treinos acima,
+      que você dá ao usar o relógio e ao conceder a permissão do Saúde.</p>
 
     <h3>O Treinador IA</h3>
     <p>Se você usa o Treinador IA e concordou com o aviso dele no aplicativo, então, a cada pergunta que você faz a ele
@@ -1521,22 +1805,27 @@
       <li><strong>Eventos de uso.</strong> O aplicativo registra eventos sobre como ele é usado — por exemplo, que um
         treino foi finalizado, com a duração dele e quantos exercícios e séries ele teve, ou que a tela de planos foi
         aberta e como foi fechada —, com a sua conta, um identificador aleatório da instalação, a versão do aplicativo e
-        a sua plataforma. Eles nunca contêm as suas notas, os nomes que você digitou nem as suas medidas corporais. Usamos
-        esses eventos para entender e melhorar o Workouts — o nosso <em>legítimo interesse</em> (art. 6º, nº 1,
-        alínea f).</li>
-      <li><strong>Relatórios de falhas.</strong> Quando o aplicativo falha, ele nos envia o que deu errado: o erro e onde
-        ele aconteceu, os últimos passos antes dele (telas abertas, solicitações feitas, eventos de sincronização), a
-        versão do aplicativo, a sua plataforma, a versão do sistema e o modelo do dispositivo, o identificador da
-        instalação e, se você tiver entrado na conta, a sua conta. No Android, uma falha do código nativo do
-        aplicativo é relatada pelo Firebase Crashlytics (seção 4). Usamos os relatórios de falhas para corrigir erros —
-        o nosso <em>legítimo interesse</em>.</li>
+        a sua plataforma. Se você usa um Apple Watch, eles também dizem se um treino foi iniciado e finalizado no
+        celular ou no relógio, que um relógio foi conectado e, quando um treino do relógio não pôde ser salvo como
+        estava, por quê, a partir de uma lista fechada de motivos. Eles nunca contêm as suas notas, os nomes que você
+        digitou nem as suas medidas corporais. Usamos esses eventos para entender e melhorar o Workouts — o nosso
+        <em>legítimo interesse</em> (art. 6º, nº 1, alínea f).</li>
+      <li><strong>Relatórios de falhas.</strong> Quando o aplicativo falha, ele nos envia o que deu errado: o erro e
+        onde ele aconteceu, os últimos passos antes dele (telas abertas, solicitações feitas, eventos de sincronização),
+        a versão do aplicativo, a sua plataforma, a versão do sistema e o modelo do dispositivo, o identificador da
+        instalação e, se você tiver entrado na conta, a sua conta. No Android, uma falha do código nativo do aplicativo
+        é relatada pelo Firebase Crashlytics (seção 4). Quando o aplicativo falha em um Apple Watch, o relógio entrega
+        um resumo da falha ao seu iPhone, que o envia a nós como os relatórios de falhas do próprio aplicativo. Usamos
+        os relatórios de falhas para corrigir erros — o nosso <em>legítimo interesse</em>.</li>
       <li><strong>Relatos de problemas.</strong> Quando você envia um em Configurações → Diagnóstico, recebemos o que
         você escreveu, as versões do seu dispositivo e do aplicativo, o estado da sincronização, um resumo dos erros
         recentes do aplicativo e — a menos que você desative “Anexar atividade recente” antes de enviar — um log da
-        atividade recente do aplicativo, que o aplicativo mostra a você primeiro. O que você escreveu, com os dados do seu dispositivo e do aplicativo e a
-        sua conta, também chega por e-mail à nossa caixa de suporte. Usamos isso para responder a você por e-mail, no
-        endereço da sua conta, guardando a nossa resposta junto com o seu relato — <em>execução do nosso contrato</em> —
-        e para encontrar e corrigir o problema — o nosso <em>legítimo interesse</em>.</li>
+        atividade recente do aplicativo, que o aplicativo mostra a você primeiro. Esse log inclui o de um Apple Watch
+        conectado ao aplicativo, que nunca contém os nomes que você digitou, os valores que você registrou nem a sua
+        frequência cardíaca. O que você escreveu, com os dados do seu dispositivo e do aplicativo e a sua conta, também
+        chega por e-mail à nossa caixa de suporte. Usamos isso para responder a você por e-mail, no endereço da sua
+        conta, guardando a nossa resposta junto com o seu relato — <em>execução do nosso contrato</em> — e para
+        encontrar e corrigir o problema — o nosso <em>legítimo interesse</em>.</li>
       <li><strong>Logs do servidor.</strong> O nosso servidor e a rede à frente dele registram cada solicitação: o seu
         endereço IP, o horário, o endereço solicitado, a resposta e quanto tempo ela levou, o user agent do seu
         dispositivo e, quando você tiver entrado na conta, a sua conta. Usamos esses logs para manter o serviço funcionando e seguro — o nosso <em>legítimo interesse</em>.</li>
@@ -1584,8 +1873,8 @@
       configurações do Google Play. O nosso log administrativo mantém, sob o número da conta, o que fizemos com a conta
       — os planos que demos a ela e os registros de compra que relemos nas lojas, com os identificadores de transação
       deles; depois que a conta é excluída, nada mais que guardamos liga esse número a você. O que está armazenado no
-      seu celular continua lá até você desinstalar o aplicativo. Veja
-      <a href="delete-account.html">Excluir sua conta e seus dados</a>.</p>
+      seu celular continua lá até você desinstalar o aplicativo. Os treinos que o seu Apple Watch salvou no Saúde ficam
+      lá até você excluí-los lá. Veja <a href="delete-account.html">Excluir sua conta e seus dados</a>.</p>
 
     <h2>4. Quem mais trata os seus dados</h2>
     <p>Somente aqueles que tratam dados para nós, de acordo com as nossas instruções, ou que respondem pela própria
@@ -1605,7 +1894,8 @@
         identificador da instalação do aplicativo.</li>
       <li><strong>O nosso provedor de envio de e-mails</strong>, que envia os e-mails descritos acima.</li>
       <li><strong>Apple e Google</strong>, que vendem as assinaturas e as recargas e, se você entra com eles, cuidam do
-        seu login, como controladores, de acordo com as próprias políticas de privacidade.</li>
+        seu login — e a Apple, se você usa um Apple Watch, conecta-o ao seu iPhone e mantém o app Saúde —, como
+        controladores, de acordo com as próprias políticas de privacidade.</li>
       <li><strong>Autoridades</strong>, quando a lei nos obriga a divulgar dados.</li>
     </ul>
     <p>Não vendemos os seus dados e não os compartilhamos para fins de publicidade. O aplicativo não contém
@@ -1675,7 +1965,7 @@
   <!-- ==================== UKRAINIAN ==================== -->
   <section class="lang hidden" lang="uk">
     <h1>Політика конфіденційності</h1>
-    <p class="updated">Останнє оновлення: 26 жовтня 2026 р.</p>
+    <p class="updated">Останнє оновлення: 27 жовтня 2026 р.</p>
 
     <p>Ця політика пояснює, які персональні дані обробляють застосунок <strong>Workouts</strong> і пов’язані з ним
       послуги, навіщо, на якій правовій підставі, хто ще їх обробляє, як довго ми їх зберігаємо і які у вас
@@ -1722,6 +2012,39 @@
       <li>Коли ви щось видаляєте в застосунку, наш сервер зберігає це з позначкою про видалення, щоб ваші інші пристрої
         теж це видалили; остаточно це стирається разом із вашим обліковим записом.</li>
     </ul>
+
+    <h3>Apple Watch</h3>
+    <p>Якщо ви користуєтеся Workouts на Apple Watch, годинник показує ваші заплановані тренування і те, що триває, а ви
+      записуєте на ньому свої підходи. Ваші тренування й далі записує лише застосунок на вашому iPhone: годинник
+      надсилає йому те, що ви зробили, — який підхід, з якою вагою, повтореннями, часом чи зусиллям і коли, — а
+      застосунок зберігає це так, ніби ви записали це на телефоні, а потім створює резервну копію та синхронізує, як
+      описано вище.</p>
+    <ul>
+      <li><strong>Між годинником і вашим iPhone.</strong> Годинник обмінюється цими даними безпосередньо із застосунком
+        Workouts на вашому iPhone через з’єднання, яке система Apple підтримує між ними; дорогою ніщо не проходить через
+        наш сервер.</li>
+      <li><strong>На годиннику.</strong> Годинник зберігає найближчі тренування, те, що триває, і те, чого ще не передав
+        вашому iPhone, а також короткий журнал власних технічних подій, який ніколи не містить назв, значень чи вашого
+        пульсу. Він видаляє їх, коли ви виходите з облікового запису в застосунку на iPhone або входите з іншим
+        обліковим записом, а також коли ви видаляєте застосунок із годинника.</li>
+      <li><strong>Пульс і калорії.</strong> Під час тренування годинник вимірює ваш пульс, оцінює спалені калорії та
+        показує їх вам. Поки годинник під’єднано, застосунок Workouts на вашому iPhone також показує ваш пульс і нічого
+        з нього не зберігає. Жодні з цих даних ніколи не потрапляють на наш сервер, у наші журнали, події використання
+        чи звіти про збої.</li>
+      <li><strong>Здоров’я (Apple Health).</strong> З вашого дозволу годинник зберігає тренування в застосунку Здоров’я
+        — силове тренування, його початок і кінець, ваш пульс і активну енергію, — де воно зараховується до ваших кілець
+        Активності; під час тренування він зчитує звідти ваш пульс і активну енергію, щоб їх показати. На вашому iPhone
+        Workouts використовує Здоров’я лише для того, щоб відкрити застосунок на годиннику, коли ви починаєте тренування
+        на телефоні: він нічого там не зчитує і не записує. Ці записи зберігаються на ваших пристроях, а також в Apple
+        за її власними умовами, а не в нас. Окрім того, що годинник показує вам під час тренування, ми нічого з них не
+        зчитуємо; ми ніколи не використовуємо їх для реклами чи маркетингу, не продаємо їх і не зберігаємо жодних із них
+        на нашому сервері чи в iCloud. Ви можете будь-коли відкликати дозвіл у налаштуваннях Здоров’я і видалити ці
+        записи в застосунку Здоров’я.</li>
+    </ul>
+    <p>Ми обробляємо ці дані, щоб надати вам застосунок для годинника, яким ви вирішили користуватися, — <em>виконання
+      нашого договору</em> (стаття 6(1)(b)). Те, що вони розкривають про ваше здоров’я, ми обробляємо на підставі вашої
+      <em>явної згоди</em> (статті 6(1)(a) і 9(2)(a)), як і ваші тренування вище; ви надаєте її, користуючись годинником
+      і надаючи дозвіл Здоров’ю.</p>
 
     <h3>ШІ-тренер</h3>
     <p>Якщо ви користуєтеся ШІ-тренером і в застосунку погодилися з приміткою щодо тренера, то щоразу, коли ви
@@ -1780,22 +2103,27 @@
       <li><strong>Події використання.</strong> Застосунок записує події про те, як ним користуються, — наприклад, що
         тренування завершено, з його тривалістю та кількістю вправ і підходів, або що відкрито екран тарифів і як його
         закрито, — разом із вашим обліковим записом, випадковим ідентифікатором встановлення, версією застосунку та
-        вашою платформою. Вони ніколи не містять ваших нотаток, введених вами назв чи ваших параметрів тіла. Ми
-        використовуємо їх, щоб розуміти й покращувати Workouts, — наш <em>законний інтерес</em> (стаття 6(1)(f)).</li>
+        вашою платформою. Якщо ви користуєтеся Apple Watch, вони також указують, на телефоні чи на годиннику тренування
+        почали й завершили, що під’єднано годинник, а коли тренування з годинника не вдалося зберегти таким, яким воно
+        було, — чому, із закритого переліку причин. Вони ніколи не містять ваших нотаток, введених вами назв чи ваших
+        параметрів тіла. Ми використовуємо їх, щоб розуміти й покращувати Workouts, — наш <em>законний інтерес</em>
+        (стаття 6(1)(f)).</li>
       <li><strong>Звіти про збої.</strong> Коли застосунок дає збій, він надсилає нам відомості про те, що пішло не так:
         помилку і місце, де вона виникла, останні кроки перед нею (відкриті екрани, надіслані запити, події
         синхронізації), версію застосунку, вашу платформу, версію системи й модель пристрою, ідентифікатор встановлення
         і, якщо ви ввійшли, ваш обліковий запис. На Android про збої нативного коду застосунку повідомляє Firebase
-        Crashlytics (розділ 4). Ми використовуємо звіти про збої, щоб виправляти помилки, — наш <em>законний
-        інтерес</em>.</li>
+        Crashlytics (розділ 4). Коли застосунок на Apple Watch дає збій, годинник передає зведення про збій вашому
+        iPhone, який надсилає його нам так само, як звіти про збої самого застосунку. Ми використовуємо звіти про збої,
+        щоб виправляти помилки, — наш <em>законний інтерес</em>.</li>
       <li><strong>Звіти про проблеми.</strong> Коли ви надсилаєте такий звіт із розділу Налаштування → Діагностика, ми
         отримуємо те, що ви написали, версії вашого пристрою та застосунку, стан синхронізації, зведення нещодавніх
-        помилок застосунку і — якщо ви не вимкнете «Додати нещодавню активність» перед надсиланням — журнал нещодавньої активності
-        застосунку, який застосунок спершу вам показує. Те, що ви написали, разом із даними про ваш пристрій і застосунок та вашим
-        обліковим записом, також надходить електронною поштою до нашої скриньки підтримки. Ми використовуємо це, щоб
-        відповісти вам електронною поштою на адресу вашого облікового запису, зберігаючи нашу відповідь разом із вашим
-        звітом, — <em>виконання нашого договору</em>, — і щоб знайти та усунути проблему, — наш <em>законний
-        інтерес</em>.</li>
+        помилок застосунку і — якщо ви не вимкнете «Додати нещодавню активність» перед надсиланням — журнал нещодавньої
+        активності застосунку, який застосунок спершу вам показує. Цей журнал містить і журнал під’єднаного до
+        застосунку Apple Watch, який ніколи не містить введених вами назв, записаних значень чи вашого пульсу. Те, що ви
+        написали, разом із даними про ваш пристрій і застосунок та вашим обліковим записом, також надходить електронною
+        поштою до нашої скриньки підтримки. Ми використовуємо це, щоб відповісти вам електронною поштою на адресу вашого
+        облікового запису, зберігаючи нашу відповідь разом із вашим звітом, — <em>виконання нашого договору</em>, — і
+        щоб знайти та усунути проблему, — наш <em>законний інтерес</em>.</li>
       <li><strong>Журнали сервера.</strong> Наш сервер і мережа перед ним записують кожен запит: вашу IP-адресу, час,
         запитувану адресу, відповідь і час, за який її надано, рядок агента користувача (user agent) вашого пристрою і,
         якщо ви ввійшли, ваш обліковий запис. Ми використовуємо їх, щоб підтримувати роботу та безпеку
@@ -1840,14 +2168,15 @@
         </tbody>
       </table>
     </div>
-    <p>Коли ви видаляєте свій обліковий запис, його буде видалено через 30 днів після вашого запиту разом з усім, що,
-      як зазначено вище, зберігається до того часу, зокрема з вашими кредитами; RevenueCat також видаляє свій запис про
+    <p>Коли ви видаляєте свій обліковий запис, його буде видалено через 30 днів після вашого запиту разом з усім, що, як
+      зазначено вище, зберігається до того часу, зокрема з вашими кредитами; RevenueCat також видаляє свій запис про
       вас. Видалення облікового запису не скасовує підписку: щоб із вас більше не списували кошти, скасуйте її в
       налаштуваннях App Store або Google Play. Наш адміністративний журнал зберігає під номером облікового запису те, що
       ми робили з цим обліковим записом, — надані йому тарифи та записи про покупки, які ми повторно отримали з
       магазинів, разом з їхніми ідентифікаторами транзакцій; після видалення облікового запису ніщо інше з того, що ми
       зберігаємо, не пов’язує цей номер із вами. Те, що зберігається на вашому телефоні, залишається там, доки ви не
-      видалите застосунок. Див. <a href="delete-account.html">Видалення облікового запису й даних</a>.</p>
+      видалите застосунок. Тренування, які ваш Apple Watch зберіг у Здоров’ї, залишаються там, доки ви їх там не
+      видалите. Див. <a href="delete-account.html">Видалення облікового запису й даних</a>.</p>
 
     <h2>4. Хто ще обробляє ваші дані</h2>
     <p>Лише ті, хто обробляє дані для нас, за нашими вказівками, або хто відповідає за власну частину:</p>
@@ -1865,8 +2194,9 @@
         отримує звіти про збої нативного коду застосунку та ідентифікатор
         встановлення застосунку.</li>
       <li><strong>Наш постачальник послуг доставки електронної пошти</strong>, який надсилає описані вище листи.</li>
-      <li><strong>Apple і Google</strong>, які продають підписки та поповнення і, якщо ви цим користуєтеся,
-        забезпечують вхід, — як контролери відповідно до власних політик конфіденційності.</li>
+      <li><strong>Apple і Google</strong>, які продають підписки та поповнення і, якщо ви цим користуєтеся, забезпечують
+        вхід, а Apple, якщо ви користуєтеся Apple Watch, також під’єднує його до вашого iPhone і забезпечує роботу
+        застосунку Здоров’я, — як контролери відповідно до власних політик конфіденційності.</li>
       <li><strong>Державні органи</strong>, якщо закон вимагає від нас розкрити дані.</li>
     </ul>
     <p>Ми не продаємо ваших даних і не передаємо їх для реклами. У застосунку немає реклами.</p>
