@@ -11,10 +11,11 @@
  *      app matches a phone's, by `phones` (any Spanish reads Latin American Spanish, Brazil's Portuguese alone reads
  *      Brazilian Portuguese) — else English.
  *
- * A language marked `draft` has texts that wait for their lawyer's review (docs/languages-plan.md, §Q.2): only a link
- * naming it opens it, under a notice that the English version applies, and neither the menu, a stored pick nor the
- * browser's language leads to it. Its review signed off, the change that publishes it takes `draft` away and adds its
- * <link rel="alternate"> to every page (`node tools/check-site.mjs --fix`).
+ * A language marked `draft` has texts not yet published: only a link naming it opens it, under a notice (its words'
+ * `draft` and `draftLink`) that the English version applies, and neither the menu, a stored pick nor the browser's
+ * language leads to it. The change that publishes it takes `draft` and the notice's words away and adds its
+ * <link rel="alternate"> to every page (`node tools/check-site.mjs --fix`). No language is a draft since 27 October
+ * 2026, when the six of LANG-21 were published (docs/languages-plan.md, §Q.2).
  *
  * `node tools/check-site.mjs` loads this file as a module to check the rule and every page against the list.
  */
@@ -48,57 +49,45 @@
       }
     },
     {
-      code: 'de', name: 'Deutsch', phones: ['de'], draft: true,
+      code: 'de', name: 'Deutsch', phones: ['de'],
       words: {
         language: 'Sprache', home: 'Startseite', company: 'Unternehmen', privacy: 'Datenschutzerklärung',
-        terms: 'Nutzungsbedingungen', delete: 'Dein Konto und deine Daten löschen', support: 'Support',
-        draft: 'Diese Übersetzung ist ein Entwurf, der noch anwaltlich geprüft wird. Wo sie von der englischen Fassung abweicht, gilt die englische Fassung.',
-        draftLink: 'Englische Fassung lesen'
+        terms: 'Nutzungsbedingungen', delete: 'Dein Konto und deine Daten löschen', support: 'Support'
       }
     },
     {
-      code: 'es-419', name: 'Español (Latinoamérica)', phones: ['es'], draft: true,
+      code: 'es-419', name: 'Español (Latinoamérica)', phones: ['es'],
       words: {
         language: 'Idioma', home: 'Inicio', company: 'Empresa', privacy: 'Política de privacidad',
-        terms: 'Términos de uso', delete: 'Eliminar tu cuenta y tus datos', support: 'Soporte',
-        draft: 'Esta traducción es un borrador pendiente de revisión jurídica. Si difiere de la versión en inglés, prevalece la versión en inglés.',
-        draftLink: 'Leer la versión en inglés'
+        terms: 'Términos de uso', delete: 'Eliminar tu cuenta y tus datos', support: 'Soporte'
       }
     },
     {
-      code: 'fr', name: 'Français', phones: ['fr'], draft: true,
+      code: 'fr', name: 'Français', phones: ['fr'],
       words: {
         language: 'Langue', home: 'Accueil', company: 'Entreprise', privacy: 'Politique de confidentialité',
-        terms: 'Conditions d’utilisation', delete: 'Supprimer ton compte et tes données', support: 'Assistance',
-        draft: 'Cette traduction est une version provisoire, en attente de relecture par un juriste. En cas de différence avec la version anglaise, c’est la version anglaise qui s’applique.',
-        draftLink: 'Lire la version anglaise'
+        terms: 'Conditions d’utilisation', delete: 'Supprimer ton compte et tes données', support: 'Assistance'
       }
     },
     {
-      code: 'it', name: 'Italiano', phones: ['it'], draft: true,
+      code: 'it', name: 'Italiano', phones: ['it'],
       words: {
         language: 'Lingua', home: 'Home', company: 'Azienda', privacy: 'Informativa sulla privacy',
-        terms: 'Termini di utilizzo', delete: 'Elimina il tuo account e i tuoi dati', support: 'Assistenza',
-        draft: 'Questa traduzione è una bozza in attesa della revisione di un legale. Se differisce dalla versione inglese, prevale la versione inglese.',
-        draftLink: 'Leggi la versione inglese'
+        terms: 'Termini di utilizzo', delete: 'Elimina il tuo account e i tuoi dati', support: 'Assistenza'
       }
     },
     {
-      code: 'pt-BR', name: 'Português (Brasil)', phones: ['pt-BR'], draft: true,
+      code: 'pt-BR', name: 'Português (Brasil)', phones: ['pt-BR'],
       words: {
         language: 'Idioma', home: 'Início', company: 'Empresa', privacy: 'Política de privacidade',
-        terms: 'Termos de uso', delete: 'Excluir sua conta e seus dados', support: 'Suporte',
-        draft: 'Esta tradução é um rascunho e ainda será revisada por um advogado. Se ela divergir da versão em inglês, prevalece a versão em inglês.',
-        draftLink: 'Ler a versão em inglês'
+        terms: 'Termos de uso', delete: 'Excluir sua conta e seus dados', support: 'Suporte'
       }
     },
     {
-      code: 'uk', name: 'Українська', phones: ['uk'], draft: true,
+      code: 'uk', name: 'Українська', phones: ['uk'],
       words: {
         language: 'Мова', home: 'Головна', company: 'Компанія', privacy: 'Політика конфіденційності',
-        terms: 'Умови використання', delete: 'Видалення облікового запису й даних', support: 'Підтримка',
-        draft: 'Цей переклад — чернетка, яку ще має перевірити юрист. Якщо він відрізняється від англійської версії, діє англійська версія.',
-        draftLink: 'Читати англійську версію'
+        terms: 'Умови використання', delete: 'Видалення облікового запису й даних', support: 'Підтримка'
       }
     }
   ];

@@ -24,13 +24,15 @@ App Privacy label in `app-store/app-privacy.md`. They follow these pages.
   change. Node alone, no dependency.
 
 **Drafts (do NOT publish — `drafts/`, kept out of the upload by `.assetsignore`):**
-- `drafts/watches.md` — what the watch app adds to the privacy policy, the account-deletion page and
-  the Terms (EN + PL), for the lawyer's review. It goes onto the pages with the watch app's launch,
-  in every language of the site (workouts-frontend `docs/languages-plan.md`, LANG-43), and the change
-  that puts it there deletes the draft.
-- `drafts/lang-21/<code>.md` — each draft language's briefing for its lawyer: what its draft chose,
-  what it adapted, the labels it is unsure of and its first questions. It goes with its language's
-  publication.
+- `drafts/watches.md` — what the watch apps add to the privacy policy, the account-deletion page and
+  the Terms (EN + PL). The Apple Watch's part is on the pages, in every language, since 27 October
+  2026 (workouts-frontend `docs/languages-plan.md`, LANG-43); what is left is Wear OS's, Garmin's and
+  Amazfit's, each published with its watch's launch, in every language of the site, and the change
+  that publishes the last of them deletes the draft.
+- `drafts/lang-21/<code>.md` — each language's briefing from its draft: what it chose, what it
+  adapted, the labels it was unsure of and the questions it had for a lawyer. Its language was
+  published on 27 October 2026 without a lawyer's review (`docs/languages-plan.md`, LANG-D10), and the
+  briefing is kept as the record of those choices and questions, should a lawyer ever read the text.
 
 The pages use only relative links, so they work under any domain or subpath without edits.
 
@@ -51,7 +53,9 @@ and nothing else holds a copy:
   RevenueCat, with the buyer's consent, ACO-06), on 25 October 2026 (the Terms' §18 on the
   versions in other languages and the Privacy Policy's line on asking in your own, LANG-21), and on 26 October 2026
   (LANG-44: the Settings row the pages name, one name for the Terms and one for the deletion page, the problem reports'
-  legal bases, Firebase Cloud Messaging gone from the Android app and from §4, and Polish in neutral address).
+  legal bases, Firebase Cloud Messaging gone from the Android app and from §4, and Polish in neutral address), and on
+  27 October 2026 (LANG-43: the Apple Watch, which the app has carried since 1.1.8 — the Privacy Policy's "Apple
+  Watch" part and its lines in §2, §3 and §4, the account-deletion page's watch, and the Terms' §2 and §8).
 - Moving the site to another address means changing `billing.legal` in the app,
   `LEGAL_SITE_URL` in the backend's `.env`, and `ORIGIN` in `tools/check-site.mjs` (then `--fix`),
   which the pages' `hreflang` alternates name whole.
@@ -74,14 +78,16 @@ footer's words, and carries the language on the site's own links. A page opens i
 Polish therefore opens only for a Polish browser, a Polish pick or `?lang=pl`: a language the site
 has no text for reads English, never Polish.
 
-**Drafts.** A language marked `draft` in `lang.js` has texts that wait for their lawyer's review
-(`docs/languages-plan.md`, §Q.2): only a link naming it opens it, under a notice that the English
-version applies; the menu lists it only while it is shown, a pick of it is not kept, and no
-browser's language opens it. German, Spanish (Latin America), French, Italian, Portuguese (Brazil)
-and Ukrainian are drafts since LANG-21 (25 October 2026). **Publishing a language** once its lawyer
-signs it off: apply their changes (to English and Polish too where they change what the texts say),
-take `draft` off its entry, run `node tools/check-site.mjs --fix` (its `hreflang` alternates), and
-record the sign-off in LANG-21's As built; then the app's `environment.prod.ts` gains its two URLs.
+**Drafts.** A language marked `draft` in `lang.js` has texts not yet published: only a link naming
+it opens it, under a notice that the English version applies; the menu lists it only while it is
+shown, a pick of it is not kept, and no browser's language opens it. German, Spanish (Latin
+America), French, Italian, Portuguese (Brazil) and Ukrainian were drafts from LANG-21 (25 October
+2026) and were published on 27 October 2026, by the product owner's decision, without a lawyer's
+review (`docs/languages-plan.md`, LANG-D10); the Terms' §18 keeps English the version that applies
+where a translation differs, unless the law where the reader lives says otherwise. No language is a
+draft now. **Publishing a language** that is: take `draft` and its notice's words off its entry,
+run `node tools/check-site.mjs --fix` (its `hreflang` alternates), and record it in LANG-21's As
+built; then the app's `environment.prod.ts` gains its two URLs.
 
 **A block of one market's own** — something its law asks that the English does not say, such as
 Brazil's LGPD in the Privacy Policy — is a `<div class="local">` in that language's section; every
