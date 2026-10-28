@@ -55,7 +55,11 @@ and nothing else holds a copy:
   (LANG-44: the Settings row the pages name, one name for the Terms and one for the deletion page, the problem reports'
   legal bases, Firebase Cloud Messaging gone from the Android app and from §4, and Polish in neutral address), and on
   27 October 2026 (LANG-43: the Apple Watch, which the app has carried since 1.1.8 — the Privacy Policy's "Apple
-  Watch" part and its lines in §2, §3 and §4, the account-deletion page's watch, and the Terms' §2 and §8).
+  Watch" part and its lines in §2, §3 and §4, the account-deletion page's watch, and the Terms' §2 and §8), and for
+  the app release that brings its two switches (LANG-56: body measurements on the explicit consent of *Use my body
+  measurements*, Apple's refund questions answered only once *Answer Apple's refund questions* is switched on, the
+  watch's health data on Apple Health's permission, and the Terms' §16 asking for acceptance of a change that takes
+  anything away or adds to the price). Publish that change when the app release carrying the switches is out.
 - Moving the site to another address means changing `billing.legal` in the app,
   `LEGAL_SITE_URL` in the backend's `.env`, and `ORIGIN` in `tools/check-site.mjs` (then `--fix`),
   which the pages' `hreflang` alternates name whole.
