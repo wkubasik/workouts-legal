@@ -60,6 +60,12 @@ and nothing else holds a copy:
   measurements*, Apple's refund questions answered only once *Answer Apple's refund questions* is switched on, the
   watch's health data on Apple Health's permission, and the Terms' §16 asking for acceptance of a change that takes
   anything away or adds to the price). Publish that change when the app release carrying the switches is out.
+  On 6 November 2026 they were brought in line ahead of the code, as Google Play's Health Connect declaration needs
+  (workouts-frontend `docs/roadmap/ecosystem-plan.md`, ECO-27): the Privacy Policy's "Apple Health and Health
+  Connect" part — what the phone saves to its health store, the workouts an iPhone reads only to save none twice, the
+  body weight read on consent — with its lines in the Apple Watch part, §2's usage events, §3 and §4, and the
+  account-deletion page's phone. The app release that brings it (ECO-01 … ECO-04) follows; every switch it names is
+  off until the person turns it on, so the text is true of the app before that release too.
 - Moving the site to another address means changing `billing.legal` in the app,
   `LEGAL_SITE_URL` in the backend's `.env`, and `ORIGIN` in `tools/check-site.mjs` (then `--fix`),
   which the pages' `hreflang` alternates name whole.
