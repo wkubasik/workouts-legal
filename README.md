@@ -66,6 +66,11 @@ and nothing else holds a copy:
   body weight read on consent — with its lines in the Apple Watch part, §2's usage events, §3 and §4, and the
   account-deletion page's phone. The app release that brings it (ECO-01 … ECO-04) follows; every switch it names is
   off until the person turns it on, so the text is true of the app before that release too.
+  On 9 November 2026 they were brought in line ahead of the code again (workouts-frontend
+  `docs/roadmap/social-plan.md`, SOC-24): the Terms' sections 19 to 22 (shared plans, invitations, groups, the age
+  question, the community rules, reports and moderation, a trainer's client's consent), the Privacy Policy's "Sharing
+  and training with others" with its lines in §2's Notifications, §3, §4, §5 and §7, and the account-deletion page's
+  "At once". Every part is worded by feature, so the text is true of the app before each part ships.
 - Moving the site to another address means changing `billing.legal` in the app,
   `LEGAL_SITE_URL` in the backend's `.env`, and `ORIGIN` in `tools/check-site.mjs` (then `--fix`),
   which the pages' `hreflang` alternates name whole.
