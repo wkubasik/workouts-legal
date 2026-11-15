@@ -75,9 +75,10 @@ and nothing else holds a copy:
   `docs/roadmap/CHECKLIST.md`, OPS-03; `docs/roadmap/monetisation-plan.md`, §B.7, §G.8, MON-08): four points after
   "Inviting friends" in the Terms' section 19 — a month of Pro each once the invited friend has trained, a month saved
   while Pro is paid for or held for good, the limits, and that the rewards may end — a clause in section 4, and the
-  Privacy Policy's "Invitations" and its row in §3 for what a reward keeps. The product owner and the lawyer read it
-  (M-34) before it is merged, which publishes it; it takes effect only once every account has been told, 14 days
-  ahead (section 16).
+  Privacy Policy's "Invitations" and its row in §3 for what a reward keeps. It was published the same day without a
+  lawyer's reading, by the product owner's decision (workouts-frontend `docs/roadmap/README.md`, O-11: no lawyer reads
+  the legal texts; the owner reads the English and the Polish); it takes effect only once every account has been told,
+  14 days ahead (section 16), by the admin console's notice (the backend's `deploy/README.md`, "Terms notice").
 - Moving the site to another address means changing `billing.legal` in the app,
   `LEGAL_SITE_URL` in the backend's `.env`, and `ORIGIN` in `tools/check-site.mjs` (then `--fix`),
   which the pages' `hreflang` alternates name whole.
