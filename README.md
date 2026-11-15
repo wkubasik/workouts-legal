@@ -71,6 +71,13 @@ and nothing else holds a copy:
   question, the community rules, reports and moderation, a trainer's client's consent), the Privacy Policy's "Sharing
   and training with others" with its lines in §2's Notifications, §3, §4, §5 and §7, and the account-deletion page's
   "At once". Every part is worded by feature, so the text is true of the app before each part ships.
+  On 15 November 2026 the invitation's reward was drafted ahead of the code (workouts-frontend
+  `docs/roadmap/CHECKLIST.md`, OPS-03; `docs/roadmap/monetisation-plan.md`, §B.7, §G.8, MON-08): four points after
+  "Inviting friends" in the Terms' section 19 — a month of Pro each once the invited friend has trained, a month saved
+  while Pro is paid for or held for good, the limits, and that the rewards may end — a clause in section 4, and the
+  Privacy Policy's "Invitations" and its row in §3 for what a reward keeps. The product owner and the lawyer read it
+  (M-34) before it is merged, which publishes it; it takes effect only once every account has been told, 14 days
+  ahead (section 16).
 - Moving the site to another address means changing `billing.legal` in the app,
   `LEGAL_SITE_URL` in the backend's `.env`, and `ORIGIN` in `tools/check-site.mjs` (then `--fix`),
   which the pages' `hreflang` alternates name whole.
