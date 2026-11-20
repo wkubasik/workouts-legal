@@ -78,7 +78,9 @@ and nothing else holds a copy:
   Privacy Policy's "Invitations" and its row in §3 for what a reward keeps. It was published the same day without a
   lawyer's reading, by the product owner's decision (workouts-frontend `docs/roadmap/README.md`, O-11: no lawyer reads
   the legal texts; the owner reads the English and the Polish); it takes effect only once every account has been told,
-  14 days ahead (section 16), by the admin console's notice (the backend's `deploy/README.md`, "Terms notice").
+  14 days ahead (section 16), by the admin console's notice (the backend's `deploy/README.md`, "Terms notice"). That
+  notice is not sent, by the product owner's decision of 20 November 2026, with about one active account (frontend
+  `docs/roadmap/MANUAL.md`, M-83): until one is, section 19's "Anything it brings is described in the app" stands.
   On 20 November 2026 the app's new name, *WK Workouts*, was written in place of *Workouts* on every page, in every
   language (workouts-frontend `docs/roadmap/design-plan.md`, DES-15; `docs/roadmap/README.md`, D-16, O-14), to be
   published with the backend's rename by 7 December, before the store submission of the release that renames the app. The noun stays a noun —
