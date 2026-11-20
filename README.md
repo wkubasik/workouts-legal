@@ -1,6 +1,6 @@
-# Workouts — Store legal pages
+# WK Workouts — Store legal pages
 
-Static pages and copy for the Google Play (and App Store) listing of the **Workouts** app.
+Static pages and copy for the Google Play (and App Store) listing of the **WK Workouts** app.
 
 **Pages to publish** — each in every language of `lang.js` (below):
 - `index.html` — landing page linking everything below
@@ -79,6 +79,13 @@ and nothing else holds a copy:
   lawyer's reading, by the product owner's decision (workouts-frontend `docs/roadmap/README.md`, O-11: no lawyer reads
   the legal texts; the owner reads the English and the Polish); it takes effect only once every account has been told,
   14 days ahead (section 16), by the admin console's notice (the backend's `deploy/README.md`, "Terms notice").
+  On 20 November 2026 the app's new name, *WK Workouts*, was written in place of *Workouts* on every page, in every
+  language (workouts-frontend `docs/roadmap/design-plan.md`, DES-15; `docs/roadmap/README.md`, D-16, O-14), to be
+  published with the backend's rename by 7 December, before the store submission of the release that renames the app. The noun stays a noun —
+  English's "Workouts saved to Apple Health…", and German's *Workouts*, the word for workouts — and German says "die
+  App WK Workouts" and "Konto bei WK Workouts" where it wrote "Workouts-App" and "Workouts-Konto", as the app's own
+  German never builds a compound on the name. A name changes none of the Terms' rights or duties, so no notice was
+  sent for it (section 16; O-11) and no page's *Last updated* moved. The addresses and `?lang=` are as they were.
 - Moving the site to another address means changing `billing.legal` in the app,
   `LEGAL_SITE_URL` in the backend's `.env`, and `ORIGIN` in `tools/check-site.mjs` (then `--fix`),
   which the pages' `hreflang` alternates name whole.
