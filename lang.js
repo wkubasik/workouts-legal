@@ -219,7 +219,7 @@
 
       var heading = section.querySelector('h1');
       document.title = section.getAttribute('data-title')
-        || (heading ? heading.textContent.trim() + ' — Workouts' : document.title);
+        || (heading ? heading.textContent.trim() + ' — WK Workouts' : document.title);
 
       document.querySelectorAll('[data-word]').forEach(function (element) {
         var word = words[element.getAttribute('data-word')];
